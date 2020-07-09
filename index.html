@@ -26,6 +26,10 @@
     font-family: "Times New Roman", Times, serif
   }
 
+  .mySlides {
+    display: none;
+  }
+
   p.sc {
     font-variant: small-caps;
   }
@@ -58,25 +62,32 @@
 </style>
 
 
-<body class="w3-blue-gray">
+<body class="w3-blue-grey">
 
   <!-- Page Container -->
   <div class="w3-content w3-margin-top" style="max-width:2000px;">
+      <!-- Comment Block -->
+      <div class="w3-content w3-large w3-text-white w3-center" style="min-width: 100%;">
 
+        <div class="mySlides w3-container">
+          <p style="font-size: 120%;">Thank you for all that you have brought to this team - you have gone above and beyond- and have shown
+          incredible grit. Your solution orientation and team player attitude is definitely going to take you places!
+          Please continue to stay in touch with the team - you have been invaluable. And such an integral contributer to
+          the momentum created on the MAL account. Thank you for all your effort.<br>
+          <i><b>Kirana Singh | Customer Experience Manager</b></i><br>
+          <i><b>Genex Insights | 2020</b></i></p>
+        </div>
+      </div>
+      <!-- End Comment Block-->
+      <br>
+      <br>
     <!-- The Grid -->
     <div class="w3-row-padding">
 
-      <!-- Disclaimer Block -->
-      <div class="w3-container w3-display-topright w3-text-black" style="max-width: 400px">
-        <p>Disclaimer: This static site was developed in a way that clicking on certain titles will open the relevant
-          documents in new windows.</p>
-      </div>
-      <br>
-      <br>
 
       <!-- Name and Surname -->
       <div class="w3-container">
-        <h1 style="font-size:90px">Kishan <font color="#6e03fd">Narotam</font>
+        <h1 style="font-size:120px"><font color="#ffffff">Kishan</font> <font color="#6e03fd">Narotam</font>
         </h1>
         <!-- End Name and Surname -->
       </div>
@@ -587,6 +598,24 @@
         class="fa fa-linkedin w3-hover-opacity"></i></a>
   </footer>
 
+  <script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {
+        slideIndex = 1
+      }
+      x[slideIndex - 1].style.display = "block";
+      setTimeout(carousel, 5000);
+    }
+  </script>
 </body>
 
 </html>

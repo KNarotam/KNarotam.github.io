@@ -4,7 +4,7 @@
 
 <head>
     <!-- add icon link -->
-    <link rel="icon" href="Images/Logo.png" type="image/x-icon">
+    <link rel="icon" href="../../Images/Logo.png" type="image/x-icon">
 </head>
 
 <meta charset="UTF-8">
@@ -43,6 +43,18 @@
         #main {
             margin-left: 0
         }
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
     }
 </style>
 

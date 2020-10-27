@@ -4,7 +4,7 @@
 
 <head>
     <!-- add icon link -->
-    <link rel="icon" href="Images/Logo.png" type="image/x-icon">
+    <link rel="icon" href="../../Images/Logo.png" type="image/x-icon">
 </head>
 
 <meta charset="UTF-8">
@@ -43,6 +43,19 @@
         #main {
             margin-left: 0
         }
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
     }
 </style>
 
@@ -100,7 +113,7 @@
         </header>
 
         <!-- Welcome Section -->
-        <div class="w3-content w3-text-white w3-padding-64"  style="width:page; font-size: large;">
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
             <h1 class="w3-text-light-grey w3-center">GAMING</h1>
             <hr style="width:page" class="w3-opacity">
             <p>One of the most important parts of my life. Gaming is not just a hobby or passion or lifestyle for me. It
@@ -110,27 +123,34 @@
                 it is, gaming is a true part of who I am, so if you are a gamer, PC, PlayStation, Xbox, hell even a
                 phone gamer, I hope you enjoy the reviews.
             </p>
-
-
-            <!-- Footer -->
-            <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
-                <p>Find me on social media.</p>
-                <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-                <a href="https://www.facebook.com/JoKishler" target="_blank"><i
-                        class="fa fa-facebook-official w3-hover-opacity"></i></a>
-                <a href="https://www.instagram.com/jokishler/" target="_blank"><i
-                        class="fa fa-instagram w3-hover-opacity"></i></a>
-                <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
-                        class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-                <a href="https://twitter.com/KNarotam" target="_blank"><i
-                        class="fa fa-twitter w3-hover-opacity"></i></a>
-                <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
-                        class="fa fa-linkedin w3-hover-opacity"></i></a>
-                <!-- End footer -->
-            </footer>
-
-            <!-- END PAGE CONTENT -->
         </div>
+
+        <div class="w3-container w3-text-white w3-padding-64 w3-center"
+            style="width: page; overflow-wrap: break-word; ">
+            <div class="column">
+                <a href="Reviews/FIFA21Review.html" class="w3-button w3-hover-black">
+                <img src="../../Images/Gaming/FIFA 21.jpg" alt="FIFA 21" style="width:100%"></a>
+                <b>FIFA 21 Review</b> 
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+
 
 </body>
 

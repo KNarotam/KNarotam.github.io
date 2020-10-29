@@ -57,12 +57,88 @@
         clear: both;
         display: table;
     }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
 </style>
 
 <body class="w3-black">
 
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Icon Bar (Sidebar - hidden on small screens) -->
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+            <!-- Avatar image in top left corner -->
+            <img src="Images/Logo Supreme.png" style="width:100%">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+                <i class="fa fa-home w3-xxxlarge"></i>
+                <p>HOME</p>
+            </a>
+            <a target="_blank" href="Pages/CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i><img src="Images/Icons/User.png" style="width:90%;"></i>
+                <p>CV/RÉSUMÉ</p>
+            </a>
+            <a href="Pages/Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i><img src="Images/Icons/Suit.png" style="width:100%;"></i>
+                <p>FASHION</p>
+            </a>
+            <a href="Pages/Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i><img src="Images/Icons/PS.png" style="width:100%;"></i>
+                <p>GAMING</p>
+            </a>
+            <a href="Pages/Tech/TechHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i><img src="Images/Icons/Tech.png" style="width:100%;"></i>
+                <p>TECH</p>
+            </a>
+            <a href="Pages/Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i><img src="Images/Icons/Joker.jpg" style="width:100%;"></i>
+                <p>LIFE</p>
+            </a>
+        </nav>
+
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
         <!-- Avatar image in top left corner -->
         <img src="Images/Logo Supreme.png" style="width:100%">
         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
@@ -92,22 +168,9 @@
     </nav>
 
 
-
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-            <a href="Pages/CV/CV.html" class="w3-bar-item w3-button" style="width:25% !important">CV/RÉSUMÉ</a>
-            <a href="Pages/Fashion/FashionHome.html" class="w3-bar-item w3-button"
-                style="width:25% !important">FASHION</a>
-            <a href="Pages/Gaming/GamingHome.html" class="w3-bar-item w3-button" style="width:25% !important">GAMING</a>
-            <a href="Pages/Tech/TechHome.html" class="w3-bar-item w3-button" style="width:25% !important">TECH</a>
-            <a href="Pages/Life/LifeHome.html" class="w3-bar-item w3-button" style="width:25% !important">LIFE</a>
-        </div>
-    </div>
-
     <!-- Page Content -->
     <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
         <!-- Header/Home -->
         <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
             <img src="Images/Header.png" style="width:60%;" alt="Header Logo">
@@ -127,62 +190,69 @@
                 tested if I <i>could</i> actually do it. So here we go, welcome to the website that could just define
                 ... well me. Welcome to my blog.</p>
         </div>
-            <div class="w3-container w3-text-white w3-padding-64 w3-center"
-                style="width: page; overflow-wrap: break-word; ">
-                <h1 class="w3-text-light-grey w3-center">LATEST POSTS</h1>
-                <div class="row">
-                    <div class="column">
-                        <h2>Fashion</h2>
-                    </div>
-                    <div class="column">
-                        <h2>Gaming</h2>
-                    </div>
-                    <div class="column">
-                        <h2>Tech</h2>
-                    </div>
-                    <div class="column">
-                        <h2>Life</h2>
-                    </div>
+        <div class="w3-container w3-text-white w3-padding-64 w3-center"
+            style="width: page; overflow-wrap: break-word; ">
+            <h1 class="w3-text-light-grey w3-center">LATEST POSTS</h1>
+            <div class="row">
+                <div class="column">
+                    <h2>Fashion</h2>
                 </div>
-
-                <div class="row">
-                    <div class="column">
-
-                    </div>
-                    <div class="column">
-                        <a href="/Pages/Gaming/Reviews/NovDec2020.html" class="w3-button w3-hover-black">
-                            <img src="Images/Gaming/NovDec2020/Nov Dec 2020.png" alt="November/December Games" style="width:100%"></a>
-                            Upcoming Nov/Dec Games
-                    </div>
-                    <div class="column">
-    
-                    </div>
-                    <div class="column">
-
-                    </div>
+                <div class="column">
+                    <h2>Gaming</h2>
+                </div>
+                <div class="column">
+                    <h2>Tech</h2>
+                </div>
+                <div class="column">
+                    <h2>Life</h2>
                 </div>
             </div>
 
-            <!-- Footer -->
-            <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
-                <p>Find me on social media.</p>
-                <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-                <a href="https://www.facebook.com/JoKishler" target="_blank"><i
-                        class="fa fa-facebook-official w3-hover-opacity"></i></a>
-                <a href="https://www.instagram.com/jokishler/" target="_blank"><i
-                        class="fa fa-instagram w3-hover-opacity"></i></a>
-                <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
-                        class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-                <a href="https://twitter.com/KNarotam" target="_blank"><i
-                        class="fa fa-twitter w3-hover-opacity"></i></a>
-                <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
-                        class="fa fa-linkedin w3-hover-opacity"></i></a>
-                <!-- End footer -->
-            </footer>
+            <div class="row">
+                <div class="column">
 
-            <!-- END PAGE CONTENT -->
+                </div>
+                <div class="column">
+                    <a href="/Pages/Gaming/Reviews/NovDec2020.html" class="w3-button w3-hover-black">
+                        <img src="Images/Gaming/NovDec2020/Nov Dec 2020.png" alt="November/December Games"
+                            style="width:100%"></a>
+                    Upcoming Nov/Dec Games
+                </div>
+                <div class="column">
 
+                </div>
+                <div class="column">
 
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
 </body>
 
 </html>

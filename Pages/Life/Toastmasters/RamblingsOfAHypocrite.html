@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | Ramblings of a Hypocrite</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../Images/Logo.png" type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV/RÉSUMÉ</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../Tech/TechHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Tech.png" style="width:100%;"></i>
+            <p>TECH</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV/RÉSUMÉ</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../Tech/TechHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Tech.png" style="width:100%;"></i>
+            <p>TECH</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../Images/Life/Toastmasters/The Ramblings of a Hypocrite.png" style="width:100%;"
+                alt="Ramblings Image">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">A Series of Motivational Speeches: Part 1</h1>
+            <p class="w3-text-light-grey w3-center">Presented On: 08/10/2020</p>
+            <hr style="width:page" class="w3-opacity">
+            <p>I sat at my desk staring at the TV, wondering, thinking what in the world am I going to talk about? I
+                thought about confidence versus arrogance, or defining insanity but nothing was coming together. For a
+                second I thought maybe I was going nuts. I can talk non stop about the most random nonsense, but I
+                cannot put together a 5 minute speech. No matter what topic I thought of, I could not come up with a
+                speech. And so I stood up and started flipping through some of my magazines, and realized they all have
+                a common theme. Luxury.</p>
+
+            <p> I have a question for you. Raise your hand if you have ever seen something, whether it was in a
+                magazine or in a store window or any place, something that you admired. Something that you just really
+                really wanted, but when you found out the price, you said <i>I’m good with what I have</i> or <i>I don’t
+                    need it</i>. How many of you have actually experienced that?
+            </p>
+
+            <p>Most of us have felt this sensation, and there is no harm wanting the finer things in life. Everyone has
+                their weaknesses, myself I have a collection, yes a collection of watches, bags and shoes. Some say I
+                have a problem, I say I don’t have enough space. But that is a conversation for another day. We all want
+                to be successful and we all want some sort of luxury. But is it worth it and can you afford it?
+            </p>
+
+            <p>People go into debt because they spend more than they earn. They go crazy now knowing that they have a
+                salary. But many forget to follow the simple 50/30/20 rule. 50% of your salary goes to needs like rent,
+                food and water. 30% on your wants and 20% into your savings. But still people overspend on their credit
+                cards, buying extravagant items like a new pair of shoes instead of asking themselves do they really
+                need it right now? I should know, I literally ask myself this question every single week when I have
+                over 70 pairs of shoes in my cupboard right now. And believe me when I say this, it has been a while
+                since I last counted. I still go crazy buying shoes, when I could honestly open up a store and sell them
+                to you.
+            </p>
+
+            <p>I’m too worried about where am I going to put the next pair I buy, but at times can be so heartless to
+                no give a R2 coin to a beggar. My biggest concern is when am I going to wear it or where for all that is
+                good and sane am I going to put these shoes. And that beggar’s worry is if they will have at least
+                something to eat tonight, or somewhere warm to sleep on a cold, rainy night.</p>
+
+            <p>
+                I know in my last post I said focus on yourself and this may be contradicting to some ideas, but
+                focusing on yourself does not mean you should stop caring for others. And there are those that care too
+                much for others and not themselves. Where is the balance? Does it even exist? Even professional
+                psychologists have their own psychologists to help them get through their profession. And I know! I know
+                what depression and suicidal thoughts feel like, and so I go out of my way to make sure someone else
+                won’t go through the same situation alone and I try to help them, not caring about my own mental health.
+            </p>
+
+            <p>But let’s be honest, most of you know me ... am I really mentally healthy, or am I just nuts?
+                Happy-golucky, goofball Kishan with very expensive taste. I couldn’t just buy a plain mask for R50, I
+                had to get a branded mask that does the same exact thing at ten times the price. Look I love Louis
+                Vuitton but even I wouldn’t buy their basic branded face shield. But what I would buy is a PS5. Gaming
+                has been such a crucial component of my life and who I am, and I did not hesitate to pay for the
+                pre-order. In a matter of seconds, with ninja like abilities, I summoned my debit card, entered my
+                numbers with precision and said goodbye to 1 months salary in 30 seconds. That is how quickly I can
+                spend money. But can you imagine what I could have done with that money? The charities and people it
+                could help, but instead, I bought a PS5.</p>
+
+            <p>Why shouldn’t I? I worked for it. I worked hard for it. I earned it. I saved up for it. What’s the point
+                of making money, if you are not going to enjoy it while you are alive? I’m not saying spend as if it is
+                your last day on earth, although when I travel to Dubai, I do that, without fail every ... single ...
+                time. But spend it on something that is going to be important to you. Something you really do want, and
+                are willing to work hard for and not regret paying crazy amounts for.</p>
+
+            <p>
+                If you want that expensive handbag or shoe or watch, work for it, earn it and enjoy it. Did you know the
+                average starting price for a Louis Vuitton handbag is R60 000, and I have 3 backpacks and
+                2 duffel bags in my cupboard and I’m not going anywhere anytime soon. If you really want it, go forth
+                and work for it, earn it and reward yourself. Because you deserve it. Or be like me, have dad buy it for
+                you cause you’re a spoilt brat. I’m not going to judge, but hey what do I know? I’m just a hypocrite
+                rambling on.
+            </p>
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+</body>
+
+</html>

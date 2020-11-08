@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | How COVID-19 has Affected the Fashion Industry</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../Images/Logo.png" type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+</style>
+
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV/RÉSUMÉ</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../Tech/TechHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Tech.png" style="width:100%;"></i>
+            <p>TECH</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV/RÉSUMÉ</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../Tech/TechHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Tech.png" style="width:100%;"></i>
+            <p>TECH</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../Images/Fashion/COVIDFashionIndustry.png" style="width:100%;"
+                alt="COVID-19 Fashion Industry">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">How COVID-19 has Affected the Fashion Industry</h1>
+            <hr style="width:page" class="w3-opacity">
+            <p>The coronavirus pandemic has been affecting the industries around the world, with the travel and
+                hospitality being negatively impacted the most. But one industry that has seen a bit of mixed emotions
+                has been the fashion industry.</p>
+
+            <p>The pandemic is ongoing and with majority of the world working from home and remotely, daily office wear
+                went from suits and ties to sweatpants and tees. Now I don&rsquo;t know about you, but for me I kind of
+                hated it at first. I enjoyed dressing up for work, choosing a lapel pin to match with the shirt, and a
+                bracelet for the day. Now, working from home, I barely put on a watch, let alone some sort of formal
+                attire. But that is just me, let's dive into how this frustrating pandemic has affected the
+                industry.</p>
+
+            <p>According to McKinsey, they forecast that the global luxury goods market will contract by 35%-39% this
+                year, as shoppers have slowed their spending. The idea of luxury has moved from the aesthetics of
+                fashion and cars to health and vitality. Surveys were done in the US and in Shanghai on luxury buyers.
+                Now for those of you who don't know what luxury buyer is, simply put, it is a person who spends
+                $2,000 on a single fashion item in the past 12 months. Now as a result of this survey, it was found that
+                luxury buyers were boasting about their newly purchased high-end fitness equipment instead, and that
+                this was now becoming a status symbol <sup><a href="1">1</a></sup>.</p>
+
+            <p>But as stores began to open worldwide, people were not flocking to the brick-and-mortar outlets because
+                things have changed. We are now accustomed to entering a store, having your temperature checked and
+                hands sanitized, but that does not really mix with the idea of luxury shopping now does it? Let's
+                do the math:<br>
+                <i>Luxury boutique store + having your temperature checked + wearing a mask &#8800; a luxury
+                    experience </i><sup><a href="1">1</a></sup>.</p>
+
+            <p>All of those luxury fashion items, which are set to rebound after the pandemic, known as "quiet
+                luxury";, is already seeing a resurgence, specifically the high-end brands such as Hermes, Prada
+                and Bottega Veneta. After the '08-'09 economic crisis, luxury brands were able to charge
+                significantly more for certain items. For example, the Hermes Kelly bag retailed for upwards of $4,800
+                in
+                2000, but 13 years later, that same bag was priced at $7,600. Basically, what I am trying to say, is
+                that
+                if you want some of that luxury, now is a time to buy it, because the expectation is to see a positive
+                growth of 1%-4% in the next year alone <sup><a href="1">1</a></sup></p>
+
+            <p>Although the future growth seems to be positive, the current impact that COVID has had on the fashion
+                industry is truly seen in the factories in Bangladesh. Bangladesh is the world&rsquo;s second-largest
+                apparel exporter of western fast fashion brands. I will get into what fast fashion is later on, but what
+                this pandemic has meant for this industry, according to Bloomberg, is a shutdown of approximately 1089
+                garment factories and a loss of approximately $1.5 billion. Now the reason that loss is so substantial
+                is because of the way payments to these factories are done. Brands generally would pay the factories
+                weeks or months after delivery has been made, the factories however pay upfront for the materials used.
+                Brands have ended up cancelling orders when the pandemic hit, even stopping payments, and the factories
+                have had to end up destroying these garments or holding on to them <sup><a href="2">2</a></sup> <sup><a
+                        href="3">3</a></sup>.</p>
+
+            <p>Did you know that the fashion industry accounts for 10% of the world&rsquo;s carbon emissions, as well as
+                drying up water sources and polluting rivers and streams?2 3 This means that the industry severely needs
+                a sustainable material that must be added to the supply chain. In Indonesia, experts have seen the
+                demand for Tencel fibers, which are cellulosic fibres derived from renewable wood sources. This is an
+                absolute gamechanger for the industry, as it offers long-lasting comfort to soft-feel fabrics; it is
+                biodegradable; and will last longer as the fibres are stronger. And if this sounds too good to be true,
+                well it is not, the pricing is not either. Tencel fibres can blended with other fibres to bring down
+                prices and fit well within the supply chain <sup><a href="4">4</a></sup>.</p>
+
+            <p>When the pandemic began in March/April, fashion brands panicked, and tried to clean out their inventory,
+                offering discounts of up to 70%. But as stores began to close, and lockdown was being extended,
+                e-commerce stores saw an increase in sales, specifically the fast fashion brands. H&M online sales
+                increased by 36% between March and May; the ASOS Group&rsquo;s international sales were up by 17%;
+                Zalando, Europe's largest e-tailor estimates a record &euro;300 million earnings <sup><a
+                        href="5">5</a></sup>.</p>
+
+            <p>Now what exactly is fast fashion. Fast fashion is clothing designs, typically similar to high-end brands,
+                that move quickly from the catwalk to stores. For example, Zara would take Balenciaga high-top sock
+                sneakers and create something similar, and retail it for a tenth of the cost. Now, what the industry saw
+                during lockdown was that the focus on fashion was on casual and loungewear, which makes sense. But
+                fashion insiders do not think this will last long, as fashion is like a pendulum, swinging from one
+                extreme to the other. In 1918, the Spanish Flu ravaged the world, and like now, casual and comfortable
+                fashion was sought after. However, when the pandemic ended in 1920, it welcomed in the era of the
+                roaring 20s. Now I can tell you, I am extremely keen to hit up a few roaring 20s looks this decade
+                <sup><a href="6">6</a></sup>.
+            </p>
+
+            <p> Although the fashion industry took a hit, it does not mean they have not taken advantage of it. Numerous
+                accessories have been created, such as custom masks, designed mask cases, gloves, push-stick keychains
+                and even wearable air purifier necklaces. Ultimately, I believe that wearing masks and similar
+                precautions are going to be in place for years to come, and as everything, we must adapt and evolve to
+                it. From matching belts and shoes, to matching masks and gloves, one can hope the pendulum swings to the
+                other end in no time.</p>
+
+            <p>
+                <a id="1"
+                    href="https://www.cnbc.com/2020/08/07/luxury-has-been-hit-hard-by-the-virus-and-what-consumers-value-has-changed.html"><sup>1</sup>
+                    Handly, L; <i>Luxury has been hit hard by the virus. And what consumers value has changed</i>;
+                    Published:
+                    07/08/2020</a><br>
+                <a id="2" href="https://www.openaccessgovernment.org/covid-19-fashion-industry/89851/"><sup>2</sup> Open
+                    Access Government; Impacts of COVID-19 on the fashion industry; Published: 07/07/2020</a><br>
+                <a id="3"
+                    href="https://www.fashionrevolution.org/the-impact-of-covid-19-on-the-people-who-make-our-clothes/"><sup>3</sup>
+                    Fashion Revolution; <i>The impact of COVID-19 on the people who make our clothes - Fashion
+                        Revolution :
+                        Fashion Revolution</i>; Published: 01/2020</a><br>
+                <a id="4"
+                    href="https://www.thejakartapost.com/adv/2020/10/27/sustainable-fashion-trend-rises-along-with-e-commerce-during-covid-19.html"><sup>4</sup>
+                    The Jakarta Post; <i>Sustainable fashion trend rises along with e-commerce during COVID-19 -
+                        Inforial -
+                        The Jakarta Post</i>; Published: 27/10/2020</a><br>
+                <a id="5"
+                    href="https://www.morethanshipping.com/the-impact-of-coronavirus-on-the-fashion-industry/"><sup>5</sup>
+                    Ozdil, S; <i>The Impact of Coronavirus on the Fashion Industry - More Than Shipping</i>; Publsihed:
+                    24/07/2020</a><br>
+                <a id="6"
+                    href="https://www.fastcompany.com/90553879/4-fashion-insiders-reveal-how-the-industry-is-being-altered-by-covid-19"><sup>6</sup>
+                        Segran, E; <i>4 fashion insiders reveal how COVID-19 is altering the industry</i>; Published:
+                        30/10/2020</a></p>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | PS5</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../Images/Logo.png" type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    table,
+    th,
+    td {
+        border: 3px solid white;
+        border-collapse: collapse;
+    }
+
+    table.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../Tech/TechHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Tech.png" style="width:100%;"></i>
+            <p>TECH</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../Tech/TechHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Tech.png" style="width:100%;"></i>
+            <p>TECH</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../Images/Gaming/PS5/PS5.png" style="width:100%;" alt="PS5 Cover">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">PS5: The Hype is Real</h1>
+            <p class="w3-text-light-grey w3-center">Release Date: 19/11/2020</p>
+            <hr style="width:page" class="w3-opacity">
+            <p>I don't know where to even begin with this. I don't even know if I should call it a review. Ladies and
+                gentlemen, the day finally arrived. The PlayStation 5 has landed, with all its glory, and might, sexy
+                curves, liquid metal cooling, sleek design. At this I'm just making up shit as I go along. And I've only
+                just started this damn post.</p>
+
+            <p>Here we go, I'm going to my best to convey to you what this beautiful piece of machinery is worth, what
+                it can do and why this DualSense Wireless Controller is the greatest controller this world has ever
+                seen.</p>
+
+            <p>Let's start off with the unboxing. We all got told the PS5 is going to be huge, but daaaammmnnnn soooon
+                &#8230; It's soo big (that's what she said, I know). But it is, biggest I've seen (that's what she
+                said). Look enough, jokes aside, it's big, it's sexy and it is damn phenomenal (that's what she said
+                &#8230; about me) oh yeah &#8230; I'm totally not a cocky bugger, humbly bragging about my new PS5. Yeah
+                right Kish, and the sky isn't blue. Shut the hell up and tell these people why the PS5 is the best thing
+                you own.</p>
+
+            <h1 class="w3-text-light-grey w3-center">Built like a Beast</h1>
+            <p>With its impressive hardware, namely SSD, two big cooling fans and the AMD Radeon&trade; GPU, and all the
+                other technical stuff. If you want to know the literally ins of the PS5, watch the teardown video. For
+                me the most impressive part of this PS5, is that because of the sheer bad-assery that is the System on a
+                Chip is running at such a high rate, Sony utilized liquid metal as the thermal interface material to
+                ensure long-term, stable, high cooling performance. But that doesn't mean it can't heat up, and if it
+                does, the PS5 system will display a warning about it. But unlike the PS4, when this thing gets going,
+                there is no jet engine, just a silent stream of air. It sounds weird, but it's the best way I can
+                explain it. A beast of a machine, with the power and sound of the wind.<br>
+            </p>
+            <p class="w3-center"><iframe  width="100%" height="400" src="https://www.youtube.com/watch?v=CaAY-jAjm0w&t=360s&ab_channel=PlayStation">
+            </iframe></p>
+
+            <h1 class="w3-text-light-grey w3-center">DualSense &#8230; more like Every Sense</h1>
+            <p>The controller for the senses. Sony's DualSense controller is revolutionary for any gamer. Now you all
+                have probably
+                heard of the new features like the adaptive triggers or the haptic feedback. But what in God's name
+                are those things. Let's start with the adaptive triggers. L2 and R2 have in place this feature that
+                gives pressing the button a real feel. For example, take Call Of Duty. Before, on the PS4's controller,
+                a
+                light press and the triggers go down. But now, you really have to give it a press to fire the gun,
+                and the feeling. Oh god that sensation. The haptic feedback is felt at every part of the controller,
+                is an absolute sensation that travels from the tip of your finger, through your hands, up your arms
+                and you truly feel every aspect of what you are playing.</p>
+            <p class="w3-center"><img src="../../../Images/Gaming/PS5/Controller.jpg" style="width:100%;"
+                    alt="Controller"></p>
+            <p>So, for any of you fortunate people who own a PS5, I urge you to play <i>Astro's Playroom</i>. This
+                is a game that comes with the PS5, and will truly let you feel every aspect of the controller.
+                Walking through some grass, you feel the feedback on the left when the grass moves on your left, the
+                same on the right. And if that's not reason enough to play it, then maybe this will be. <i>Astro's
+                    Playroom</i> is a game, that takes you back in time through the historical artefacts of the
+                PlayStation. Even things you didn't know existed. It's a fun game, cute features and so many damn
+                Easter Eggs, it may as well be Easter time. People, play the damn thing. I felt like a kid
+                again.<br>
+                And just a minor detail, the texture on the back of the controller is the PS symbols. Oh and if
+                you're wondering why I have the Bat symbol on my analog sticks &#8230; the answer is just because I
+                can.</p>
+
+            <p class="w3-center"><img src="../../../Images/Gaming/PS5/Texture.jpg" style="width:60%;" alt="Texture"></p>
+
+            <h1 class="w3-text-light-grey w3-center">Moves like the Wind, only Quieter</h1>
+            Oh, the speed of this thing is undeniable. Playing at 60fps, upscaled to 4k (not native &#8230;
+            yet), the loading times of games and replaying of old ones makes the experience completely brand
+            new, and literally streamlined. YouTube channel <a href="https://www.youtube.com/watch?v=801Bpk5XM_I&t=626s&ab_channel=gameranx"><i>gameranx</i></a> did a bunch of tests on the PS5, one of
+            them being on how quick the loading times are from PS4 to PS5. I'm not going to say anything, I'd
+            let the results speak for themselves.<br>
+            <table class="center " style="width:70%">
+                <tr>
+                    <th><b>Game</th>
+                    <th>PS4</th>
+                    <th>PS5</b></th>
+                </tr>
+                <tr>
+                    <td>Final Fantasy XII</td>
+                    <td>~35 seconds</td>
+                    <td>~20 seconds</td>
+                </tr>
+                <tr>
+                    <td>God of War</td>
+                    <td>~48 seconds</td>
+                    <td>~26 seconds</td>
+                </tr>
+                <tr>
+                    <td>Journey</td>
+                    <td>~33 seconds</td>
+                    <td>~29 seconds</td>
+                </tr>
+                <tr>
+                    <td>Spider-Man</td>
+                    <td>~59 seconds</td>
+                    <td>~15 seconds</td>
+                </tr>
+            </table>
+
+            <h1 class="w3-text-light-grey w3-center">Get yourself a PS5</h1>
+            <p> People I cannot believe the power, the beauty, the happiness in my heart and the feeling of
+                owning and playing on the PS5. I know it is ridiculously expensive, but save up, and get one.
+                You will NOT be disappointed. And if you're not a Sony PlayStation fan, there is always the Xbox
+                Series X, so have fun over there.<br>
+                For now, I'll be in hibernation, playing AC Valhalla, Spider-Man: Miles Morales, Watch
+                Dogs: Legion, Immortals Fenyx Rising and Cyberpunk 2077. And hopefully those reviews will
+                follow.<br>
+                Till next time, JoKishler out! (╯°□°）╯︵ ┻━┻) </p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+</body>
+
+</html>

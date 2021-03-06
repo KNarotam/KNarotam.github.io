@@ -1,185 +1,222 @@
+<!DOCTYPE html>
 <html>
+<title>Kishan Narotam | Blog</title>
 
 <head>
+    <!-- add icon link -->
+    <link rel="icon" href="Images/Logo.png" type="image/x-icon">
 </head>
 
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="Images/Logo Supreme.png" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="Pages/CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="Pages/Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="Pages/Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="Pages/Tech/TechHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="Images/Icons/Tech.png" style="width:100%;"></i>
+            <p>TECH</p>
+        </a>
+        <a href="Pages/Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
 
 
-    <div id="qp_all3433561" style="width:100%;max-width:600px;">
-        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-        <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'
-            type='text/css'>
-        <STYLE>
-            #qp_main3433561 .qp_a>SPAN INPUT {
-                display: none;
-            }
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="Images/Logo Supreme.png" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="Pages/CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="Pages/Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="Pages/Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="Pages/Tech/TechHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="Images/Icons/Tech.png" style="width:100%;"></i>
+            <p>TECH</p>
+        </a>
+        <a href="Pages/Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
 
-            #qp_main3433561[results='0'] .qp_a>SPAN:before {
-                content: "\f1db";
-                position: absolute;
-                width: 2em;
-                margin-left: -2em;
-                display: block;
-                color: inherit;
-                font-family: 'FontAwesome';
-                text-align: center;
-                box-sizing: border-box;
-                border-left: 1px solid transparent
-            }
 
-            #qp_main3433561[results='0'] .qp_a[sel='1']>SPAN:before {
-                content: "\f192";
-                color: inherit;
-            }
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="Images/Header.png" style="width:60%;" alt="Header Logo">
+        </header>
 
-            #qp_main3433561 .qp_btna:hover input {
-                background-color: #000 !important;
-                color: #FFF
-            }
-
-            #qp_main3433561[results='0'] .qp_a:hover {
-                color: #FFF !important;
-                background-color: #000000 !important
-            }
-
-            #qp_main3433561[results='0'] .qp_a[sel='1'] {
-                background-color: #000 !important;
-                color: #FFF !important
-            }
-
-            #qp_all3433561 {
-                max-width: 820px;
-                margin: 0 auto;
-            }
-        </STYLE>
-        <div id="qp_main3433561" fp='AA8e453B-104' results=0
-            style="padding: 15px;                        background: #485563; /* fallback for old browsers */                         background: -webkit-linear-gradient(to right, #29323c, #485563); /* Chrome 10-25, Safari 5.1-6 */                         background: linear-gradient(to right, #29323c, #485563);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                         font-size:12px;                        text-align:left;                        background-size: 100%;                        background-repeat: no-repeat;                        background-attachment: local;                        margin: 0 auto;                        max-width: 820px;                        color:white;                        box-sizing: border-box;order:initial">
-            <div
-                style="color: #FFF;                        font-size: 2.0em;                        font-family: 'Roboto',sans-serif,Arial;                        margin-bottom: 0.8em">
-                <div style="padding:0;display:table-cell;vertical-align:middle;text-align:left;line-height:1.3em">Goal
-                </div>
-            </div>
-            <form id="qp_form3433561" action="//www.poll-maker.com/results3433561xAA8e453B-104" method="post"
-                target="_blank" style="display:inline;margin:0px;padding:0px">
-                <div style="padding:0px"><input type=hidden name="qp_d3433561"
-                        value="44245.2167939840-44245.2166923699">
-                    <div style="clear: both;                        padding: 20px 5px;                        margin-bottom: 0.8em;                        display: block;                        background:#ffffff1f;                        color: #FFF;                        font-family: 'Roboto',sans-serif;                        font-size: 1.3em;                        line-height: 1;                        box-shadow: 0 1px 2px rgba(0,0,0,.4)"
-                        class="qp_a"
-                        onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}">
-                        <span style="padding-left:2em;display:inline-block;cursor:inherit"><input
-                                style="float:left;width:20px;height:20px;padding:0px;margin-left:-25px;margin-top:2px;line-height:2em;-webkit-appearance:radio;"
-                                name="qp_v3433561" type="radio" value="1" />1</span></div>
-                    <div style="clear: both;                        padding: 20px 5px;                        margin-bottom: 0.8em;                        display: block;                        background:#ffffff1f;                        color: #FFF;                        font-family: 'Roboto',sans-serif;                        font-size: 1.3em;                        line-height: 1;                        box-shadow: 0 1px 2px rgba(0,0,0,.4)"
-                        class="qp_a"
-                        onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}">
-                        <span style="padding-left:2em;display:inline-block;cursor:inherit"><input
-                                style="float:left;width:20px;height:20px;padding:0px;margin-left:-25px;margin-top:2px;line-height:2em;-webkit-appearance:radio;"
-                                name="qp_v3433561" type="radio" value="2" />2</span></div>
-                    <div style="clear: both;                        padding: 20px 5px;                        margin-bottom: 0.8em;                        display: block;                        background:#ffffff1f;                        color: #FFF;                        font-family: 'Roboto',sans-serif;                        font-size: 1.3em;                        line-height: 1;                        box-shadow: 0 1px 2px rgba(0,0,0,.4)"
-                        class="qp_a"
-                        onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}">
-                        <span style="padding-left:2em;display:inline-block;cursor:inherit"><input
-                                style="float:left;width:20px;height:20px;padding:0px;margin-left:-25px;margin-top:2px;line-height:2em;-webkit-appearance:radio;"
-                                name="qp_v3433561" type="radio" value="3" />3</span></div>
-                    <div style="clear: both;                        padding: 20px 5px;                        margin-bottom: 0.8em;                        display: block;                        background:#ffffff1f;                        color: #FFF;                        font-family: 'Roboto',sans-serif;                        font-size: 1.3em;                        line-height: 1;                        box-shadow: 0 1px 2px rgba(0,0,0,.4)"
-                        class="qp_a"
-                        onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}">
-                        <span style="padding-left:2em;display:inline-block;cursor:inherit"><input
-                                style="float:left;width:20px;height:20px;padding:0px;margin-left:-25px;margin-top:2px;line-height:2em;-webkit-appearance:radio;"
-                                name="qp_v3433561" type="radio" value="4" />4</span></div>
-                    <div style="clear: both;                        padding: 20px 5px;                        margin-bottom: 0.8em;                        display: block;                        background:#ffffff1f;                        color: #FFF;                        font-family: 'Roboto',sans-serif;                        font-size: 1.3em;                        line-height: 1;                        box-shadow: 0 1px 2px rgba(0,0,0,.4)"
-                        class="qp_a"
-                        onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}">
-                        <span style="padding-left:2em;display:inline-block;cursor:inherit"><input
-                                style="float:left;width:20px;height:20px;padding:0px;margin-left:-25px;margin-top:2px;line-height:2em;-webkit-appearance:radio;"
-                                name="qp_v3433561" type="radio" value="5" />5</span></div>
-                    <div style="clear: both;                        padding: 20px 5px;                        margin-bottom: 0.8em;                        display: block;                        background:#ffffff1f;                        color: #FFF;                        font-family: 'Roboto',sans-serif;                        font-size: 1.3em;                        line-height: 1;                        box-shadow: 0 1px 2px rgba(0,0,0,.4)"
-                        class="qp_a"
-                        onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}">
-                        <span style="padding-left:2em;display:inline-block;cursor:inherit"><input
-                                style="float:left;width:20px;height:20px;padding:0px;margin-left:-25px;margin-top:2px;line-height:2em;-webkit-appearance:radio;"
-                                name="qp_v3433561" type="radio" value="6" />6</span></div>
-                    <div style="clear: both;                        padding: 20px 5px;                        margin-bottom: 0.8em;                        display: block;                        background:#ffffff1f;                        color: #FFF;                        font-family: 'Roboto',sans-serif;                        font-size: 1.3em;                        line-height: 1;                        box-shadow: 0 1px 2px rgba(0,0,0,.4)"
-                        class="qp_a"
-                        onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}">
-                        <span style="padding-left:2em;display:inline-block;cursor:inherit"><input
-                                style="float:left;width:20px;height:20px;padding:0px;margin-left:-25px;margin-top:2px;line-height:2em;-webkit-appearance:radio;"
-                                name="qp_v3433561" type="radio" value="7" />7</span></div>
-                    <div style="clear: both;                        padding: 20px 5px;                        margin-bottom: 0.8em;                        display: block;                        background:#ffffff1f;                        color: #FFF;                        font-family: 'Roboto',sans-serif;                        font-size: 1.3em;                        line-height: 1;                        box-shadow: 0 1px 2px rgba(0,0,0,.4)"
-                        class="qp_a"
-                        onClick="var c=this.getElementsByTagName('INPUT')[0]; if((!event.target?event.srcElement:event.target).tagName!='INPUT'){c.checked=(c.type=='radio'?true:!c.checked)};var i=this.parentNode.parentNode.parentNode.getElementsByTagName('INPUT');for(var k=0;k!=i.length;k=k+1){i[k].parentNode.parentNode.setAttribute('sel',i[k].checked?1:0)}">
-                        <span style="padding-left:2em;display:inline-block;cursor:inherit"><input
-                                style="float:left;width:20px;height:20px;padding:0px;margin-left:-25px;margin-top:2px;line-height:2em;-webkit-appearance:radio;"
-                                name="qp_v3433561" type="radio" value="8" />8</span></div>
-                </div>
-                <div
-                    style="clear: both;                                                        padding-left: 0px;                                                        text-align: left;                                                        margin: 0.8em 0 0.8em 0">
-                    <a style="display:inline-block;padding-right:0px;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;text-decoration:none;width:100%"
-                        class="qp_btna" href="#"><input name="qp_b3433561"
-                            style="border: .08em solid rgba(0,0,0,.1);                         background: #33333352;                        color: #FFF;                        font-family:'Roboto',sans-serif,Arial;font-size:1.4em;cursor:pointer;cursor:hand;-webkit-appearance:none;box-shadow:0 1px 2px rgba(0,0,0,.2);                        width: 100%;                        padding: 20px 5px;                        box-sizing: border-box;                        line-height: 1"
-                            type="submit" btype="v" value="Vote" /></a><a
-                        style="padding:0px;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;text-decoration:nonewidth: 100%;margin-top:15px;display: none"
-                        class="qp_btna" href="#"><input name="qp_b3433561"
-                            style="border: .08em solid rgba(0,0,0,.1);                         background: #33333352;                        color: #FFF;                        font-family:'Roboto',sans-serif,Arial;font-size:1.4em;cursor:pointer;cursor:hand;-webkit-appearance:none;box-shadow:0 1px 2px rgba(0,0,0,.2);                        width: 100%;                        padding: 20px 5px;                        box-sizing: border-box;                        line-height: 1"
-                            type="submit" btype="r" value="Results" /></a></div>
-            </form>
-            <div style="display:none">
-                <div id="qp_rp3433561"
-                    style="position:absolute;right:5px;top:15px;width:5ex;height:2.5em;font-size:1em;text-align:right;overflow:hidden;line-height:2.5em">
-                </div>
-                <div id="qp_rv3433561"
-                    style="width:0%;padding-right:3px;color:#F4F4F4;font-size: .9em;line-height:2.5em;text-align:right;box-sizing:border-box">
-                </div>
-                <div id="qp_rb3433561"
-                    style="margin-top:2.5em;display:block;color:#FFFFFF;font-size:0.9em;line-height:1.5em;opacity:0">
-                </div>
-                <div id="qp_rva3433561"
-                    style="background-color:#000000;line-height: 44px;margin-bottom:-15px;margin-top:-0px"></div>
-                <div id="qp_rvb3433561"
-                    style="background-color:#000000;line-height: 44px;margin-bottom:-15px;margin-top:-0px"></div>
-                <div id="qp_rvc3433561"
-                    style="background-color:#000000;line-height: 44px;margin-bottom:-15px;margin-top:-0px"></div>
-            </div>
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" id="about" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">TEST PAGE</h1>
+            <hr style="width:page" class="w3-opacity">
+            <p>This is my test page. if you found this ... you should NOT BE HERE! Okay, thanks bye!
+            </p>
         </div>
-        <STYLE t=633>
-            .cclass {
-                display: inline-block !important;
+
+        <iframe width="100%" height="800" src="https://www.youtube.com/embed/TSIHM0G-Op4" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
             }
 
-            .aclass {
-                display: none !important;
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
             }
-        </STYLE>
-        <SCRIPT t=633>
-            try {
-                var notRandom = 'True';
-
-                sys.init(0, function () {
-                    sys.themeFirstLoadCB.push(function () {
-                        var pfn = sys.dthemes.renderCB;
-                        sys.dthemes.renderCB = function (pfn) {
-                            return function () {
-                                pfn();
-                                if (notRandom == 'True') {
-                                    notRandom = '';
-                                    var parent = document.getElementById("poll-layouts");
-                                    for (var i = 0; i < parent.children.length; i++) {
-                                        //parent.appendChild(parent.children[Math.random() * i | 0]);
-                                    }
-                                }
-                            }
-                        }(pfn);
-                    });
-                });
-            } catch (e) {
-                console.log('error', e)
-            }
-        </SCRIPT>
-        <div style='text-align:center; margin:5px;'>Created with <a id="qp_foot3433561"
-                href="https://www.survey-maker.com">Survey maker</a></div>
-    </div>
-    <script src="//scripts.poll-maker.com/3012/scpolls.js" language="javascript"></script>
+        </script>
 </body>
 
 </html>

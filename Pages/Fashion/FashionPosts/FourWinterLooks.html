@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | Four Winter Looks to Keep You Warm</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../Images/Fashion/Winter Looks/Winter Looks.jpg" type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+</style>
+
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R&D</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../Images/Fashion/Winter Looks/Winter Looks.jpg" style="width:100%;"
+                alt="Winter Looks Cover">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">Four Winter Looks to Keep You Warm but Ready to Go Out</h1>
+            <p class="w3-text-light-grey w3-center">11/08/2021<br></p>
+            <hr style="width:page" class="w3-opacity">
+
+            <p>My first fashion post outside of Instagram. Wow, a bit nerve wracking to say the least, but have to start
+                somewhere right? Winter is almost gone, or so we thought, and while we thought sunshine and some heat
+                was back, we were wrong. Turns out, it was a short spell before some August chills hit us again.</p>
+
+
+            <p>So as much as you wanna go out and look good, but at the same time not freeze your ass off, OR, you'd
+                want to just chill at home in some sweats with bed head, that's up to you. But when the surprise invite
+                comes out, or a last minute plan, here are four looks I put together to keep you warm, and ready to go
+                out at the drop of a pin.</p>
+
+            <h1 class="w3-center">Look 1: Ripped Jeans, Warm Hoodie and some Nikes</h1>
+
+            <p>Nothing beats a hoodie and some jeans. Honestly, this was inspired by Sergio Ines's looks with the ripped
+                black jeans. But always a good look. Long hoodie, some skinny jeans and pair of custom Air Max 90s, this
+                is one look that can never go wrong. Now add to that some light Mykita Solomon frames to wrap it up.</p>
+
+            <img src="../../../Images/Fashion/Winter Looks/1.jpg" style="width:100%;" alt="Outfit 1">
+
+            <h1 class="w3-center">Look 2: Classic Colours with a Splash</h1>
+
+            <p>Navy blue comfort waist joggers, with a simple white sweater, coupled with some High Top Supergas. Plain,
+                simple and something that looks good anywhere. And just for fun, let's grab a pair of Tony Stark
+                sunglasses for that harsh winter sun!</p>
+
+            <img src="../../../Images/Fashion/Winter Looks/2.jpg" style="width:100%;" alt="Outfit 2">
+
+            <h1 class="w3-center">Look 3: Bringing out the Inner Gamer</h1>
+
+            <p>Still sticking with the plain and simple colours, and keeping it neutral with a super dope Mario sweater
+                from Primark in the UK. I mean this thing is awesome, his 'stache is even velvet!! And as it should be,
+                besides the sneakers, let something stand out, and why not our favourite Italian plumber? Put it all
+                together with some Air Jordan 1 High Zoom Racer Blue to stick with the colour scheme of the look. And to
+                make it a bit more flashy why not put on some Fendi shades!</p>
+
+            <img src="../../../Images/Fashion/Winter Looks/3.jpg" style="width:100%;" alt="Outfit 3">
+
+
+            <h1 class="w3-center">Look 4: The Sunday Lounger</h1>
+
+            <p>Last but not least, let's play with the monotones. Not bothering with lenses or sunglasses, but chill at
+                home, watch the football or grand prix or whatever is on TV, but do it looking good and staying comfy as
+                hell!! Comfort joggers, a light and fleecy sweater and some black slip ons from Zara. You're ready to go
+                from sitting on the couch, to out to eat in a matter of seconds. Just don't forget your mask! </p>
+
+
+            <img src="../../../Images/Fashion/Winter Looks/4.jpg" style="width:100%;" alt="Outfit 4">
+
+
+            <p>And that's it people, 4 looks too keep you warm, looking good while going out or even just for the vibes! Till next time!</p>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+</body>
+
+</html>

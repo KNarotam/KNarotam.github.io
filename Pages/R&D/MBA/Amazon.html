@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | International Human Resource Management - Tesla Inc.</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../../Images/R&D/MBA/IHRM/Tesla.jpg" type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+        background-color: #555;
+    }
+
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../../Images/R&D/MBA/IHRM/Tesla.jpg" style="width:100%;" alt="Cover Image">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">Tesla Inc.</h1>
+            <h1 class="w3-text-light-grey w3-center">International Human Resource Management and Analysis</h1>
+            <p class="w3-text-light-grey w3-center">Submitted: 08/07/2021</p>
+            <hr style="width:page" class="w3-opacity">
+
+
+            <h1 class="w3-center">Executive Summary</h1>
+            <p>Tesla Inc., is 100th on the Fortune 500 list and is a leader in the automotive industry specialising in
+                their electric vehicles and sustainable energy storage and generation. Tesla&rsquo;s plans for
+                internationalisation was researched and investigated, specifically looking at Human Resource Management
+                (HRM) and International Human Resource Management (IHRM). An environmental analysis is done on the
+                company using SWOT and PESTLE analysis; and any challenges identified are analysed against how they
+                would affect the HRM practice at Tesla. These policies are then reviewed and analysed to see how they
+                would enable Tesla to overcome their internationalisation challenges. Hofstede&rsquo;s cultural
+                dimensions were used to analyse the difference in culture between USA and China with the most noticeable
+                difference being that of individualism vs. collectivism. Each of the cultural dimensions are further
+                discussed and ways of integrating the cultural differences are explored; as well as recruitment
+                strategies are researched and presented as a way for Tesla to hire host country nationals. The trait and
+                behavioural theories of leadership are reviewed with the behavioural theory being analysed as a suitable
+                leadership theory for Tesla&rsquo;s culture. Research and analysis are further done on IHRM, looking at
+                how expatriates are selected, trained and the focus of expatriate management. Cisco Systems Inc. is used
+                as a multinational company with great HRM practices, with special focus given on expatriate compensation
+                and performance management. Lastly, recommendations are given for Tesla&rsquo;s internationalisation
+                plans, specifically referring to adapting their HR policies for internationalisation, creating a
+                well-structured expatriate training programme, and recruiting host country nationals.</p>
+
+
+            <h1 class="w3-center">1. Introduction</h1>
+
+            <p>Tesla, Inc., commonly and hereon referred to as Tesla, currently 100th on the Fortune 500 list; is the
+                world&rsquo;s leading manufacturer in electric vehicles in conjunction with sustainable energy storage
+                and generation. Defined by their mission to &ldquo;accelerate the world&rsquo;s transition to
+                sustainable energy&rdquo;, Tesla has grown to become a household name and leader in the transport
+                industry (Tesla, Inc., 2020). In 2018, Tesla had established its subsidiary in Shanghai, with an
+                agreement with Chinese authorities to build its first manufacturing factory outside of the United States
+                (BBC, 2018).</p>
+
+            <h2 class="w3-center">1.1. Environmental Analysis</h2>
+            <p>In order to understand and identify the challenges that Tesla are likely to
+                face in the international environment, an environmental analysis &ndash; both internal and external
+                &ndash; must be done on the company itself.</p>
+
+            <h3 class="w3-center">1.1.1. SWOT Analysis</h3>
+            <p>A SWOT analysis can be beneficial to HR as it can allow the department to better manage
+                the company&rsquo;s strategic plan and overall operations of the human resources in all the necessary
+                departments. This allows HR to hone in on the human resources within each department, enforcing the
+                strengths; addressing the weaknesses; utilise the opportunities; and mitigate any threats (Sarokin,
+                2020).</p>
+
+            <p>Figure 1 presents the SWOT analysis of Tesla, with its presented strengths clearly setting the company up
+                for success in the international market. However, the weaknesses relating to its current production of
+                vehicles and subsequent effects of it are localised to the United States only as expanding its current
+                factories pose a challenge. The internationalisation of Tesla by building a factory in Shanghai allows
+                Tesla to seize the available opportunities presented to the company by building on the brand and its
+                value. Although the threats presented will be ever growing, especially in a market as rapidly changing
+                as China, the company must look to adjusting their strategies accordingly while continuously building on
+                their current strengths,</p>
+
+            <img src="Figure1.png" style="width:100%;" alt="Figure 1">
+            <figcaption class="w3-center">Fig.1 - SWOT Analysis of Tesla Inc. (Gupta, 2020)</figcaption>
+
+
+            <h3 class="w3-center">1.1.2. PESTLE Analysis</h3>
+            <p>A PESTLE analysis can have a major impact on HR as it allows the department to ensure that the company is
+                compliant and safe from any repercussions. It allows the department to not only put focus on the company
+                and its objectives and strategy but also its employees and accommodating their need, especially in an
+                international environment (Frue, 2019).</p>
+
+            <p>Figure 2 presents the PESTLE analysis for Tesla, which focuses more on the external environment of Tesla
+                specifically factors that affect the internationalisation of the company presenting various
+                opportunities and threats. While internationalisation of Tesla will result in a multitude of
+                opportunities for the company, especially from a political, economic, technological and environmental
+                standpoint, Tesla does face many challenges from a legal, sociocultural and even political factors.</p>
+
+            <img src="Figure2.png" style="width:100%;" alt="Figure 2">
+            <figcaption class="w3-center">Fig.2 - PESTLE Analysis of Tesla Inc. (Kissinger, 2019)</figcaption>
+
+            <h3 class="w3-center">1.1.3. Overall Critical Analysis</h3>
+
+            <p>A country like China has incentives for both manufacturers and consumers to purchase and manufacture
+                electric vehicles respectively, with expectations that at least 20% of the vehicles will be electric by
+                2025. This creates a huge opportunity for Tesla to open their factory within Shanghai, as the company
+                will be able to manufacture their cars while receiving subsidies from the government. However, in China
+                given the abundance of a workforce and technological components the supply of the vehicles could surpass
+                the demand for it leading to pricing pressures. The construction of the vehicles will bound by the laws
+                of the host country, for example using locally sourced components, requiring a strategic adjustment for
+                Tesla to ensure the quality remains the same, while using different components. Lastly, the increase in
+                rivals within the industry presents an ever-growing concern, with a lesser valued and known brand, these
+                rivals may be able to out-perform Tesla in the developing markets outside of the USA (Lopez, 2019).</p>
+
+            <p>These noticeable challenges impact the HRM practices at Tesla in many ways. The senior positions in the
+                new factory should be taken up by experienced Tesla employees and can assist in recruiting the correct
+                type of employees in the factory. The use of expatriate senior managers and their knowledge of the
+                requirements for a job will allow Tesla to recruit correctly and efficiently. However, the recruitment
+                of local employees may be challenged by rivals, specifically local rivals. The forced use of locally
+                sourced components does mean that the company needs a team dedicated to building new relationships with
+                local suppliers to ensure the quality of the vehicle is up to the Tesla standard. This leads to ensuring
+                that all local employees are trained, coached and retained correctly to ensure that the newly formed
+                international division of the company can continue to be a competitor in the market.</p>
+
+            <h2 class="w3-center">1.2. HRM Policy Analysis</h2>
+            <p>HRM policies and procedures are used as a reference to create a set of guidelines for managers and
+                supervisors that allow them to manage their subordinates defined by the company which are further
+                governed by local and international law. The are many key elements that form the fundamental base of HR
+                policies such as:</p>
+            <ul>
+                <li>Equal opportunities policy</li>
+                <li>Hiring, recruiting and onboarding employees</li>
+                <li>Offboarding and terminating employees</li>
+                <li>Wages</li>
+                <li>Codes of conduct</li>
+                <li>Performance monitoring</li>
+                <li>Working hours</li>
+                <li>Use of company resources</li>
+                <li>Disciplinary actions.</li>
+            </ul>
+
+            <p>These are some of the key fundamentals for creating a company&rsquo;s HR policies which lead into
+                creating a handbook for employees to aid them in managing expectations of the company (Withaar, 2019).
+                Tesla&rsquo;s employee handbook has changed over the years from being a long, formal document into a
+                four-page handbook, aptly titled &ldquo;The Anti-Handbook Handbook&rdquo; (Babal, 2020).</p>
+
+            <p>The internationalisation of Tesla will impact all of these elements of an HR policy, however given the
+                way the Tesla handbook is written, it gives employees the freedom to be innovative and challenge the
+                company through any level of hierarchy. While the handbook does address the key elements in a different
+                manner, this allows Tesla to adapt it with ease to international laws and policies (Tesla Inc., n.d.).
+                Recruiting local employees can be done by simply ensuring that Tesla adheres to the host country&rsquo;s
+                law, as Tesla&rsquo;s leader does not require specific educational criteria, but rather looks at how an
+                individual can impact the company with innovation and motivation (Kelly, 2020). By enforcing
+                Tesla&rsquo;s &ldquo;Anti-Handbook Handbook&rdquo; in its internationalisation strategy allows Tesla to
+                overcome many HRM policy challenges as this type of handbook can be constantly updated and adapted to
+                the necessary markets.</p>
+
+            <p>One of the greatest challenges that faces Tesla in their internationalisation strategy lies with the
+                expatriate employees. These employees will require extensive training to understand and adapt to new
+                cultures and new norms while assisting the company in creating a good foundation in the new market. The
+                onboarding, training and development of local employees to attain senior positions and have Tesla retain
+                these employees is an ever-growing challenge in China. However, given Tesla&rsquo;s &ldquo;Goals and
+                Feedback&rdquo; section within their handbook, allows them to overcome this challenge by constantly and
+                consistently setting achievable expectations for employees to attain and be rewarded for it (Froese, et
+                al., 2019).</p>
+
+
+            <h1 class="w3-center">3. Literature Review</h1>
+            <h2 class="w3-center">3.1. Hofstede’s Cultural Dimensions</h2>
+            <p>Hofstede&rsquo;s study on how culture influences the values in the workplace is one of the most
+                comprehensive done. The results of the framework have allowed management in multi-national enterprises
+                (MNE) to be able to understand the differences between countries and how to manage these differences
+                (OpenStax, 2019).</p>
+            <img src="Figure3.png" style="width:100%;" alt="Figure 3">
+            <figcaption class="w3-center">Fig.3 - Hofstede's Cultural Dimensions Comparison of USA and China (Hofstede
+                Insights, 2021)</figcaption>
+            <p>Figure 3 presents a recreated version of the differences in the cultural dimensions between USA and China
+                from Hofstede Insights (Hofstede Insights, 2021). While the difference in culture is significantly
+                noticeable, each dimension indicates a different aspect that needs to be managed.</p>
+
+            <h3 class="w3-center">3.1.1. Power Distance Index (PDI)</h3>
+
+
+            <p>The PDI is a measure of the degree of inequality that exists within society
+                of that country (Hofstede, et al., 2010). China&rsquo;s high score of 80 indicates that the inequalities
+                that currently exist within its society is acceptable, as aspiring beyond their current stand point
+                should not be allowed (Hofstede Insights, 2021). USA with a low score of 40 shows that social inequality
+                exists, however allowing society to aspire to reach beyond their norms is encouraged by society.</p>
+
+            <h3 class="w3-center">3.1.2. Individualism vs. Collectivism (IDV)</h3>
+
+            <p>The IDV measures how a person is brought up within their
+                society, with individualism being defined as &ldquo;ties between individuals are loose&rdquo;, whereas
+                collectivism is defined as the opposite, where individuals are &ldquo;integrated into strong, cohesive
+                in-groups&rdquo; (Hofstede, et al., 2010). USA&rsquo;s high score of 91 coupled with its low PDI score
+                of 40 indicates how USA is generally branded as a country to achieve one&rsquo;s dreams (Hofstede, et
+                al., 2010). China&rsquo;s low score of 20 shows how society tends to work together in groups whereby
+                companies regard their employees as family (Garcia, et al., 2014).</p>
+
+            <h3 class="w3-center">3.1.3. Uncertainty Avoidance (UAI)</h3>
+            <p>The fear of the unknown, specifically the uncertainty of what will
+                happen in the future is what is measured by UAI (Hofstede, et al., 2010). China&rsquo;s low score of 30
+                is an indication of the country and laws as well its culture as a whole. Subsequently, USA having a
+                below-average score of 46 shows that the society prefers to follow more consistency than China, however
+                will still allow and accept innovation and change as a whole (Garcia, et al., 2014).</p>
+
+
+            <h3 class="w3-center">3.1.4. Masculinity vs. Femininity (MAS) </h3>
+            <p>MAS looks at measuring how society motivates themselves, whether
+                seeking power and performance (masculine) over enjoyment and comfort (feminine) (Hofstede, et al.,
+                2010). The similarly high values of 62 and 66 for USA and China respectively show how both societies are
+                driven by success and will continue to perform at high levels putting work life ahead of family life;
+                something that is seen more and more equally for both men and women (Hofstede Insights, 2021) (Garcia,
+                et al., 2014).</p>
+
+            <h3 class="w3-center">3.1.5. Long-Term vs. Short-Term Orientation (LTO) </h3>
+            <p>LTO is a measure based on how society want to move forward,
+                where long-term is focused on the rewards of the future through perseverance whereas short-term looks at
+                preserving traditions of the past and present (Hofstede, et al., 2010). USA&rsquo;s low score of 26
+                indicates how society is more practical, having a firm grasp of what is considered good and bad.
+                China&rsquo;s high score of 87 shows how well the country is more pragmatic, being able to take
+                traditions and change and adapt them going forward, showing strong perseverant traits in achieving
+                results (Hofstede Insights, 2021) (Garcia, et al., 2014).</p>
+
+            <h3 class="w3-center">3.1.6. Indulgence vs. Restraint (IND)</h3>
+            <p>IND looks at measuring how much society allows for gratifying certain desires to make life more enjoyable
+                and fun(Hofstede, et al., 2010). China&rsquo;s low score of 24 shows how restrained the country is and
+                that
+                indulgence is outside of the social norm. However, USA&rsquo;s high score of 68 is proof of the adage,
+                &ldquo;work hard and play hard&rdquo;, as this is something seen throughout society by showing the
+                personal indulgence on all social media platforms (Hofstede Insights, 2021).</p>
+
+            <h2 class="w3-center">3.2. Synthesising the Integration of Cultural Differences</h2>
+            <p>As China allowed the investment of foreign businesses into their domestic market, the categorisation of
+                the ownership of businesses have changed, with three distinct categories being seen, namely:
+                state-owned, privately owned, and US-owned (Kim, et al., 2016). Based on Hofstede&rsquo;s cultural
+                differences seen in Figure 3, there are definite differences between US and China cultures. For example,
+                policies relating to rules and various product catalogues have been put in place that seemingly
+                discriminate against foreign companies (Browne &amp; Chao, 2010).</p>
+
+            <p>While trade between USA and China is continuously growing, US-owned firms within China display a more
+                Westernised management style, which align towards to the high IDV measure of the US society being
+                individualistic and driven as opposed to state-owned businesses (Kim, et al., 2016). Although this does
+                indicate that Tesla should not have much of an issue with regards to the management of local employees,
+                it can be suggested that expatriates should be knowledgeable of all cultural dimensions as this allows
+                the expatriates to better manage stakeholders. This in turn would mitigate potential organizational
+                performance barriers by understanding how the various cultural dimensions can affect decision making
+                (Ray, 2011).</p>
+
+            <p>According to Kim et al., managers that work in US-owned firms in China tend to see inefficiency due to
+                the cultural differences, as in general US firms would see a higher IND and MAS measure while their LTO,
+                UA and PD measures are significantly lower; as opposed to state-owned firms having high values for
+                LTO,UA, PDI while MAS measures whereas MAS and IDV are significantly lower (Kim, et al., 2016). A
+                challenge arises where it is expected that local employees should adhere to the Western-styled culture
+                seen in US firms. While expatriates should be trained to understand and engage with the culture within
+                China, it can be suggested that in order to ensure that the internationalisation of Tesla is successful
+                while achieving organisational objectives, local employees must be trained in a manner that allows them
+                to understand and engage with the US culture.</p>
+
+            <p>The training of expatriate managers to understand the culture within China would also allow the company
+                to adapt to its internationalisation in a faster manner. As the company would be inclined to source
+                components locally, understanding the local culture would enable the expatriates to manage relations
+                with suppliers and potential partners with minimal conflict as understanding how the state-owned firms
+                operate culturally (Lopez, 2019).</p>
+
+            <h2 class="w3-center">3.3. Recruitment Strategies</h2>
+            <p>Tesla&rsquo;s internationalisation strategy is one that would be increasingly welcomed within China as
+                there is a demand for the use and implementation of electric vehicles, especially in Shanghai where
+                sales are recorded as the highest (Xu, et al., 2020). Since the senior managers will be expatriates, the
+                focus would be to hire host-country nationals (HCNs) or local employees. With Tesla being a US-firm, it
+                can be suggested that the culture within the company would be that similar to US culture, as a result
+                adapting the HRM practices from the west can be done so with limited effort (Cooke, 2012). This would
+                become something that is appealing to HCNs as state-owned businesses are more susceptible to government
+                intervention, interference and political pressure. In conjunction to this, state-owned businesses are
+                subject to the &ldquo;three irons&rdquo;, whereby the government appoints management, promotions and
+                salary (Miedtank, 2017).</p>
+
+            <p>While using aspects of culture and minimised government intervention as an incentive to work for Tesla,
+                the company could pursue various hiring options. Wholly Foreign Owned Entity (WFOE) could employee
+                talent from both the host country or the parent country. This can be managed by hiring an experience HR
+                to handle the compliance and administrative operations, however this may be costly to the company. The
+                other option is to outsource to an HR agency, through which all administrative tasks such as hiring and
+                firing, payroll, housing, etc. can be handled. The benefit of using an HR agency is that it is highly
+                recommended and more reliable for the company (HROne, n.d.). Another option would be having Tesla create
+                their own HR department catered to hiring in China, this will allow the HR department to utilise
+                channels such as WeChat to hire local talent to cater for the Chinese market itself (Sun &amp; Goh,
+                2020).</p>
+
+            <p>Zhong et al. had conducted research on various MNEs through a multiple case study approach, with one of
+                the cases being similar to the requirements for Tesla. It was found that hiring more HCNs allowed for
+                low cost and high quality of service, while management was still controlled by PCNs (Zhong, et al.,
+                2021). Other benefits of hiring HCNs include eliminating language and other barriers, a reduction in
+                hiring costs as no work permits would be required, HCNs stay in positions longer, given the fact that
+                the firm is US-owned, employees can achieve higher levels of individualism.</p>
+
+            <h1 class="w3-center">4. Application of Theory into Practice</h1>
+            <h2 class="w3-center">4.1. Behavioural Dimensions</h2>
+            <h3 class="w3-center">4.1.1. Theories of Leadership</h3>
+            <p>A leadership theory is defined as the explanations, ideas and thoughts of how and why certain individuals
+                become leaders. It looks to answer the question of whether leaders are born or if they are made.
+                (Corporate Finance Institute, n.d.). This leads to two theories that define whether leaders are born or
+                made, which are: trait theory and behavioural theory.</p>
+
+            <p>Trait theory states that leaders are naturally born leaders, that any leadership traits are a part of
+                their personality. The core traits of a leader as identified by trait theory include emotional
+                intelligence and maturity; cognitive ability; knowledge of business; integrity and honesty; motivation;
+                drive for success; and confidence within themselves and their abilities (Piyu, 2019).</p>
+
+            <p>Behavioural theory rejects the idea of trait theory and that leaders are born, but rather identifies that
+                leaders can be developed and trained. With a positive atmosphere and relevant training, leadership
+                qualities can be developed while focusing on the behaviours of leaders as opposed to their
+                characteristics (Piyu, 2019). Table 1 presents the differences between trait theory and behavioural
+                theory, comparing the strengths and limitations/drawbacks of each theory.</p>
+
+            <figcaption class="w3-center">Table 1: Table showing the differences between Trait and Behavioural Theory
+                (Piyu, 2019)</figcaption>
+            <table style="width: 100%; border: 1px solid;">
+                <tbody>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border: 1pt solid windowtext;background: rgb(166, 166, 166);padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>
+                                <strong><u>Trait Theory</u></strong></p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;background: rgb(166, 166, 166);padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>
+                                <strong><u>Behavioural Theory</u></strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"
+                            style="width: 802.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;background: rgb(166, 166, 166);padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>
+                                <strong><u>Strengths</u></strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Validated theory with research backing</p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:right;'>
+                                Allows more leadership theories to be research based on developing leaders</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Forms the baseline for the characteristics of a leader when assessed</p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:right;'>
+                                Promotes value of leadership styles, while emphasizing concern for people and
+                                collaboration</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                When measuring behaviour, objective criteria is used for categorising and measuring</p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:right;'>
+                                Helps understand how team relationships are affected on different behavioural styles</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Easy to categorise observable behaviours</p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:right;'>
+                                Helps find balance between different leadership styles, and how to behave as a leader
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Collective behaviours of individuals create a strong correlation with traits of
+                                leadership</p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:right;'>
+                                No physiological traits are used to consider effectiveness of a leader</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"
+                            style="width: 802.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;background: rgb(166, 166, 166);padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>
+                                <strong><u>Limitations/Drawbacks</u></strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Definition of a successful leader is subjective</p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:right;'>
+                                Learning, understanding the behaviours of leaders does not indicate efficient leadership
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                List of leadership traits is long</p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:right;'>
+                                Learning and understanding the behaviours is less complex and does not allow one to
+                                master them</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                None of the traits identified are rated as the &ldquo;most important&rdquo;</p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:right;'>
+                                Adapting behaviours to various situations is a challenge</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Physiological traits (height and weight) is related to the model</p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:right;'>
+                                &nbsp;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width: 398.05pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Complex theory</p>
+                        </td>
+                        <td
+                            style="width: 404pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0mm 5.4pt;vertical-align: top;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-align:right;'>
+                                &nbsp;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="w3-center">4.1.2. Analysis of Leadership Theory</h3>
+            <p>Tesla&rsquo;s plan to internationalise the organisation and build a factory in Shanghai is a welcomed one
+                within the industry and would be increasingly positive for the company itself. Although Elon
+                Musk&rsquo;s leadership style is that of a servant leader, the solo effect that he has on his company,
+                its share price and investors could be cause for some concern. (Khan, 2021). The behavioural theory of
+                leadership would be the most suitable for Tesla&rsquo;s internationalisation as this would conform to
+                Tesla&rsquo;s organisational culture of encouraging and motivating employees of all levels to be
+                innovative and look for ways that would allow Tesla to have a competitive advantage. By having
+                management use the organizational culture to optimise the way employees achieve and innovate creative
+                behaviours, it allows the company to remain and hold a competitive advantage (Meyer, 2019).</p>
+
+            <p>Behavioural theory would allow employees to step up with innovative solutions and ideas and begin to
+                learn leadership qualities while implementing their solution. Using this leadership theory allows
+                employees to work as the theory suggest and learn the various qualities that would be best for the work
+                at hand. The internationalisation will allow host country nationals to learn the behaviours of senior
+                management, adapt and improve on those behaviours within their local environment making that subsidiary
+                more efficient from a leadership perspective.</p>
+
+            <p>Behavioural theory is more suitable for Tesla&rsquo;s internationalisation as innovation would require
+                constant change and adaption. No specific style of leadership or trait of leadership will be consistent
+                throughout any drastic changes and so having employees and leaders, whether expatriate or local, be
+                trained and upskilled according to the change that is being implemented will allow Tesla to maintain
+                effective leadership while remaining competitive and being ahead of said competitors.</p>
+
+            <p>One of Tesla&rsquo;s features of its organisational culture is to &ldquo;think like owners&rdquo;. This
+                means that Tesla uses this as a motivational tool for employees by allowing them to think as if they own
+                the company. It in turn allows the company to maintain a specific mindset catered to supporting the
+                business development (Meyer, 2019). Allowing employees to think like they own Tesla, gives them all an
+                opportunity to develop and unconsciously learn leadership skills, traits and behaviours making the
+                behavioural theory a more suitable choice.</p>
+
+            <p>Subsequently, Tesla&rsquo;s last feature of its organisational culture is &ldquo;we are ALL IN&rdquo;,
+                means that employees must be unified into teams that continuously work to improve the business. This
+                would minimise conflict, develop synergy through the human resources of the company and increase the
+                collaboration by using each employee&rsquo;s skills and talents to their maximum potential (Meyer,
+                2019). The constant collaboration would allow leaders to emerge making the behavioural theory a more
+                suitable leadership theory.</p>
+
+            <h2 class="w3-center">4.2. Role of IHRM</h2>
+            <h3 class="w3-center">4.2.1. Selection Process</h3>
+            <p>Multinational corporations (MNCs) are known for having employees from all over the globe working within
+                the company and in order to employee the necessary talent can follow any of the three main staffing
+                strategies:</p>
+            <ul style="list-style-type: disc;margin-left:26px;">
+                <li>Parent-Country Nationals (PCN)</li>
+                <li>Host-Country Nationals (HCN)</li>
+                <li>Third-Country Nationals (TCN).</li>
+            </ul>
+            <p>PCNs are regarded as your expatriates and determining whether or not they will be successful and selected
+                for the position is based on various criteria, which can be seen in Figure 4.</p>
+
+            <p>The job factors relating specifically to the technical skills is one of the most crucial determinants for
+                the success of an expatriate, as being away from the headquarters the usual sources of information and
+                assistance is a distance away. The &ldquo;unidimensional approach&rdquo; is created as the method that
+                aligns to a candidate have the minimum requirements for the expatriate job which is the technical skills
+                and abilities. Although research and arguments are had over a more balanced approach, the
+                &ldquo;unidimensional approach&rdquo; is still regarded as the bare minimum for being selected for the
+                expatriate position (Wang, et al., 2011). Once a PCN is chosen, the correct type of visa must be applied
+                for and issued, as well as considering training prior to moving.</p>
+
+            <p>An HCN selection is far simpler than selecting an expatriate. While the matter of their technical skills,
+                organisational cultural fit and overall character is still incredibly considered, an HCN is easier to
+                hire as there are less costs involved from a moving and training perspective. While expatriates may and
+                will take time to adjust and adapt to their new surroundings, HCNs are able to be more productive from
+                the start as culturally they have overcome all challenges and concerns regarding laws (University of
+                Minnesota, 2011). In addition, the compensation of an HCN could be significantly lower than that of an
+                expatriate making hiring of an HCN faster as less negotiations would be involved.</p>
+
+            <img src="Figure4.png" style="width:100%;" alt="Figure 4">
+            <figcaption class="w3-center">Fig.4 - Selection Criteria for Expatriate Selection adapted from (Wang, et
+                al., 2011) and (University of Minnesota, 2011)</figcaption>
+            <h3 class="w3-center">4.2.2. Expatriate Training</h3>
+            <p><b>Cultural training</b> is the initial and most important training that is presented for expatriates.
+                Generally, this training is done prior to the employee&rsquo;s departure to the host country. The
+                purpose of this training is to immerse the expatriate into the new culture that they will be living in.
+                This training includes learning the etiquettes, history, religion or even the political aspects of the
+                culture. It can further be extended to understanding the management style of the country, food and
+                logistics such as currency and transportation (Schmitz, 2012).</p>
+
+            <p><b>Language training</b> is a possible topic that may be needed for any assignment. Although English is
+                regarded
+                as the language used for business internationally, the other aspect of language training falls to body
+                language and small habits that are normal in parent countries that could be considered disrespectful in
+                host countries. Understanding and learning these non-verbal forms of communication can allow an
+                expatriate to adapt faster and build better relationships with the HCNs (Schmitz, 2012).</p>
+
+            <p><b>Assignment training</b> would be a major topic that must be taught as this will allow the expatriate
+                to fully
+                understand the goals and expectations of the assignment. Not only will it allow the expatriate to manage
+                the work correctly, but will also allow the expatriate to be successful in their final delivery
+                (Schmitz, 2012).</p>
+
+            <p><b>Personal management training</b> is training the expatriate to be able to cope with stress, feeling
+                homesick,
+                culture shock, or even workload management. The pressures from the new environment and work can impact
+                not only the expatriate but the expatriate&rsquo;s family as well. By ensuring that not only the
+                expatriate but the family as well is able to manage the stress of expatriation will allow the employee
+                to reduce the amount of personal stress in their life and manage the assignment better, leading to
+                success (Schmitz, 2012).</p>
+            <h3 class="w3-center">4.2.3. Expatriate Management</h3>
+            <p>Over and above preparing the expatriates for their assignment through the various training topics,
+                expatriate management includes the constant support of the expatriates during their assignment.
+                Providing the constant support throughout the assignment will contribute to the overall success of the
+                assignment. The support is dependent on the assignment itself, based on its timeline and requirements,
+                and this can be discussed during pre-departure training (Morris, 2020).</p>
+
+            <p>Expatriate management includes constant contact with the expatriate through various channels. This could
+                be through an employee in the parent country itself or even previous expatriates. The knowledge sharing
+                and feedback of positive experiences can allow the expatriate to feel less lonely and cut-off. Besides
+                communication, ensuring that the expatriate is covered by adequate healthcare and an emergency contact
+                can make managing the expatriate an easier task (Morris, 2020).</p>
+
+            <p>Prior to departure, the expatriate must be engaged with to agree on a fair compensation package to ensure
+                willingness of the employee considering the costs of visa sponsorships, housing and allowances. In
+                conjunction to this, an adequate repatriation package must be created and agreed upon to not only
+                incentivise the employee to return to the parent country offices, but to aid in the readjustment of the
+                expatriate and their family. Lastly, expatriate management should include post-assignment discussions
+                whereby the expatriate can give constructive feedback to allow the company to better manage future
+                expatriation of employees (Morris, 2020).</p>
+            <h3 class="w3-center">4.2.4. Analysis of another MNC</h3>
+            <p>Cisco Systems Inc., founded in California in 1984 began creating and producing routers and has quickly
+                risen to be a leader in the computer networking industry, becoming a constantly nominated and
+                award-winning company specifically recognised by Great Place to Work &reg;. Over the last decade, Cisco
+                has expanded their operations across the globe into more than 165 countries, allowing and creating a
+                diverse staff through equal opportunities (Chen, 2017).</p>
+
+            <p>In an attempt to obtain better results, Cisco paid more attention to defining the company&rsquo;s goals
+                and direction, with that understanding how to measure its progress, especially appraising
+                employee&rsquo;s performance. This allows employees to set out their performance goals for the year,
+                define their work, and measure against their goals. As a reward to meeting or exceeding one&rsquo;s
+                goals, Cisco is able to compensate their employees in monetary or non-monetary ways which include
+                performance-based pay; extra leave; stock purchasing options; and even flexible work practices. These
+                rewards are over and above the wages agreed upon between the employee and Cisco (Chen, 2017).</p>
+
+            <p>Although Cisco does offer its employees rewards and incentives for better performance and results, the
+                company does pride themselves in equal and fair culture. Through various mergers and acquisitions, Cisco
+                looks to further diversify their culture by hiring more local talent and incorporating diversity into
+                their leadership team. This allows Cisco to have a more geocentric approach, ensuring that human
+                resources are utilised to the maximum while constantly innovating and allowing the company to maintain a
+                competitive advantage (Chen, 2017).</p>
+
+            <p>The geocentric approach, where employees are hired based on suitability and not nationality, allows Cisco
+                to be a company open to anyone of any nationality. The company does allow for expatriate management, as
+                seen by Cisco employee Matthew Ingram. Mr Ingram has worked at Cisco since 2015, and since then has been
+                encouraged to use the company&rsquo;s technology to work remotely supporting his wife&rsquo;s career
+                aspirations of being a travelling nurse (Ingram, 2019). Another example is seen in India, where Cisco
+                expatriate employees are primarily from four places, Europe, Singapore, Beijing and USA. The cultural
+                orientation during the pre-departure training includes a language course of 160 hours, depending on the
+                individual&rsquo;s needs (Biswas, 2007).</p>
+
+            <h1 class="w3-center">5. Recommendations and Conclusions</h1>
+            <h2 class="w3-center">5.1. Recommendations</h2>
+            <p>Tesla&rsquo;s internationalisation plans by opening a factory in Shanghai would be an incredibly welcomed
+                one to the company and the country itself. While the company&rsquo;s current HR policies are somewhat
+                informal, the prospect of international subsidiaries should indicate a need for a more defined HR policy
+                that can be defined for the companies outside of USA. This would ensure that the Tesla&rsquo;s brand is
+                protected but continually successful in foreign countries.</p>
+
+            <p>Tesla&rsquo;s current management of human resources does allow for innovation and challenges all levels
+                of management; however, the company could benefit from adapting similar HRM practices from a company
+                such as Cisco. By creating subsidiaries across the globe, Tesla can change their recruitment approach to
+                be geocentric as opposed to a polycentric approach or in the case of China an ethnocentric approach. The
+                benefit of changing the HR practice to be more geocentric would allow Tesla to maintain their level of
+                innovation but have a greater impact on their competitors on a global scale.</p>
+
+            <p>Tesla should ensure that a well-constructed and thoroughly researched training programme is put in place
+                for any expatriates that will be sent on assignment for the company. The definition of this training
+                will determine the success of the internationalisation of Tesla. These expatriates can then be given the
+                opportunity to train host country nationals to become leaders in the subsidiary company and continue to
+                adapt and lead the company to have and maintain a better competitive advantage within that country
+                respectively.</p>
+
+            <p>In conjunction with expatriate training, Tesla should ensure that any and all recruitments done for host
+                country nationals and even third country nationals are done through a reputable, highly informed and
+                expertly trained HR department or company. The better the understanding and training of the HR
+                department, the more refined and well-selected host country nationals will be employed for the company.
+            </p>
+            <h2 class="w3-center">5.2. Conclusion</h2>
+            <p>Tesla is the world leader in aesthetically pleasing electric vehicles, currently 100th on the Fortune 500
+                list, the company is a leader in the electric vehicle and a fierce competitor in the automotive
+                industry. The company&rsquo;s plan to internationalise themselves by building a factory in Shanghai is
+                the first Gigafactory built outside of the United States. The company has many opportunities available
+                to them with regards to their internationalisation plans, however it brings with it many threats.
+                Although its HR policies are unique and somewhat informal, it allows Tesla to easily adapt these
+                policies to conform to host country laws and regulations. According to Hofstede&rsquo;s cultural
+                dimensions, many differences exist between USA and China with the individualism vs. collectivism having
+                the greatest difference. The company has various options in recruiting host country nationals, and given
+                the HR policies, the behavioural leadership theory would be best suited for Tesla as it would allow
+                employees to more collaborative, innovative and give the company a competitive advantage.</p>
+
+            <p>The report looked into Tesla&rsquo;s plans for internationalisation through building its factory in
+                Shanghai, analysing various HRM and IHRM practices and its impact on the company. An environmental
+                analysis was done on the company and any challenges that were likely to be faced were analysed on how it
+                would affect the HRM practice within Tesla. The HRM policies are critically reviewed and discussed on
+                how they would enable Tesla to overcome any challenges faced. Recruitment strategies are investigated
+                and an analysis was done on the selection of expatriates and host country nationals. This was taken
+                further and the expatriate training was discussed and the relevant areas of expatriate management. Cisco
+                System Inc. were used as an MNC to understand and analyse their IHRM best practices with the focus on
+                compensation and performance management of expatriates. Lastly, recommendations are given for Tesla for
+                their internationalisation and adaption of HRM practices.</p>
+
+            <button class="collapsible">
+                <h1>References</h1>
+            </button>
+
+            <div class="content">
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Babal, S., 2020,&nbsp;<em>How Tesla step-up its HR game? | hrnxt.com.&nbsp;</em>[Online].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Available at:&nbsp;<span
+                        style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://hrnxt.com/hr/how-tesla-step-up-its-hr-game/14488/2020/02/14/">https://hrnxt.com/hr/how-tesla-step-up-its-hr-game/14488/2020/02/14/</a></span>
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;[Accessed 3 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    BBC, 2018. <em>Electric carmaker Tesla to build factory in Shanghai - BBC
+                        News.&nbsp;</em>[Online].&nbsp;</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    Available at: <span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://www.bbc.com/news/business-44789823">https://www.bbc.com/news/business-44789823</a></span><u>&nbsp;</u>
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    [Accessed 30 June 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Biswas, S., 2007. <em>Expats at home with Indian culture - The Economic
+                        Times.&nbsp;</em>[Online].&nbsp;</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Available at: <span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://economictimes.indiatimes.com/news/company/corporate-trends/expats-at-home-with-indian-culture/articleshow/1911485.cms?from=mdr">https://economictimes.indiatimes.com/news/company/corporate-trends/expats-at-home-with-indian-culture/articleshow/1911485.cms?from=mdr</a></span>&nbsp;
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    [Accessed 8 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Browne, A. &amp; Chao, L., 2010. <em>U.S. Firms Feel Shut Out in China: [1],&nbsp;</em>New York,
+                    N.Y,:</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    Wall Street Journal (Online).</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Chen, H., 2017. The Success of Cisco Systems, Inc.&apos;s Human Resource Management</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    Strategy. <em>Journal of Service Science and Management,&nbsp;</em>Volume 10, pp. 206-215.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Cooke, F. L., 2012. A decade of transformation of HRM in China: A review of literature and</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    suggestions for future studies. <em>Asia Pacific Journal of Human Resource,&nbsp;</em>47(1), pp. 6-
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    40.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Corporate Finance Institute, n.d. <em>Leadership Theories - Learn About Key Leadership</em></p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    <em>Theories.&nbsp;</em>[Online].&nbsp;<br>Available at: <span
+                        style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://corporatefinanceinstitute.com/resources/careers/soft-skills/leadership-theories/">https://corporatefinanceinstitute.com/resources/careers/soft-skills/leadership-theories/</a></span><u>&nbsp;</u>
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    [Accessed 5 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Froese, F. et al., 2019. Challenges for foreign companies in China: implications for research</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    and practice. <em>Asian Business &amp; Management,&nbsp;</em>18(4), pp. 249-262.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Frue, K., 2019. <em>PESTLE Analysis for Human Resources: How PESTLE Affects HR.&nbsp;</em>[Online] .
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Available at: <span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://pestleanalysis.com/pestle-analysis-for-human-resources-how-pestle-affects-hr/">https://pestleanalysis.com/pestle-analysis-for-human-resources-how-pestle-affects-hr/</a></span><u>&nbsp;</u>
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    [Accessed 2 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Garcia, F., Mendez, D., Ellis, C. &amp; Gautney, C., 2014. Cross-cultural, values and ethics</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    differences and similarities between the US and Asian countries. <em>Journal of Technology
+                        Management in China,&nbsp;</em>9(3), pp. 303-322.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Gupta, S., 2020. <em>Tesla SWOT Analysis (2020) | Business Strategy Hub.&nbsp;</em>[Online].&nbsp;
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    Available at: <span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://bstrategyhub.com/tesla-swot-analysis/">https://bstrategyhub.com/tesla-swot-analysis/</a></span><u>&nbsp;</u>
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    [Accessed 2 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Hofstede Insights, 2021. <em>Country Comparison - Hofstede Insights.&nbsp;</em>[Online].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://www.hofstede-insights.com/country-comparison/china,the-usa/">https://www.hofstede-insights.com/country-comparison/china,the-usa/</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    4 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Hofstede, G., Hofstede, G. J. &amp; Minkov, M., 2010. <em>Cultures and Organizations: Software
+                        of</em></p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    <em>the Mind.&nbsp;</em>Revised and Expanded3rd Edition ed. New York: McGraw-Hill.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    HROne, n.d. Top 3 HR challenges when starting a business in China. [Online].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    Available at: <span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://www.hrone.com/top-3-hr-difficulties-in-china/">https://www.hrone.com/top-3-hr-difficulties-in-china/</a></span>&nbsp;
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    [Accessed 4 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Ingram, M., 2019. <em>&lsquo;Choose Your Own Adventure&rsquo; at Cisco - Cisco
+                        Blogs.&nbsp;</em>[Online].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://blogs.cisco.com/wearecisco/choose-your-own-adventure-at-cisco">https://blogs.cisco.com/wearecisco/choose-your-own-adventure-at-cisco</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    8 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Kelly, J., 2020. <em>Tesla&rsquo;s Leaked Employee Handbook Is As Unconventional As Founder
+                        Elon</em></p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:18.0pt;'>
+                    <em>Musk.&nbsp;</em>[Online].<br>Available at: <span
+                        style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://www.forbes.com/sites/jackkelly/2020/02/14/teslas-leaked-employee-handbook-is-as-unconventional-as-its-founder-elon-musk/?sh=63a401557ec2">https://www.forbes.com/sites/jackkelly/2020/02/14/teslas-leaked-employee-handbook-is-as-unconventional-as-its-founder-elon-musk/?sh=63a401557ec2</a></span>&nbsp;
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:18.0pt;'>
+                    [Accessed 3 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Khan, M. R., 2021. A critical analysis of Elon Musk&rsquo;s leadership in Tesla motors. <em>Journal
+                        of</em></p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:18.0pt;'>
+                    <em>Global Entrepreneurship Research.</em></p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Kim, K. et al., 2016. Do all Chinese employees have the same cultural values? An</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:18.0pt;'>
+                    exploratory investigation on differences in Chinese cultural values among state-, privately-, and
+                    US-owned firms. <em>Personnel Review,&nbsp;</em>45(5), pp. 827-849.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Kissinger, D., 2019. <em>Tesla, Inc. PESTEL/PESTLE Analysis &amp; Recommendations &ndash;
+                        Panmore</em></p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    <em>Institute.&nbsp;</em>[Online].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="http://panmore.com/tesla-motors-inc-pestel-pestle-analysis-recommendations">http://panmore.com/tesla-motors-inc-pestel-pestle-analysis-recommendations</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    2 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Lopez, L., 2019. <em>Tesla May Face Challenges in China Expansion.&nbsp;</em>[Online].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:18.0pt;'>
+                    Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://www.businessinsider.com/tesla-challenges-china-expansion-2019-2?IR=T">https://www.businessinsider.com/tesla-challenges-china-expansion-2019-2?IR=T</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    2 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Meyer, P., 2019. <em>Tesla Inc.&rsquo;s Organizational Culture &amp; Its Characteristics (Analysis)
+                        &ndash;</em></p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:18.0pt;'>
+                    <em>Panmore Institute.&nbsp;</em>[Online].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:18.0pt;'>
+                    Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="http://panmore.com/tesla-motors-inc-organizational-culture-characteristics-analysis">http://panmore.com/tesla-motors-inc-organizational-culture-characteristics-analysis</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    6 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Miedtank, T., 2017. Chapter 4 International human resource management and employment</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    relations of Chinese MNCs. In: <em>Chinese investment in Europe: corporate strategies and labour
+                        relations.&nbsp;</em>s.l.:s.n., pp. 79-95.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Morris, A., 2020. <em>Expatriate Management (Best Practice Tips) |
+                        DavidsonMorris.&nbsp;</em>[Online].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://www.davidsonmorris.com/expatriate-management/">https://www.davidsonmorris.com/expatriate-management/</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    7 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    OpenStax, 2019. <em>Principles of Management.&nbsp;</em>s.l.:OpenStax CNX.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Piyu, 2019.&nbsp;<em>Difference Between Trait and Behavioral Theories of Leadership | Compare the
+                        Difference Between Similar Terms.&nbsp;</em>[Online].&nbsp;<br>Available at:&nbsp;<span
+                        style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://www.differencebetween.com/difference-between-trait-and-behavioral-theories-of-leadership/">https://www.differencebetween.com/difference-between-trait-and-behavioral-theories-of-leadership/</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    6 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Ray, J. S., 2011. Cultural Comparison of the United States and China from the Project</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    Manager&apos;s Perspective. <em>SSRN Electronic Journal.</em></p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Sarokin, D., 2020. <em>SWOT Analysis for HR Practices.&nbsp;</em>[Online].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://smallbusiness.chron.com/swot-analysis-hr-practices-45260.html">https://smallbusiness.chron.com/swot-analysis-hr-practices-45260.html</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    1 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Schmitz, A., 2012. <em>Human Resource Management.&nbsp;</em>s.l.:Saylor Academy.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Sun, Y. &amp; Goh, B., 2020. <em>Tesla hiring in Shanghai as production ramps up | Reuters.</em></p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    [Online].<br>Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://www.reuters.com/article/us-tesla-china-idUSKCN24T030">https://www.reuters.com/article/us-tesla-china-idUSKCN24T030</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    4 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Tesla Inc., n.d. <em>Tesla Anti-Handbook Handbook.&nbsp;</em>[Online].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://www.scribd.com/document/446927426/Tesla-Anti-Handbook-Handbook#fullscreen&from_embed">https://www.scribd.com/document/446927426/Tesla-Anti-Handbook-Handbook#fullscreen&amp;amp;from_embed</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    3 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Tesla, Inc., 2020. <em>Tesla Form 10K.&nbsp;</em>[Online].&nbsp;</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm">https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm</a></span><br>&nbsp;[Accessed
+                    30 June 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    University of Minnesota, 2011. Staffing Internationally. In: <em>Human Resource Management.</em></p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    Minnesota: University of Minnesota Libraries Publishing.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Wang, J., Houston, V. S. &amp; Oswald, 2011. Expatriate Selection: The Key To International</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    Success. <em>International Business &amp; Economics Research Journal (IBER),&nbsp;</em>Volume 1.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Withaar, L., 2019. <em>Key Human Resource Management Policies &amp; Procedures.&nbsp;</em>[Online].
+                </p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    Available at:&nbsp;<span style="color:#0563C1;text-decoration:underline;"><a
+                            href="https://smallbusiness.chron.com/key-human-resource-management-policies-procedures-60802.html">https://smallbusiness.chron.com/key-human-resource-management-policies-procedures-60802.html</a></span><u>&nbsp;</u><br>&nbsp;[Accessed
+                    2 July 2021].</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Xu, H., Zhou, Y., Hewu, W. &amp; Minggao, O., 2020. Plug-in electric vehicles in China and the</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;margin-left:36.0pt;'>
+                    USA: a technology and market comparison. <em>Mitigation and Adaptation Strategies for Global
+                        Change,&nbsp;</em>25(3), pp. 329-353.</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                    Zhong, Y., Zhu, J. C. &amp; Zhang, M. M., 2021. Expatriate Management of Emerging Market</p>
+                <p
+                    style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;text-indent:36.0pt;'>
+                    Multinational. <em>Journal of Risk and Financial Management,&nbsp;</em>Issue 14, p. 252.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+</body>
+
+</html>

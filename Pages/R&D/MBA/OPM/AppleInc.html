@@ -100,6 +100,30 @@
     .openbtn:hover {
         background-color: #444;
     }
+
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+        background-color: #555;
+    }
+
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
 </style>
 
 <body class="w3-black">
@@ -178,12 +202,1007 @@
         <!-- Welcome Section -->
         <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
             <h1 class="w3-text-light-grey w3-center">Apple Inc.</h1>
-            <h1 class="w3-text-light-grey w3-center">Operations Management Investigation of Apple Inc.</h1>
+            <h1 class="w3-text-light-grey w3-center">Operations Management Investigation and Analysis</h1>
             <p class="w3-text-light-grey w3-center">Submitted: 30/05/2021</p>
             <hr style="width:page" class="w3-opacity">
 
-            <embed src="AppleInc.pdf" width="100%" height="2100px" />
+            <h1 class="w3-center">Executive Summary</h1>
+            <p>Apple Inc. is fourth on the Fortune 500 list, and is an industry leader in the technology industry. The
+                company is valued at over $2 trillion, and their mission and organisational objectives are presented and
+                explained how aligned they are. An analysis was done on the company&rsquo;s existing operations and
+                quality management processes which include the <em>Products</em>, <em>Services</em>, <em>Markets and
+                    Distribution</em>, <em>Supply of Components</em> and <em>Research and Development</em>. The analysis
+                continues using operations management tools such as flowcharts, control charts, FMEA and Six Sigma to
+                explore how Apple utilises these tools in two different scenarios. The current Information Management
+                Systems are explored and how these operations have affects any of the business operations. An AI
+                analysis was done detailing how Apple uses AI to enhance their overall business operations from both an
+                internal and value-add view, lastly giving recommendations on improving existing business operations.
+            </p>
 
+            <h1 class="w3-center">1. Introduction</h1>
+            <p>Currently fourth on the Fortune 500 list, Apple Inc., commonly referred to as Apple, is one of the
+                world&rsquo;s most recognised and respected brands and a leader in the technology industry. Apple was
+                founded and created in 1976 as the brain child of Steven Jobs and Stephen Wozniak, with its first
+                standalone computer, known as the <em>Apple II</em>, being released and sold in 1977&nbsp;(Levy, 2021).
+                Since then, Apple has quickly risen to become a market leader in the industry, currently having a market
+                value of more than <em>$2 trillion</em>.</p>
+
+            <p>Apple&rsquo;s mission statement defines their purpose as a company &ldquo;committed to bringing the best
+                user experience to its customers through its innovate hardware, software and services&rdquo; (Apple Inc,
+                2018). This mission statement defines Apple&rsquo;s business strategy in which they leverage their
+                &ldquo;unique ability to design and develop its own operating systems, hardware, application software
+                and services to provide its customers products and solutions with innovative design, superior
+                ease-of-use and seamless integration.&rdquo; The strategy further supports the community for any
+                offerings &ndash; software, hardware and digital content &ndash; that aligns with Apple. Furthermore,
+                expanding the brand through company-owned retail and online stores as well as a distribution network
+                including third-parties; and investing within itself for research, development, marketing and
+                advertising, forms part of Apple&rsquo;s business strategy and organizational objectives.&nbsp;(Apple
+                Inc, 2018).</p>
+
+            <p>Ultimately, there are two elements that define Apple&rsquo;s purpose: user experience and innovation;
+                both of which aligned to achieve the business strategy defined by the organisational objectives which is
+                further extended down into the company&rsquo;s operational and quality processes. The first of the
+                operational processes is the <strong>Products</strong> where a new version of the product is released
+                year on year, utilising Apple&rsquo;s own updated software and latest hardware. The second process is
+                the <strong>Services</strong> which is catered to their customers from a support and digital offering
+                perspective that includes advertising and various forms of digital content. <strong>Markets and
+                    Distribution</strong> is the third process that allows Apple to broaden their reach within the
+                domestic and global market and build various partnerships with many third-parties to aid in the
+                distribution and marketing of all Apple products and services. <strong>Supply of Components</strong> is
+                the process that ensures all components utilised in the creation of any products are available and
+                created for Apple&rsquo;s products that allow the company to deliver quality products. Lastly,
+                <strong>Research and Development</strong> ensures that the company will always adapt to any changes in
+                the industry, to remain competitive by developing and building new technology, subsequently improving
+                current products and services offered (Apple Inc., 2020).</p>
+
+            <h1 class="w3-center">2. Existing Operations and Quality Management</h1>
+            <p>Apple&rsquo;s success in the technology industry was the result of their branding, products and ingenuity
+                in industry itself. Jeffery L. Cruikshank studied Apple&rsquo;s management and defined <em>The Apple
+                    Way</em> into four categories that focus on: the product, the customer, marketing, and leadership
+                (Cruikshank, 2005). This focus aligns to Apple&rsquo;s vision and mission of making exceptional product
+                and can be seen in all of their operations and quality management processes.</p>
+
+            <h2 class="w3-center">2.1. Decision Areas of Operations Management</h2>
+            <p>The 10 decision areas of operations management can dictate the success or failure of a company if not
+                managed correctly. Apple is an example of how managing these 10 decision areas can lead a company to
+                success. The company has an allocated team of senior managers, each of which are dedicated to handling
+                the implementation of the measures addressing the 10 decisions areas which are:</p>
+            <ol style="list-style-type: decimal;margin-left:26px;">
+                <li>Design of Goods and Services</li>
+                <li>Quality Management</li>
+                <li>Process and Capacity Design</li>
+                <li>Location Strategy</li>
+                <li>Layout Design and Strategy</li>
+                <li>Job Design and Human Resources</li>
+                <li>Supply Chain Management</li>
+                <li>Inventory Management</li>
+                <li>Scheduling</li>
+                <li>Maintenance.</li>
+            </ol>
+
+            <p>Each of these areas are managed in a way that aligns to Apple&rsquo;s vision and mission statements. For
+                example, Location Strategy and Layout Design and Strategy is a selective process when choosing a
+                location and depending on that location, what would a customer expect in a store of that calibre. Every
+                one of these decisions in operation management are considered very carefully before any implementation
+                occurs, which is why Apple has been successful and will continue to be successful in the industry
+                (Rowland, 2019).</p>
+
+            <h2 class="w3-center">2.2. Products</h2>
+            <p>Apple&rsquo;s line of products include their line of smartphones: the <em>iPhone&reg;</em>; the personal
+                computers: the <em>Mac&reg;</em> which are both desktop and laptops; the multi-purpose tablets: the
+                <em>iPad&reg;</em> range; wearable technology: the <em>Apple Watch</em>; the audio product range:
+                <em>AirPods&reg;</em> and any of the products in the <em>Beats&reg;</em> range; home and streaming
+                devices: <em>Apple TV &reg;</em> and <em>HomePod&reg;</em>; and Apple&rsquo;s virtual assistant
+                <em>Siri&reg;</em> (Apple Inc., 2020). From a software perspective, each one these products, those that
+                require an operating system, all execute and run Apple&rsquo;s various operating systems that Apple have
+                developed and continuously updated to bring consumers a constant stream of improvements and features.
+                Apple&rsquo;s new range of devices always include new hardware such as better and faster processors,
+                improved cameras and storage capabilities, higher resolution screens, etc. The constant release of new
+                smartphones, tablets and personal computers year-on-year align to Apple&rsquo;s business strategy of
+                designing and developing their own software, hardware, operating systems etc.</p>
+
+            <p>According to their last published fiscal results, Apple&rsquo;s <em>iPhone</em> had decreased by 3% in
+                2020 due to no new model being introduced into the market. Going forward, with the release of the iPhone
+                12 and its variations in 2021, Apple should be on board to improve on these sales. The <em>Mac</em>
+                sales had increased by 11% due to their new laptop, as well as their <em>iPad</em> sales increasing by
+                the same amount. <em>AirPods</em> and the new <em>Apple Watch</em> had increased the sales of the
+                Wearables, Home and Accessories division by 16% (Apple Inc., 2020). It can be seen that year-on-year
+                Apple&rsquo;s sales continually increase, and a larger increase is seen in years when Apple introduce
+                newer products in their product line. Based on their current organisational operations and processes,
+                Apple will continue to grow in a sustainable manner as long they continue to innovate their products and
+                constantly utilise and develop the latest technology. This introduction and continued innovation will
+                allow Apple to mitigate their risk of the constant introduction of new technology and its application to
+                Apple products (Apple Inc., 2020).</p>
+
+            <h2 class="w3-center">2.3. Services</h2>
+            <p>The services operations within Apple cater not only to the company but the customer as well. These
+                operations form part of quality management processes as well. The first of the services that are offered
+                is the advertising that Apple use to not only boost the company itself but it includes arrangements with
+                numerous third-parties that will utilise the Apple advertising platform. The <em>Cloud Services</em> are
+                part of the offerings that Apple provides for the customers that not only allows for customers to store
+                data on the cloud but allows all of the products owned by customers to receive the most recent content
+                across multiple platforms. Apple also provides <em>Payment Services</em> which include their cashless
+                payment and branded credit card. The <em>Digital Content</em> is the large umbrella that works on
+                multiple platforms that allows customers to download and use various applications and access and use
+                digital content such as electronic books, music, media, gaming and podcast content. These work alongside
+                a subscription-based service that is offered to the customers across the various platforms and works
+                hand-in-hand with third-party developers to create and publish the various content. The last service
+                offered is <em>AppleCare</em> which is the fee-based service and support catered to customers from a
+                quality management perspective. This allows customers to gain support from the company for technical
+                matters, both software or hardware related as well as coverage similar to that of insurance (Apple Inc.,
+                2020).</p>
+
+            <p>Over the last fiscal year, the Services operations saw a 16% increase, with a constant growth projected.
+                Apple&rsquo;s agreement with multiple third-parties will allow the company to maintain customer loyalty
+                while increasing the offerings provided through any of their products and services offered through the
+                agreements with various third parties. By continuing agreements with multiple third-parties to utilise
+                the various platforms that Apple services provide as well as continuously improving the platforms
+                themselves; Apple can sustain their growth of the business through their services operations, allowing
+                them to mitigate the risks identified with the ongoing COVID-19 pandemic. This sustainable growth would
+                also mitigate the dependency on various third-parties that provide products, services and content to
+                Apple who form a major part of Apple&rsquo;s financial success (Apple Inc., 2020).</p>
+
+            <h2 class="w3-center">2.4. Markets and Distribution</h2>
+            <p>As described in the book <em>The Apple Way</em>, category two is focused holistically on the customer
+                (Cruikshank, 2005). Given the products and services provided by Apple, the customers range from the
+                general consumer market to businesses of all sizes, including the education sector as well as the
+                government. Apple is able to bring their products and services as well as other third-party products to
+                market and directly to the customer through multiple distribution channels that include their own
+                physical stores, an online store and multiple third-party businesses. These include network carries,
+                various wholesaler, retailer and even verified reseller stores (Apple Inc., 2020).</p>
+
+            <p>The rise of the COVID-19 pandemic has affected the company in multiple ways, forcing many of the stores
+                to close and all staff to work remotely from home. While this has been handled successfully, Apple still
+                has a dependency on network carriers, wholesaler, retailer and reseller stores to continue managing the
+                operations (Apple Inc., 2020). By maintaining their platforms and agreements, the company can
+                potentially mitigate this risk by constantly monitoring global and regional markets as well as the
+                pandemic. This will allow Apple and their relevant third-parties to maintain a successful marketing and
+                distribution network that would ensure continued growth and success (Apple Inc., 2020).</p>
+
+            <h2 class="w3-center">2.5. Supply of Components</h2>
+            <p>In order for Apple to develop and create their products, the company requires essential components that
+                are available from multiple sources with some being sourced from limited vendors. Given the
+                hypercompetitive environment in the technology industry, Apple competes with multiple rivals over
+                components, that creates a major dependency on the component, its respective suppliers and the market
+                itself. However, some components that allow Apple to maintain a competitive advantage over their
+                competitors are custom and are generally available from a singular source. Depending on how new the
+                technology is, this component may be subject to limited supply and supplier constraints. Although Apple
+                has agreements with all their suppliers, there is no guarantee of any extension, renewal or
+                similar-termed agreements with the suppliers. This does create a dependency risk for the company on
+                these suppliers. Along with this, the company outsources all hardware related components, located
+                primarily within the Asian continent (Apple Inc., 2020).</p>
+
+            <p>These two risks could be mitigated by ensuring that Apple has the correct agreements in place with all
+                suppliers as well as identifying potential alternatives for some components; which could result in a
+                much less scarcity issue arising with regards to any and all components. Apple could also continue to
+                create more custom components which will allow them to become more innovative, and remain competitive in
+                the market itself.</p>
+
+            <h2 class="w3-center">2.6. Research and Development</h2>
+            <p>Like many technology companies, research and development play a vital role in a technology
+                company&rsquo;s ability to stay relevant, competitive and successful. Apple&rsquo;s research and
+                development operations are constantly adapting, testing and utilising the latest in technology. In doing
+                so in a continuous and timeous manner, Apple is able to maintain a competitive advantage in all their
+                products and services. Research and development also include intellectual property and licensing it such
+                that it can be offered as a service through their digital content. Furthermore, this entails Apple
+                acquiring third-party businesses and subsequently the corresponding technology that will allow Apple to
+                utilise it within their own operational and quality management processes (Apple Inc., 2020).</p>
+
+            <p>Over the last 5 years, Apple has increased their research and development expenses by 86%, using 2% more
+                of their total net sales from 2018 to 2020 (Apple Inc, 2018) (Apple Inc., 2020). The constant investment
+                within the company itself has increased the costing requirements, however it has allowed Apple to
+                maintain a strong competitive advantage in the market and remain a business constantly improving in both
+                technology and value provided.</p>
+
+            <h1 class="w3-center">3. Operations Management Tool Analysis</h1>
+            <p>Evaluating how various operations management tools contribute to the success of Apple&rsquo;s
+                organizational objectives will be done using two scenarios:</p>
+            <ul style="list-style-type: disc;margin-left:26px;">
+                <li>The creation and development of a new product.</li>
+                <li>The testing of reliability and safety of products.</li>
+            </ul>
+
+            <h2 class="w3-center">3.1. Flow Charts</h2>
+            <p>Flow charts, or process flow diagrams, present a sequential and logical order of steps within a process.
+                Primarily used to describe how a specific process flows, define the steps and order of steps, time
+                frames, decisions and dependencies (ASQ, n.d.). Using the creation and development of a new product,
+                Apple does this in a specific manner as depicted in Figure 1.</p>
+            <p>Flow charts, or process flow diagrams, present a sequential and logical order of steps within a process.
+                Primarily used to describe how a specific process flows, define the steps and order of steps, time
+                frames, decisions and dependencies (ASQ, n.d.). Using the creation and development of a new product,
+                Apple does this in a specific manner as depicted in Figure 1.</p>
+
+            <img src="Figure1.png" style="width:100%;" alt="Figure 1">
+            <figcaption class="w3-center">Fig.1 - High Level Process Flow of Product Creation and Development (Kahney,
+                2019)</figcaption>
+
+            <p>As seen in Figure 1, the process is a very high-level view of how a product at Apple moves from inception
+                to manufacturing. As per Apple&rsquo;s core value, Steve Jobs had ensured that when a product is being
+                created, it begins with the Industrial engineers, in the design stage. New products and ideas are
+                designed and prototypes are made during the first three stages which is made up of the Industrial Design
+                team; the Product Design team consisting of electrical and mechanical engineers and Device Software
+                group; and the Operations team (Rowland, 2019).</p>
+
+            <p>Once the team is happy with the prototype, the process moves onto the Product Design, whereby the various
+                electrical and mechanical engineers work to ensure all necessary components can fit within the design
+                itself, also known as Packing the Suitcase. While the Product Design is working on the design of the
+                internal components, the Operations team begins to evaluate the product and begins assessing how the new
+                product and its introduction will affect the current supply chain, in conjunction with planning how the
+                product will be catered for mass production (Rowland, 2019).</p>
+
+            <p>By including Operations in the design early into the process, will allow the team to constantly adhere to
+                the limitations of what can and what cannot be mass produced. Operations begins to manage the tools,
+                fixtures and develop the process for the production of the product. This involves designing the parts
+                that are crucial to the manufacturing dedicated to specific components of the product, such as the
+                battery. Once approved, Operations take over completely and begin to scale the manufacturing process on
+                a global scale monitoring where and how the cost can be reduced in all areas (Rowland, 2019).</p>
+
+            <h2 class="w3-center">3.2. Control Charts</h2>
+            <p>Control charts are plotted points of data that allow the user to study how a process changes over time
+                within set threshold limits. These charts can aid in identifying and correcting various problems as they
+                occur, determining whether the process (in this case product) is stable and testing quality (ASQ, n.d.).
+                For Apple, the scenario of testing the reliability and safety of their products will be used.</p>
+
+            <p>Within the Apple operations exists two dedicated engineering groups, called Reliability and Safety. These
+                teams perform multiple, often exhaustive tests on the various products; with the focus of the test being
+                on the extreme conditions. For example, <em>AirPods</em> are placed into synthetic sweat and this is
+                done to simulate the gym environment and how well would the product itself survive in these
+                environments. Given the highly unlikely, yet possible scenarios, such as dropping the laptop on solid
+                concrete or a phone in a urinal; these sorts of tests are done so to evaluate the product&rsquo;s
+                quality in extreme conditions (Rowland, 2019).</p>
+
+            <p>Apple can utilise control charts to monitor the data and progress of their products being able to
+                estimate potential lifespan of products, and how should business evaluate and cater their services
+                provided through <em>AppleCare</em>. With testing in this manner, the Reliability and Safety teams must
+                have proposed solutions as problem arises, which could be unknown until testing such as this is done
+                (Rowland, 2019).</p>
+
+            <h2 class="w3-center">3.3. FMEA</h2>
+            <p>The Failure Mode and Effect Analysis is a tool that is used across multiple industries as part of the
+                Lean Six Sigma methodology, that allows a team to identify potential problems and its impact that could
+                arise after the production and analyse and address them in the development stage (Forrest, n.d.).
+                Continuing with the testing of reliability and safety scenario, Apple can utilise FMEA to analyse and
+                identify potential issues that could arise with the new iPhone scheduled to release later in the year.
+                Table 1 presents an example of FMEA for this scenario.</p>
+
+            <figcaption class="w3-center">Table 1: FMEA Example for iPhone in development</figcaption>
+            <table style="width: 100%;border: 1px solid; color: white;">
+                <tbody>
+                    <tr>
+                        <td
+                            style="width:77.55pt;border:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;height:71.5pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                <strong><u>Process Step</u></strong></p>
+                        </td>
+                        <td
+                            style="width:84.45pt;border:solid windowtext 1.0pt;border-left:  none;padding:0mm 5.4pt 0mm 5.4pt;height:71.5pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                <strong><u>Potential Failure Mode</u></strong></p>
+                        </td>
+                        <td
+                            style="width:72.0pt;border:solid windowtext 1.0pt;border-left:  none;padding:0mm 5.4pt 0mm 5.4pt;height:71.5pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                <strong><u>Potential Failure Effect</u></strong></p>
+                        </td>
+                        <td
+                            style="width:23.1pt;border:solid windowtext 1.0pt;border-left:  none;padding:0mm 5.4pt 0mm 5.4pt;height:71.5pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                <strong><u>Severity</u></strong></p>
+                        </td>
+                        <td
+                            style="width:93.9pt;border:solid windowtext 1.0pt;border-left:  none;padding:0mm 5.4pt 0mm 5.4pt;height:71.5pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                <strong><u>Potential Causes</u></strong></p>
+                        </td>
+                        <td
+                            style="width:27.0pt;border:solid windowtext 1.0pt;border-left:  none;padding:0mm 5.4pt 0mm 5.4pt;height:71.5pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                <strong><u>Occurrence</u></strong></p>
+                        </td>
+                        <td
+                            style="width:139.5pt;border:solid windowtext 1.0pt;border-left:  none;padding:0mm 5.4pt 0mm 5.4pt;height:71.5pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                <strong><u>Current Process Controls</u></strong></p>
+                        </td>
+                        <td
+                            style="width:31.5pt;border:solid windowtext 1.0pt;border-left:  none;padding:0mm 5.4pt 0mm 5.4pt;height:71.5pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                <strong><u>Detection</u></strong></p>
+                        </td>
+                        <td
+                            style="width:45.0pt;border:solid windowtext 1.0pt;border-left:  none;padding:0mm 5.4pt 0mm 5.4pt;height:71.5pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                <strong><u>Risk Priority Number</u></strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3"
+                            style="width:77.55pt;border:solid windowtext 1.0pt;border-top:none;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Cracked screen and back</p>
+                        </td>
+                        <td
+                            style="width:84.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Unusable touch screen</p>
+                        </td>
+                        <td
+                            style="width:72.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Unhappy customer</p>
+                        </td>
+                        <td
+                            style="width:23.1pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                6</p>
+                        </td>
+                        <td
+                            style="width:93.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Phone dropped or thrown</p>
+                        </td>
+                        <td
+                            style="width:27.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                3</p>
+                        </td>
+                        <td rowspan="3"
+                            style="width:139.5pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Develop shock absorbent case and glass screen protector</p>
+                        </td>
+                        <td
+                            style="width:31.5pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                10</p>
+                        </td>
+                        <td
+                            style="width:45.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                180</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width:84.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Irresponsive screen</p>
+                        </td>
+                        <td
+                            style="width:72.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Dissatisfied customer</p>
+                        </td>
+                        <td
+                            style="width:23.1pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                6</p>
+                        </td>
+                        <td
+                            style="width:93.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Heavy object knocked phone in pocket</p>
+                        </td>
+                        <td
+                            style="width:27.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                3</p>
+                        </td>
+                        <td
+                            style="width:31.5pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                7</p>
+                        </td>
+                        <td
+                            style="width:45.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                126</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width:84.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Loss of display, i.e. screen not turning on</p>
+                        </td>
+                        <td
+                            style="width:72.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Disgruntled customer</p>
+                        </td>
+                        <td
+                            style="width:23.1pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                8</p>
+                        </td>
+                        <td
+                            style="width:93.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                User tripped and fell with phone in hand or pocket</p>
+                        </td>
+                        <td
+                            style="width:27.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                4</p>
+                        </td>
+                        <td
+                            style="width:31.5pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                10</p>
+                        </td>
+                        <td
+                            style="width:45.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                320</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"
+                            style="width:77.55pt;border:solid windowtext 1.0pt;border-top:none;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Data integrity is compromised</p>
+                        </td>
+                        <td
+                            style="width:84.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Authentication failure</p>
+                        </td>
+                        <td
+                            style="width:72.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Concerned and unhappy customer</p>
+                        </td>
+                        <td
+                            style="width:23.1pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                5</p>
+                        </td>
+                        <td
+                            style="width:93.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Network failure</p>
+                        </td>
+                        <td
+                            style="width:27.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                5</p>
+                        </td>
+                        <td
+                            style="width:139.5pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Automatic switch between WiFi and cellular data)</p>
+                        </td>
+                        <td
+                            style="width:31.5pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                3</p>
+                        </td>
+                        <td
+                            style="width:45.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                45</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width:84.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Unauthorised access</p>
+                        </td>
+                        <td
+                            style="width:72.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Angry customer</p>
+                        </td>
+                        <td
+                            style="width:23.1pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                10</p>
+                        </td>
+                        <td
+                            style="width:93.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Phishing attack, keylogging, hacking</p>
+                        </td>
+                        <td
+                            style="width:27.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                8</p>
+                        </td>
+                        <td
+                            style="width:139.5pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Set up two-factor authentication</p>
+                        </td>
+                        <td
+                            style="width:31.5pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                8</p>
+                        </td>
+                        <td
+                            style="width:45.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                640</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width:77.55pt;border:solid windowtext 1.0pt;border-top:  none;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Battery longevity not as predicted</p>
+                        </td>
+                        <td
+                            style="width:84.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Expanded battery (close to explosion)</p>
+                        </td>
+                        <td
+                            style="width:72.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Injured customer</p>
+                        </td>
+                        <td
+                            style="width:23.1pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                10</p>
+                        </td>
+                        <td
+                            style="width:93.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Incorrect charger used</p>
+                        </td>
+                        <td
+                            style="width:27.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                1</p>
+                        </td>
+                        <td
+                            style="width:139.5pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Supply the correct charger and cable to regulate the correct voltage</p>
+                        </td>
+                        <td
+                            style="width:31.5pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                6</p>
+                        </td>
+                        <td
+                            style="width:45.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                60</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"
+                            style="width:77.55pt;border:solid windowtext 1.0pt;border-top:none;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Phone stuck in safe mode</p>
+                        </td>
+                        <td rowspan="2"
+                            style="width:84.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Endless loop of safe mode</p>
+                        </td>
+                        <td rowspan="2"
+                            style="width:72.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Unhappy and disgruntled customer</p>
+                        </td>
+                        <td
+                            style="width:23.1pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                10</p>
+                        </td>
+                        <td
+                            style="width:93.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Incorrectly installed operating system</p>
+                        </td>
+                        <td
+                            style="width:27.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                3</p>
+                        </td>
+                        <td
+                            style="width:139.5pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                <em>AppleCare</em> and in store technicians as well as at home factory resets available
+                            </p>
+                        </td>
+                        <td
+                            style="width:31.5pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                10</p>
+                        </td>
+                        <td
+                            style="width:45.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                300</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="width:23.1pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                7</p>
+                        </td>
+                        <td
+                            style="width:93.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Unwanted third-party application</p>
+                        </td>
+                        <td
+                            style="width:27.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                2</p>
+                        </td>
+                        <td
+                            style="width:139.5pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                Factory reset</p>
+                        </td>
+                        <td
+                            style="width:31.5pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                5</p>
+                        </td>
+                        <td
+                            style="width:45.0pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0mm 5.4pt 0mm 5.4pt;">
+                            <p
+                                style='margin:0mm;margin-bottom:.0001pt;line-height:150%;font-size:16px;font-family:"Times New Roman",serif;'>
+                                70</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 class="w3-center">3.4. Six Sigma</h2>
+            <p>The Six Sigma approach was initially developed in the late 1980s by Motorola, with the goal to eliminate
+                errors by improving the systems that handled quality and measurement. While Six Sigma is focused on
+                constant improvement of value for the customer based on their experience, it makes it a useful tool for
+                Apple to use as it treats the customer as king. Although similar to Lean Manufacturing, Six
+                Sigma&rsquo;s approach is to look at variation and performance (GoSkills, n.d.). Using the first
+                scenario of creating and developing a new product, specifically an iPhone, Apple can use the five phases
+                of the Six Sigma in developing a new <em>iPhone</em>, seen in Figure 2.</p>
+
+
+            <img src="Figure2.png" style="width:100%;" alt="Figure 2">
+            <figcaption class="w3-center">Fig.2 - Five Phases of Six Sigma (DMAIC) (GoSkills, n.d.)</figcaption>
+
+            <p>Apple needs to release the next generation of the <em>iPhone</em>, using the latest technology and
+                addressing all customer concerns. In order to understand the problem, Apple can receive feedback from
+                customers on what would be desired in the next iteration of the <em>iPhone</em>. For example, customers
+                may request a better or more camera options; customers have found that the battery life could be
+                improved; Apple&rsquo;s phones do not have the capability to &ldquo;fast-charge&rdquo; their phones
+                unlike their competitors; the screen glass cracks too easily. Using this type of feedback from
+                customers, will allow Apple to define their problem, and begin to design and implement a better
+                smartphone.</p>
+
+            <h3 class="w3-center">3.4.1. Define</h3>
+            <p>Now knowing what the customer requires in the next iteration of the smartphone, Apple can now measure its
+                current performance and what is currently happening from a customer experience point of view. This will
+                allow Apple to see the true measurements of their current generation of <em>iPhone</em>s and will be
+                able to create and set baseline values that can be compared to. This is done to ensure that the new
+                product will be improved or not.</p>
+
+            <h3 class="w3-center">3.4.2. Measure</h3>
+            <p>Now knowing what the customer requires in the next iteration of the smartphone, Apple can now measure its
+                current performance and what is currently happening from a customer experience point of view. This will
+                allow Apple to see the true measurements of their current generation of iPhones and will be able to
+                create and set baseline values that can be compared to. This is done to ensure that the new product will
+                be improved or not.</p>
+
+            <h3 class="w3-center">3.4.3. Analyse</h3>
+            <p>Using the current data that Apple has gathered and currently has, the team can now begin to analyse the
+                data by identifying where and how performance is currently being hindered. A thorough analysis must be
+                done as the goal is not to simply analyse and identify where the problem is, but rather identify,
+                analyse and resolve the root cause of a problem. For example, battery life could not be performing as
+                desired because of an excessive use of mobile applications, so by analysing, the team can determine that
+                use of less applications will create a longer lasting battery. However, this does not identify the root
+                cause of the problem, as smartphones are constantly being used, and so an investigation and analysis
+                must be done on which mobile applications are causing battery degradation and look at catering for this.
+            </p>
+
+            <h3 class="w3-center">3.4.4. Improve</h3>
+            <p>Once the root causes of all variations have been identified, the team can now begin to plan and design
+                the necessary improvements required. These changes must then be tested and the team must ensure that any
+                and all changes made are resolving the problems identified and defined in the first phase.</p>
+
+            <h3 class="w3-center">3.4.5. Control</h3>
+            <p>In the final phase, the changes made must be implemented and by doing so has a ripple effect on all
+                systems required to develop and make the changes. This is done so in a sustainable manner and with
+                continued monitoring, the team can determine if all the changes and improvements made are still being
+                realised.</p>
+
+            <h1 class="w3-center">4. Management Information System (MIS) Analysis</h1>
+            <p>Management Information Systems form the backbone of an organization&rsquo;s operations consisting of
+                software and hardware; constantly analysing data, reporting on it and ultimately aiding in making
+                decisions (Shopify, n.d.). Apple&rsquo;s major types of information systems are presented in Figure 3.
+            </p>
+            <img src="Figure3.png" style="width:100%;" alt="Figure 3">
+            <figcaption class="w3-center">Fig.3 - Apple's Major Information Systems (Barzani & Nabaz, 2020)</figcaption>
+
+            <h2 class="w3-center">4.1. Transaction Processing Systems</h2>
+            <p>TPS is defined as information that monitors transactional data and transforms that into a database
+                system. This type of system is key when running an online store (Barzani &amp; Nabaz, 2020).
+                Apple&rsquo;s Market and Distribution operations include their own online retail store as well, and
+                utilising a system like TPS allows Apple to track online sales of any products. Given the COVID-19
+                pandemic, and multiple stores being forced to close, Apple still saw an increase in sales of their
+                products, which could indicate the use of the online platform in purchasing the products. The gross
+                margin of the products increased from $68.887 billion in 2019, to a gross margin of $69.461 billion in
+                2020 (Apple Inc., 2020).</p>
+
+            <h2 class="w3-center">4.2. Office Automation Systems</h2>
+            <p>The Office Automation Systems are those that enable all employees of Apple to utilise personal computers
+                and systems to perform business activities. For example, all computers present within the Apple
+                headquarters in California, granting all employees access to the necessary information (Barzani &amp;
+                Nabaz, 2020). With majority of the workforce being forced to work from home and remotely, this system
+                has extended into the cloud, allowing the employees to work remotely while still achieving objectives
+                and adding value to the customers.</p>
+
+            <h2 class="w3-center">4.3. Knowledge Work Systems</h2>
+            <p>The Knowledge Work System acts like a library for the employees of Apple. This allows all members of the
+                company to learn from others with different skillsets, on how to perform various tasks and complete
+                objectives. It assists the company in knowledge sharing and knowledge organisation while allowing team
+                members to upskill themselves without any cost to company (Barzani &amp; Nabaz, 2020).</p>
+
+            <h2 class="w3-center">4.4. Management Information Systems</h2>
+            <p>The MIS system in this case is more of a process, which begins with searching for information, storing
+                the information, monitoring and identifying conflicts and issues and developing solutions for any that
+                arise. In the case for Apple, the MIS is used for customer satisfaction (Barzani &amp; Nabaz, 2020).
+                With customer experience being the focal point of Apple&rsquo;s mission and vision, the use of an MIS
+                allows the company to maintain a positive customer satisfaction score by addressing any and all concerns
+                experienced by the customers. This system would form the backbone of Apple&rsquo;s growing success.
+                Year-on-year, Apple increases their spending in the R&amp;D operations of their company, with a 16%
+                increase from 2019 to 2020 (Apple Inc., 2020).</p>
+
+            <h2 class="w3-center">4.5. Decision Support Systems</h2>
+            <p>By collecting data, analysing it and reporting it in more readable and understandable format, the
+                Decision Support System assists the necessary stakeholders in decision making situations and scenarios
+                (Barzani &amp; Nabaz, 2020). The use of these systems has become vital in a company such as Apple, as
+                decisions made by management can ultimately affect the company itself in terms of value and earnings.
+            </p>
+
+            <h2 class="w3-center">4.6. Expert Systems</h2>
+            <p>Expert Systems are one of the most complex ones as they contain elements of AI in its use. Expert Systems
+                are those that are used to simulate human reasoning, analysing and identifying patterns and create
+                reasoning with them. Apple uses the company &ldquo;NEXPERT&rdquo;, who are responsible for developing AI
+                applications, specifically in the financial payment world (Lozano, et al., 2016). The use of the Expert
+                System allows Apple to extend their operations and services that are offered to their customers, in this
+                case the use of <em>ApplePay</em>.</p>
+            <h2 class="w3-center">4.7. Overall Analysis</h2>
+            <p>Apple being a leader in the technology industry, indicates that they utilise their Information Systems to
+                the maximise by investing more and more into research and development. The constant and increasing
+                investment in research and development has allowed Apple to develop more products in their range making
+                them better and allowing them to maintain a commanding presence in the market itself. The use of the
+                systems, whether it is for decision making, production, or upskilling, has allowed Apple to increase
+                their revenue over the last year regardless of the COVID-19 pandemic from $98.392 billion in 2019 to
+                $104.956 billion in 2020 (Apple Inc., 2020).</p>
+
+            <h1 class="w3-center">5. AI Analysis</h1>
+            <p>Artificial Intelligence (AI) is being implemented more and more in the world today in all industries to
+                help gain a competitive advantage of competitors or assist in many business operations within the
+                company itself. Apple does use AI in numerous ways both in an internal perspective, but more within the
+                products that they produce, i.e. affecting the Services operations of the business in what is being
+                offered. The virtual assistant Siri is the most notable form of AI that Apple has, making it a desirable
+                feature in all of Apple&rsquo;s products as it can be utilised with all products offered in perfect
+                synchronisation.</p>
+
+            <p>Over the years, Apple has continued to develop Siri from a basic question and answer programme to one
+                where it is able to identify callers not on your contact list; or predict the next application you may
+                open based on what you have done before; or even presenting a map location based on reservations you
+                have made. Apple&rsquo;s AI has evolved from just Siri to each product having their own &ldquo;Apple
+                brain&rdquo; inside each of the products. The use of the various AI tools and techniques such as machine
+                learning, deep learning and neural networks are constantly running on any of the products and being
+                constantly utilised to aid the user in everyday tasks, such as detecting if a person is currently
+                exercising due to an increase in their heart rate (Levy, 2016).</p>
+
+            <p>Apple&rsquo;s development in AI has aligned to their organisational objective of creating a much more
+                user-friendly and personalised user experience. But this does not only include software on the
+                smartphones and tablets but goes further into the actual hardware. The research and rapid development of
+                AI in the products, have given rise to more innovate components being used to enable more machine
+                learning techniques to be used (Levy, 2016).</p>
+
+            <p>The machine learning experts within the company do not only focus on implementing various algorithms on
+                the products and services alone, but rather are used throughout the entire company. The machine learning
+                teams are encouraged to work with other teams within the company to help solve other problems and even
+                play an important role in idea creation. Although experts are found within the company, many of those
+                that utilise the machine learning and AI have no experience in it and have been upskilled to utilise it
+                in any of their business operations (Levy, 2016).</p>
+
+            <p>Although Apple uses AI to its benefit, unlike their competitors, they do not disclose any of their
+                research to the public, however they counter this disadvantage by purchasing small companies and
+                increasing their manpower. This allows Apple to maintain a competitive advantage against all their
+                competitors by utilising the skillset of the smaller companies and developing more advanced versions of
+                their AI, that would not have been possible at any earlier stage (Levy, 2016).</p>
+
+            <p>The major concern that faces Apple and it&rsquo;s AI is around data privacy. Although encrypted, the data
+                that is given and used by the team is not the complete set of data involving user&rsquo;s personal data.
+                The first question that is asked is what happens to the information used in training and developing the
+                neural network? The second question asks how can a neural network be developed and trained to predict
+                behaviour without know personal user information? Apple has addressed both concerns utilising their
+                product as a whole, i.e. both software and hardware. The highly personal information is stored locally
+                on the device itself, thus not exposing it to any other forms of data leaks. The second concern is
+                addressed by analysing how users utilise their own device. For example, based on the number of times a
+                person opens an application and in what order is it opened is all calculated and trained in the neural
+                network to predict the probability of that application being the next one the person decides to use. It
+                can also be seen in analysing typing patterns and words used, which is how predictive text works on any
+                of the Apple devices (Levy, 2016).</p>
+
+            <p>Ultimately, Apple is able to address challenges that AI places on them by developing and training the
+                various neural networks, deep learning and machine learning algorithms on the device itself, protecting
+                users&rsquo; privacy.</p>
+
+            <h1 class="w3-center">6. Recommendations and Conclusion</h1>
+
+            <h2 class="w3-center">6.1. Recommendations</h2>
+            <p>Apple is constantly improving their operations and quality of products delivered to all their customers.
+                By focusing on the customer experience and aligning all operations to the organisational objectives,
+                Apple has continued to succeed in the technology industry maintaining a strong market share and
+                competitive advantage. In order for Apple to maintain their current growth, it could be suggested that
+                Apple continues to innovate all products and services in a more aggressive manner utilising more recent
+                and experimental technology.</p>
+
+            <p>Apple could continue innovating by creating more custom components used in their products to allow them
+                to gain a bigger competitive advantage over competitors. It could also be recommended that Apple
+                considers publishing research to the public like their competitors. Given the dependency of multiple
+                third-party developers; Apple&rsquo;s aggressive corporate approach of buying smaller companies that
+                utilise AI in other ways; Apple publishing their research could invite more third-party developers to be
+                more innovative giving Apple a much larger competitive advantage.</p>
+
+            <p>Apple&rsquo;s ongoing and growing investment into research and development increases all
+                headcount-related expenses. The company could utilise their existing AI team that develops machine
+                learning, deep learning and neural network algorithms and align the team to the research and
+                development. By utilising the various forms of AI, the company can begin to continue to innovate and
+                improve on the research and development of all operations, while reducing the constantly increasing
+                headcount expenses.</p>
+
+            <h2 class="w3-center">6.2. Conclusion</h2>
+            <p>Apple is fourth on the Fortune 500 list, and a leader in the technology industry, with their
+                organisational objectives being aligned to their mission statement. The company&rsquo;s operations and
+                quality management processes were divided into five major categories, namely, their Products, which
+                group all their devices and wearables together; their Services, by which they focus on digital content,
+                support, value-add and licensing services offered to various third-parties and customers; their Markets
+                and Distribution, where Apple focuses on selling their product and services through various channels;
+                the Supply of Components, in which they use to develop their innovative products; and research and
+                development, whereby they constant ensure the company adapts to the rapidly changing industry and
+                environment.</p>
+
+            <p>The report looked into four operations management tools and how they are used within Apple&rsquo;s
+                operations from a scenario perspective. The tools used for the analysis included: flowcharts, control
+                charts, FMEA and Six Sigma. The company&rsquo;s Information System was analysed and explained, looking
+                at how each of these systems contributed to increasing Apple&rsquo;s gross margin to $104.956 billion,
+                even throughout the COVID-19 pandemic. An analysis was done on AI and how it is used to enhance
+                Apple&rsquo;s operations including their products and services and how any challenges faced were
+                addressed. Lastly, recommendations are given to Apple on how to remain an industry leader and maintain
+                the competitive advantage while benefitting the business and not impacting any existing operations. </p>
+
+            <button class="collapsible">
+                <h1>References</h1>
+            </button>
+
+            <div class="content">
+                <p>Apple Inc. (2020). <em>Form 10-K 2020</em>. Available from:</p>
+                <p><a href="https://investor.apple.com/investor-relations/default.aspx#tabs_content--2021">https://investor.apple.com/investor-relations/default.aspx#tabs_content--2021</a></p>
+                <p>[Accessed: 27 May 2021]</p>
+                <p>Apple Inc. (2018). <em>Form 10-K 2018</em>. Available from:</p>
+                <p><a href="https://investor.apple.com/investor-relations/default.aspx#tabs_content--2021">https://investor.apple.com/investor-relations/default.aspx#tabs_content--2021</a></p>
+                <p>[Accessed: 27 May 2021]</p>
+                <p>ASQ. (n.d). <em>Control Chart - Statistical Process Control Charts | ASQ</em>. [Online]. Available from:</p>
+                <p><a href="https://asq.org/quality-resources/control-chart#:~:text=The%20control%20chart%20is%20a,are%20determined%20from%20historical%20data">https://asq.org/quality-resources/control-chart#:~:text=The%20control%20chart%20is%20a,are%20determined%20from%20historical%20data</a></p>
+                <p>[Accessed: 30 May 2021]</p>
+                <p>ASQ. (n.d). <em>What is a Flowchart? Process Flow Diagrams &amp; Maps | ASQ.</em> [Online].</p>
+                <p>Available from: <a href="https://asq.org/quality-resources/flowchart">https://asq.org/quality-resources/flowchart</a></p>
+                <p>[Accessed: 29 May 2021]</p>
+                <p>Barzani, W. &amp; Nabaz. (2020). Management information system in apple company Wilayat Salih</p>
+                <p>Mustafa In Partial Fulfillment of the Degree of MASTER OF ARTS (MA) IN BUSINESS MANAGEMNT. [Online]. <em>Information System in Management</em>. Volume 1. pp. 1-8.</p>
+                <p>Available from: <a href="https://www.researchgate.net/publication/345386327_Management_information_system_in_apple_company_Wilayat_Salih_Mustafa_In_Partial_Fulfillment_of_the_Degree_of_MASTER_OF_ARTS_MA_IN_BUSINESS_MANAGEMNT">https://www.researchgate.net/publication/345386327_Management_information_system_in_apple_company_Wilayat_Salih_Mustafa_In_Partial_Fulfillment_of_the_Degree_of_MASTER_OF_ARTS_MA_IN_BUSINESS_MANAGEMNT</a></p>
+                <p>[Accessed: 30 May 2021]</p>
+                <p>Cruikshank, J. L. (2005). <em>The Apple Way</em>. 1<sup>st</sup> Ed. New York: McGraw-Hill.</p>
+                <p>Forrest, G. (n.d). <em>FMEA (Failure Mode and Effects Analysis) Quick Guide</em>. [Online] Available</p>
+                <p>from: <a href="https://www.isixsigma.com/tools-templates/fmea/fmea-quick-guide/">https://www.isixsigma.com/tools-templates/fmea/fmea-quick-guide/</a></p>
+                <p>[Accessed: 30 May 2021]</p>
+                <p>GoSkills. (n.d). <em>What is Lean Six Sigma: What it is, Why it Matters &amp; How to Do it Right</em>.</p>
+                <p>[Online]. Available from: <a href="https://www.goskills.com/Lean-Six-Sigma">https://www.goskills.com/Lean-Six-Sigma</a></p>
+                <p>[Accessed: 30 May 2021]</p>
+                <p>Kahney, L. (2019). <em>How Apple's Operations department works [Cook book outtakes] | Cult of</em></p>
+                <p><em>Mac. </em>[Online]. Available from:</p>
+                <p><a href="https://www.cultofmac.com/616052/how-apple-operations-department-works/">https://www.cultofmac.com/616052/how-apple-operations-department-works/</a></p>
+                <p>[Accessed: 30 May 2021]</p>
+                <p>Levy, S. (2016). <em>An Exclusive Look at How AI and Machine Learning Work at Apple | WIRED.</em></p>
+                <p>[Online]. Available from:</p>
+                <p><a href="https://www.wired.com/2016/08/an-exclusive-look-at-how-ai-and-machine-learning-work-at-apple/">https://www.wired.com/2016/08/an-exclusive-look-at-how-ai-and-machine-learning-work-at-apple/</a></p>
+                <p>[Accessed: 30 May 2021]</p>
+                <p>Levy, S. (2021). <em>Apple Inc.. Encyclopedia Britannica.. </em>[Online]. Available from:</p>
+                <p><a href="https://www.britannica.com/topic/Apple-Inc">https://www.britannica.com/topic/Apple-Inc</a></p>
+                <p>[Accessed: 27 May 2021]</p>
+                <p>Lozano, P., Natividad, D., Kim, H. &amp; Lopez, K. (2016). <em>Apple Information System by Victoria</em></p>
+                <p><em>Mata. </em>[Online]. Available from:</p>
+                <p><a href="https://prezi.com/zgnj9s4swfox/apple-information-system/">https://prezi.com/zgnj9s4swfox/apple-information-system/</a></p>
+                <p>[Accessed: 30 May 2021]</p>
+                <p>Project Management Institute (PMI). (2017). <em>A Guide to the Project Management Body of</em></p>
+                <p><em>Knowledge PMBOK Guide</em>. 6<sup>th</sup> Ed. Pennsylvania: PMI.</p>
+                <p>Rowland, C. (2019). <em>Apple Inc. Operations Management: 10 Decisions, Productivity &ndash; Panmore</em></p>
+                <p><em>Institute. </em>[Online]. Available from:</p>
+                <p><a href="http://panmore.com/apple-inc-operations-management-10-decisions-areas-productivity">http://panmore.com/apple-inc-operations-management-10-decisions-areas-productivity</a></p>
+                <p>[Accessed: 29 May 2021]</p>
+                <p>Shopify. (n.d). <em>Management Information Systems (MIS) Definition - What is Management</em></p>
+                <p><em>Information Systems (MIS). </em>[Online]. Available from:</p>
+                <p><a href="https://www.shopify.co.za/encyclopedia/management-information-systems-mis#:~:text=A%20management%20information%20system%20(MIS,aid%20in%20management%20decision%2Dmaking">https://www.shopify.co.za/encyclopedia/management-information-systems-mis#:~:text=A%20management%20information%20system%20(MIS,aid%20in%20management%20decision%2Dmaking</a><u>.</u></p>
+                <p>[Accessed: 30 May 2021]</p>
+            </div>
         </div>
 
         <!-- Footer -->
@@ -210,6 +1229,23 @@
 
             function closeNav() {
                 document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
             }
         </script>
 

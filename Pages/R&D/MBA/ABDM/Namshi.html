@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | Analytics for Business Decision Making - Namshi.com</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../../Images/R&D/MBA/ABDM/Namshi.jpg" type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+        background-color: #555;
+    }
+
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../../Images/R&D/MBA/ABDM/Namshi.jpg" style="width:100%;" alt="Cover Image">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">Namshi.com</h1>
+            <h1 class="w3-text-light-grey w3-center">Analytics for Business Decision Making Analysis</h1>
+            <p class="w3-text-light-grey w3-center">Submitted: 22/10/2021</p>
+            <hr style="width:page" class="w3-opacity">
+
+
+            <h1 class="w3-center">Executive Summary</h1>
+
+
+
+            <h1 class="w3-center">1. Introduction</h1>
+
+
+            <h1 class="w3-center">5. Recommendations and Conclusions</h1>
+            <h2 class="w3-center">5.1. Recommendations</h2>
+
+            <h2 class="w3-center">5.2. Conclusion</h2>
+
+
+            <button class="collapsible">
+                <h1>References</h1>
+            </button>
+
+            <div class="content">
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+</body>
+
+</html>

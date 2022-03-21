@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | Onyx Data DNA Challenge - March 2022</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../../../Images/R&D/OnyxData/2022/March/Onyx Data DNA Challenge March 2022.jpg"
+        type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+        background-color: #555;
+    }
+
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+</style>
+<style type="text/css">
+    .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .tg td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+
+    .tg th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+
+    .tg .tg-a9p2 {
+        background-color: #000000;
+        border-color: #ffffff;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        vertical-align: top
+    }
+
+    .tg .tg-940v {
+        border-color: #ffffff;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: middle
+    }
+
+    .tg .tg-wbky {
+        background-color: #fe0000;
+        border-color: #ffffff;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: top
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../../../Images/R&D/OnyxData/2022/March/Onyx Data DNA Challenge March 2022.jpg"
+                style="width:100%;" alt="Cover Image">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">Pi Day Dataset Analysis</h1>
+            <h1 class="w3-text-light-grey w3-center">Onyx Data DNA March 2022 Challenge</h1>
+            <p class="w3-text-light-grey w3-center">Skills and Tools Used:</p>
+            <p class="w3-text-light-grey w3-center"><i>
+                    Power BI<br>
+                    DAX<br>
+                    Data Analysis<br>
+                    Trend Analysis<br>
+                    Microsoft Excel
+                </i></p>
+            <p class="w3-text-light-grey w3-center"><i class="fa fa-github w3-hover-opacity"></i> <a
+                    href="https://github.com/KNarotam/OnyxDataChallenge/tree/main/2022/March" target="_blank">GitHub
+                    Repo</a></p>
+            <hr style="width:page" class="w3-opacity">
+
+            <h1 class="w3-center">Problem Statement</h1>
+            <p> In celebration of Pi Day (March 14), a fictional bakery has logged their sales from the past 2.5 years
+                and
+                would like their data analysed in order to make better decisions based on the trends of the provided
+                data.</p>
+
+            <h1 class="w3-center">Data</h1>
+            <p>The data is from Onyx Data's DNA Challenge website, which can be accessed <a
+                    href="https://onyxdata.co.uk/dataset_challenge/march-2022/" target="_blank">here</a>.</p>
+
+            <h1 class="w3-center">Data Dictionary</h1>
+            <p>The following data dictionary is a combination of that provided by Onyx Data as well as any columns added
+                to the loaded data prior to any pre-processing was done. Those highlighted in red are created in Excel,
+                expanding on existing data columns.</p>
+
+            <table class="tg" style="table-layout: fixed; width: 100%">
+                <colgroup>
+                    <col style="width: 209px">
+                    <col style="width: 643px">
+                    <col style="width: 81px">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="tg-a9p2">Column Name</th>
+                        <th class="tg-a9p2">Description</th>
+                        <th class="tg-a9p2">Data Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Order NO</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Order number of Pie
+                                Bakery orders</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Order Date</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Date order was
+                                placed</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Date</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Month/Yr</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Month &amp; Year
+                                abbreviation of the Date of order</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Date</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-wbky">Order Day</td>
+                        <td class="tg-wbky">Day of the month the order was placed</td>
+                        <td class="tg-wbky">Integer</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-wbky">Order Month (Text)</td>
+                        <td class="tg-wbky">The Month the order was placed</td>
+                        <td class="tg-wbky">String</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-wbky">Order Year</td>
+                        <td class="tg-wbky">The Year the order was placed</td>
+                        <td class="tg-wbky">Integer</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Day of Week</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Day of the week the order
+                                was placed</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Pie Flavor</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">The flavor of the pie(s)
+                                ordered</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Quantity</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Quantity of pies
+                                ordered</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Integer</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Cost</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Total cost of pies
+                                ordered</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Float</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Slice Or Whole Pie</span>
+                        </td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Slice or Whole Pie
+                                ordered</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Pre-Order/In-Store
+                                Purchase</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Denotes if the order was
+                                made in store or pre-ordered</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Organic?</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Organic if the pie
+                                filling ingredients were certified organic</span></td>
+                        <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1 class="w3-center">Pre-Processing</h1>
+            <p>Although the data provided is generally clean and organised, some pre-processing is still done. Firstly,
+                the <i>Day of the Week</i> is actually incorrect, and as a result is redone in DAX to ensure the correct
+                day is used. The following DAX command is used:</p>
+            <p class="w3-center" style="font-family:'Courier New'">Day of the Week = FORMAT(Data[Order Date], "dddd")
+            </p>
+            <p>Further, to ensure that the days are displayed in the correct order and not alphabetically, we associate
+                each day to a number corresponding, for example by default Sunday is 0, Monday is 1, up until Saturday
+                which is 6. Personally, I prefer Monday to be 1, and Sunday to be 7. In order to create that
+                association, the numbers generated per day is executed as follows:</p>
+            <p class="w3-center" style="font-family:'Courier New'">DayNum = WEEKDAY(Data[Order Date],2)</p>
+            <p>From there, the <i>Day of the Week</i> is sorted by <i>DayNum</i>. The dashboard can now be created from
+                there.</p>
+
+            <h1 class="w3-center">Dashboard</h1>
+            <p>The dashboard was built in Power BI and can be downloaded <a
+                    href="https://github.com/KNarotam/OnyxDataChallenge/blob/main/2022/March/Dashboard.pbix"
+                    target="_blank">here</a>.</p>
+            <p>A screenshot of the dashboard is seen below:</p>
+
+            <img src="../../../../../Images/R&D/OnyxData/2022/March/Dashboard.jpg" style="width:100%;" alt="Dashboard">
+
+            <h1 class="w3-center">Final Analysis</h1>
+            <ul>
+                <li><strong>April </strong>consistently recorded the highest number of sales each year followed by
+                    <strong>November</strong>.</li>
+                <li><strong>December</strong> recorded the fewest number of sales each year with <strong>September
+                    </strong>being very closely ahead.</li>
+                <li>It could be suggested that the increase in the sales of pies during April and November align to the
+                    festive season of Easter and Thanksgiving.</li>
+            </ul>
+            <ul>
+                <li>Sales are fairly evenly distributed throughout the month, however it is seen that the
+                    <strong>6</strong><sup><strong>th</strong></sup> shows the <strong>highest</strong> number of sales
+                    with $6,762.50 and the <strong>3</strong><sup><strong>rd</strong></sup> with the
+                    <strong>lowest</strong> sales of $997.50</li>
+            </ul>
+            <ul>
+                <li><strong>Apple</strong> was the best selling flavour of them all with <strong>Strawberry Rhubarb
+                    </strong>being the second best.</li>
+                <li><strong>Other</strong> flavoured pies were the worst selling of them all.</li>
+                <li>As assumed previously, during the seasonal times of year, seasonal pies were the best selling.</li>
+                <li>During April, Apple was by far the most popular flavour, whereas in November, Pumpkin was the best
+                    selling flavour.</li>
+            </ul>
+            <ul>
+                <li>The weekly sales see that midweek sales see fairly level amount, with <strong>Saturday</strong>
+                    sales being the highest in the week and <strong>Sunday</strong> being the lowest sales day.</li>
+            </ul>
+            <ul>
+                <li>Orders between <strong>sliced</strong> and <strong>whole</strong> pies are quite even, however more
+                    people prefer to order <strong>whole </strong>pies as opposed to slices of pies.</li>
+            </ul>
+            <ul>
+                <li>Clearly, <strong>organic</strong> pies are preferred with just of 3/4 of the orders being organic in
+                    nature.</li>
+            </ul>
+            <ul>
+                <li>Similarly to sliced and whole pies, there is a similar distribution between
+                    <strong>pre-order</strong> and <strong>in-store</strong> orders of pie, with more orders being
+                    <strong>pre-ordered</strong> rather than in store.</li>
+            </ul>
+            <ul>
+                <li>Since data is only recorded from halfway through 2019, the increase in sales made from 2019 to 2020
+                    sees a significant 329.47% increase.</li>
+                <li>Although only 6 months worth of data, <strong>Strawberry Rhubarb</strong> contributed to the most to
+                    the increases sales, with <strong>Cherry</strong> contributing the least.</li>
+                <li>From 2020 to 2021, saw a <strong>19.3%</strong> increase in sales, with <strong>Pumpkin</strong>
+                    having the greatest sales impact.</li>
+            </ul>
+
+            <p>It can be suggested that going forward Pi Day Pie Palace could use this data to make crucial business decisions. For instance, ensuring a larger supply of ingredients during April and November could allow the business to make more pies, and if the ingredients are organic in nature can increase the number of organic pies sold. Furthermore, marketing can increase sales through specific festive marketing campaigns.</p>
+
+            <p>Since Apple and Strawberry Rhubarb are the best selling flavours it can be suggested to ensure a consistent supply of these flavoured ingredients to keep the best sellers in stock and best in selling.</p>
+
+            <p>Pi Day Pie Palace is on track to sell more in 2022, and based on the trends from the previous two years, it can be suggested that Strawberry Rhubarb, Pumpkin, and Apple pies will be the biggest contributors to PDPP increasing their sales, especially if they are able to market it correctly.</p>
+
+            <p>Since there is a clear preference for Organic pies, finding a supplier to supply on organic ingredients will allow PDPP to migrate towards selling only organic pies.</p>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+</body>
+
+</html>

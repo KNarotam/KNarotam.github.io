@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | The Impact of AI on Mental Health - Introduction</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../Images/R&D/" type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+        background-color: #555;
+    }
+
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../Images/R&D/AI&MentalHealth/The Impact of AI Tools on Mental Health.jpg" style="width:100%;" alt="Cover Image">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">The Impact of AI on Mental Health</h1>
+            <h1 class="w3-text-light-grey w3-center">A Journey of Ethical and Practical Considerations</h1>
+            <h2 class="w3-text-light-grey w3-center">Introduction</h2>
+            <p class="w3-text-light-grey w3-center">Written: 27/07/2023</p>
+            <hr style="width:page" class="w3-opacity">
+
+            <p>Artificial Intelligence (AI) has rapidly evolved in recent years, becoming increasingly integrated into our daily lives. From virtual assistants to predictive algorithms, AI technology continues to shape the way we interact with the world. As its influence grows, so too do the ethical and moral concerns surrounding its development and implementation. This potential impact extends beyond efficiency and convenience, touching upon profound areas such as mental health.</p>
+    
+    <p>In 2019, Bernard Marr highlighted the pervasive use of AI in everyday life, exemplified by social media, facial recognition for unlocking devices, digital voice assistants, and more [1].</p>
+
+    <p>The poster child for AI applications, OpenAI's Chat GPT, raises questions about the balance between increased efficiency and the erosion of human skills. Ethical concerns regarding privacy and data usage have arisen from the process of training AI models with allegations based around the company having trained their intelligent chatbot through scraping the internet data violating the privacy and copyright of people [2] [3] [4]. However, despite these issues, AI remains an integral part of the ongoing technological revolution.</p>
+
+    <p>For a while, I have had a thought/proposal for some research that I have yet to find much information on and while the transformative potential of AI is not limited to its impact on industries; has anyone thought to ask the question of what AI tools such as ChatGPT and Midjourney can do to one’s mental health. As AI adoption grows, it can either contribute to stress and job insecurity or empower individuals to embrace change, upskill, and optimize their work. The effects on mental health, both positive and negative, depend on the individuals' attitudes and interactions with AI.</p>
+
+    <p>Here is my thought process behind my base for my research:</p>
+    <img src="1.Theory.jpg" style="width:100%;" alt="My proposed theory">
+
+    <p>Beginning on the left, we start with the fear of AI. A person sees that AI is able to do their job. This person now begins to worry that their company may view them as redundant. Ultimately, the company decides to embrace AI and this person now becomes redundant and they lose their job. This leads to stress, worry, and ultimately depression, which is negative on their mental health. Similarly, the stress alone of becoming redundant, whether a possibility or not, could have an impact on one’s mental health. Now, this premise does seem fairly similar to previous industrial revolutions, where the use of machines and robotics began to replace people in factories. And it seems as history may repeat itself as IBM has said that they would likely be pausing their hiring for approximately 8,000 jobs as these positions could potentially be performed by AI within the next few years [5].</p>
+
+    <p>Now on the other side, we look at those embracing and using AI. However, there are two sides to this that I theorise. The first looks at a person using AI to do their job. Not worrying about how the AI is doing it, whether the tool is adhering to privacy policies, or how the tool will be using the data and storing it. This person using the AI to do their job now builds the habit of constantly letting the tool do its job taking the results at face value, making them lazy. This type of laziness and lack of care in their work can begin to build bad habits, forming comfort bubbles and areas of little to no mental growth. These bad habits can ultimately lead to having a negative impact on your mental health.</p>
+
+<p>Similarly, if we look at the person who uses AI effectively. Understanding its limitations and way data is used, they can upskill themselves alongside the tools and use it in a positive manner. For example, using AI to break down complex areas that a person may be working on to assist in understanding the sector they are working in, or doing a quick research to get the basic facts before embarking on a deeper dive into research and focusing on the critical points. Knowing that AI tools are not 100% correct and how it uses the data to train itself can allow the person to use it effectively, to help optimize their way of working rather than completely doing it for them. This sense of accomplishment, constant learning, and ability to embrace change can lead to a positive impact on one’s mental health.</p>
+
+<p>AI's influence on mental health is a nuanced topic that requires careful examination. As AI becomes increasingly prevalent, its impact on mental well-being becomes ever more pronounced. The ethical and practical implications of AI's integration into society must be explored, and their effects on mental health must be considered. Understanding how individuals respond to and interact with AI will help us identify strategies for promoting positive mental health outcomes in the age of artificial intelligence.</p>
+
+<p>Now I reiterate the point that the above is my theory, and in the foreseen future, I will be doing my best to treat this as a dissertation/research piece that could hopefully be used as such. But ultimately, I want to explore this avenue, engaging with professionals around the world, using my skills as a researcher, strategist, and more importantly data analyst to understand and present what I hope would be some key insights that can be used in the future. Whether something comes of this or not, I do not know. But research is fun, and so is exploring the avenues less traveled.</p>
+
+<p>As a starting point, my next piece will be on Cyberpsychology and mental health. Defining it, unpacking it and seeing how it can contribute to my theory and or research.</p>
+
+
+
+            <button class="collapsible">
+                <h1>References</h1>
+            </button>
+
+            <div class="content">
+                <ol>
+                    <li>
+                        <a href="https://www.forbes.com/sites/bernardmarr/2019/12/16/the-10-best-examples-of-how-ai-is-already-used-in-our-everyday-life/?sh=5e4b62211171" target="_blank">
+                            B. Marr, "The 10 Best Examples Of How AI Is Already Used In Our Everyday Life," Forbes, 16 December 2019.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.washingtonpost.com/technology/2023/06/28/openai-chatgpt-lawsuit-class-action/" target="_blank">
+                            G. D. Vynck, "ChatGPT maker OpenAI faces class action lawsuit over data to train AI - The Washington Post," The Washington Post, 28 June 2023.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://mashable.com/article/openai-chatgpt-class-action-lawsuit" target="_blank">
+                            C. Mauran, "OpenAI is being sued for training ChatGPT with 'stolen' personal data | Mashable," Mashable, 29 June 2023.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.zdnet.com/article/openai-sued-for-stealing-data-from-the-public-to-train-chatgpt/" target="_blank">
+                            S. Ortiz, "OpenAI sued for 'stealing' data from the public to train ChatGPT | ZDNET," ZDNet, 29 June 2023.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://nypost.com/2023/05/02/ibm-wont-fill-7800-jobs-because-they-could-be-done-by-ai/" target="_blank">
+                            A. Zilber, "IBM won't fill 7,800 jobs because they could be done by AI," New York Post, 2 May 2023.
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+</body>
+
+</html>

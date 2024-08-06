@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | Marvel's Spider-Man: Miles Morales Review</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../Images/Logo.png" type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 33%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../Images/Gaming//Spider-Man/MM Cover.jpg" style="width:100%;"
+                alt="Spider-Man Miles Morales Image">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">Marvel's Spider-Man Miles Morales</h1>
+            <p class="w3-text-light-grey w3-center">Review Date: 22/03/2020</p>
+            <hr style="width:page" class="w3-opacity">
+            <p>
+                It's Christmas time in New York City, and it's time to to get back to web swinging through the snow with
+                none other than Miles freaking Morales! That's right people JoKishler is back with a review, and I know
+                it's been a while since I wrote a review,and that's because video editing takes up a crap load of time,
+                but hey, hopefully the blog will be bringing through a lot more content in the coming months. But
+                anyways back to the badass sequel game to Marvel's Spider-Man.
+            </p>
+            <img src="../../../Images/Gaming/Spider-Man/MM 2.jpg" style="width:100%;" alt="Spider-Men">
+
+            <h2 class="w3-center"><b>Miles > Peter</b></h2>
+            <p>Okay controversial heading I know. But playing as Peter vs playing as Miles, Miles is just an absolute
+                unit of a hero. His bioelectric abilities or “Venom power” and his invisibility powers just make him,
+                well miles beyond Peter. Yeah yeah, it’s a lame pun, but deal with it. It was clever as fuck and I stand
+                by it. But back to game, like it’s predecessor, Miles Morales allows us to experience what it’s like to
+                be the web head 2.0 in NYC and the fact that it happens during Christmas make NYC and the environment
+                even more beautiful. And trust me when I say it’s gorgeous, I experienced the smoothest gameplay and
+                graphics on the PS5 in 4K. Don’t believe me? Check out the photo below of Central Park.</p>
+
+            <img src="../../../Images/Gaming/Spider-Man/MM Snow.jpg" style="width:100%;" alt="Central Park">
+
+            <p>Now if that does not look breath-taking I don’t know what will. But Miles Morales takes us on a journey
+                when it is up to the young web head to take a crack of protecting NYC by himself, while Peter goes on
+                vacay. Balancing life, his mom’s campaign and trying to figure out how to be the Hero of Harlem, Miles’s
+                journey is rattled with emotional highs and lows throughout the story.</p>
+
+
+            <h2 class="w3-center"><b>Sweet but Too Damn Short</b></h2>
+
+            <p>After what was an absolute gem of a first game, I was hoping <i>Insomniac</i> could keep up to their own
+                high
+                standards. And God damn did they meet and exceed expectations. Gameplay is better, graphics are better,
+                and the story is insanely gripping with side activities and side missions having mini storylines of
+                their own. My one issue, actually my biggest issue with the game is length. As awe inspiring as the
+                game’s story is, it is far too short. And that includes collecting all the collectables and side
+                activities.</p>
+
+            <p>Centred mainly around Harlem, and the neighbourhood, the Spider-Man Miles Morales takes us on the battle
+                for Harlem between the newly formed group looking for notoriety, The Underground, led by the Tinkerer
+                and the extremely aggressive, corrupt company, Roxxon. Miles truly learns how to use his powers and how
+                to be a better Spider-Man. Caught between a few flashbacks and balancing life and Spidey duties, Miles
+                learns the true meaning of being a hero and the sacrifices that come with being Spider-Man.</p>
+
+            <h2 class="w3-center"><b>Spidey Strength, Venom Power and a Whole lot of Action</b></h2>
+            <p>Now the combat is not that much different than the first game, with the exception of Venom powers and a
+                few gadgets less. But racking up so insane combo numbers and witnessing the true raw power of Spider-Man
+                is still heap loads of fun. And for that, I’ve got some gameplay footage right here for you… ROLL IT!!!
+            </p>
+
+            <video width="100%" controls>
+                <source src="../../../Videos/Spider-Man.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+
+            <h2 class="w3-center"><b>Wrap It Up Web-Head</b></h2>
+            <p>Overall, <i>Insomniac</i>'s Spider-Man Miles Morales is a phenomenal game, with far too short of a story
+                line. Miles's suits are epic, and the character development seen is one of the best in recent games. We
+                all know what a true superhero game feels like and without a doubt know what being NYC's Friendly
+                Neighbourhood Spider-Man is all about. If anyone is hesistant about this game, you're a fool, a moron
+                and I blame that menace Spider-Man!!!!</p>
+            <p>As always, stay safe people. Wear a mask, wash your hands, follow social distancing and for the love of
+                god stay sane. Till next time, JoKishler out! (╯°□°）╯︵ ┻━┻) </p>
+
+                <img src="../../../Images/Gaming/Spider-Man/MM 3.jpg" style="width:100%;" alt="Alt suit">
+
+
+            <div class="column">
+                <h5 class="w3-text-red">IGN: 9/10</h5>
+            </div>
+            <div class="column">
+                <h5 class="w3-text-yellow">Metacritic: 85%</h5>
+            </div>
+            <div class="column">
+                <h5 class="w3-text-purple">JoKishler: 9/10</h5>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+</body>
+
+</html>

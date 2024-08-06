@@ -1,203 +1,79 @@
 <!DOCTYPE html>
-<html>
-<title>Kishan Narotam | Blog</title>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<title>Page Title</title>
 
 <head>
     <!-- add icon link -->
-    <link rel="icon" href="Images/Logo.png" type="image/x-icon">
+    <link rel="icon" href="Images/Branding/Crest/Transparent White LOGO/Transparent White LOGO/Transparent White LOGO.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Stylesheet for W3 schools-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Stylesheet for Styles CSS file-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--Stylesheet for Responsive CSS file-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!--Stylesheet for footer icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-row-padding img {
-        margin-bottom: 12px
-    }
-
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-        width: 120px;
-        background: #222;
-    }
-
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {
-        margin-left: 120px
-    }
-
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {
-        #main {
-            margin-left: 0
-        }
-    }
-
-    .column {
-        float: left;
-        width: 25%;
-        padding: 5px;
-    }
-
-    /* Clearfix (clear floats) */
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-    .sidepanel {
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-
-    .sidepanel a {
-        text-decoration: none;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-
-    .sidepanel a:hover {
-        color: #f1f1f1;
-    }
-
-    .sidepanel .closebtn {
-        position: absolute;
-        top: 0;
-        right: 0px;
-        font-size: 40px;
-    }
-
-    .openbtn {
-        font-size: 20px;
-        cursor: pointer;
-        background-color: #000000;
-        color: white;
-        border: none;
-    }
-
-    .openbtn:hover {
-        background-color: #444;
-    }
-</style>
 
 <body class="w3-black">
 
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-        <!-- Avatar image in top left corner -->
-        <img src="Images/Logo Supreme.png" style="width:100%">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-            <i class="fa fa-home w3-xxxlarge"></i>
-            <p>HOME</p>
-        </a>
-        <a target="_blank" href="Pages/CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i><img src="Images/Icons/User.png" style="width:90%;"></i>
-            <p>CV</p>
-        </a>
-        <a href="Pages/Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i><img src="Images/Icons/Suit.png" style="width:100%;"></i>
-            <p>FASHION</p>
-        </a>
-        <a href="Pages/Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i><img src="Images/Icons/PS.png" style="width:100%;"></i>
-            <p>GAMING</p>
-        </a>
-        <a href="Pages/R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i><img src="Images/Icons/R&D.png" style="width:100%;"></i>
-            <p>R&D</p>
-        </a>
-        <a href="Pages/Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i><img src="Images/Icons/Joker.jpg" style="width:100%;"></i>
-            <p>LIFE</p>
-        </a>
-    </nav>
-
-
-    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <font color: white>×</font>
-        </a>
-        <!-- Avatar image in top left corner -->
-        <img src="Images/Logo Supreme.png" style="width:100%">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-            <i class="fa fa-home w3-xxxlarge"></i>
-            <p>HOME</p>
-        </a>
-        <a target="_blank" href="Pages/CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i><img src="Images/Icons/User.png" style="width:90%;"></i>
-            <p>CV</p>
-        </a>
-        <a href="Pages/Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i><img src="Images/Icons/Suit.png" style="width:100%;"></i>
-            <p>FASHION</p>
-        </a>
-        <a href="Pages/Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i><img src="Images/Icons/PS.png" style="width:100%;"></i>
-            <p>GAMING</p>
-        </a>
-        <a href="Pages/R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i><img src="Images/Icons/R&D.png" style="width:100%;"></i>
-            <p>R&D</p>
-        </a>
-        <a href="Pages/Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i><img src="Images/Icons/Joker.jpg" style="width:100%;"></i>
-            <p>LIFE</p>
-        </a>
-    </nav>
-
+    <!-- Links (sit on top) -->
+    <header>
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-padding">
+                <a href="#" class="w3-bar-item w3-button w3-mobile">HOME</a>
+                <a href="#about" class="w3-bar-item w3-button w3-mobile">ABOUT</a>
+                <a href="Pages/Style/Style.html" class="w3-bar-item w3-button w3-mobile">STYLE</a>
+                <a href="pages/strategy.html" class="w3-bar-item w3-button w3-mobile">STRATEGY</a>
+                <a href="pages/innovation.html" class="w3-bar-item w3-button w3-mobile">INNOVATION</a>
+                <a href="pages/inspiration.html" class="w3-bar-item w3-button w3-mobile">INSPIRATION</a>
+                <a href="pages/gaming_hub.html" class="w3-bar-item w3-button w3-mobile">GAMING HUB</a>
+            </div>
+        </div>
+    </header>
 
     <!-- Page Content -->
     <div class="w3-padding-large" id="main">
-        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+
         <!-- Header/Home -->
         <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-            <img src="Images/Header.png" style="width:60%;" alt="Header Logo">
+            <img src="Images/Branding/Logo.png" style="width:80%;" alt="Logo">
         </header>
 
         <!-- Welcome Section -->
-        <div class="w3-content w3-text-white w3-padding-64" id="about" style="width:page; font-size: large;">
-            <h1 class="w3-text-light-grey w3-center">TEST PAGE</h1>
+        <div class="w3-content w3-text-white w3-padding-64" id="home" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">PAGE TITLE</h1>
             <hr style="width:page" class="w3-opacity">
-            <p>This is my test page. if you found this ... you should NOT BE HERE! Okay, thanks bye!
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus augue tortor. Maecenas tristique
+                tortor id mollis pellentesque. Donec in purus non purus sagittis tincidunt sed ac massa. Morbi lacinia
+                rhoncus tellus, in blandit mi tristique at. Nullam quis ipsum et risus auctor porta eu in risus. Nunc
+                pharetra eros a tortor volutpat, nec bibendum ante fringilla. Morbi eget rutrum ante. Sed lobortis
+                bibendum metus, id eleifend diam porta et. Ut erat quam, convallis quis velit sed, pretium cursus
+                ligula. Ut commodo, lacus nec convallis ultrices, dolor dolor vestibulum felis, a congue dui felis in
+                lorem.
             </p>
+
+            <p>Pellentesque ornare pharetra lacus eu aliquet. Fusce hendrerit eros vitae nulla blandit, sit amet
+                facilisis augue viverra. Fusce volutpat in velit at porttitor. Sed tincidunt elementum tempus. Nunc
+                semper commodo elit, id ullamcorper ipsum fermentum porta. Sed ac ultricies elit, ac bibendum tortor.
+                Aliquam non diam ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+            <p>Nunc at ipsum placerat elit molestie dignissim. Donec erat ipsum, iaculis sit amet enim eu, scelerisque
+                auctor arcu. In gravida justo eu magna ultrices, vitae iaculis nisl blandit. Cras ut lorem nec dolor
+                dignissim lobortis quis sed diam. Etiam tempor est eget enim tincidunt pretium. Aenean non tempus ex. In
+                congue felis sit amet justo rutrum blandit. Quisque libero magna, pharetra eu luctus ut, laoreet nec
+                risus. Phasellus porttitor posuere ipsum, id consequat tortor auctor quis. Vestibulum a accumsan justo.
+                Nam in diam est.</p>
+
         </div>
-        <p>The various innovations that will breakthrough in the industry, specifically in the technology industry, may not always affect the current business and social landscape. However, there are some innovations will cause the disruption to the industry and current status quo. In 2013, McKinsey Global Institute reported on various disruptive technologies that would change businesses, life and the global economy. The 12 technologies identified are estimated to have anywhere between a $14 trillion to $33 trillion a year impact in 2025 (Manyika, et al., 2013). The 12 disruptive technologies include:</p>
-        <ul>
-        <li>Mobile internet</li>
-        <li>Automation of knowledge work</li>
-        <li>Internet of Things</li>
-        <li>Cloud</li>
-        <li>Advanced robotics</li>
-        <li>Autonomous &amp; near-autonomous vehicles</li>
-        <li>Next-generation genomics</li>
-        <li>Energy storage</li>
-        <li>3-D printing</li>
-        <li>Advanced materials</li>
-        <li>Advanced oil &amp; gas exploration &amp; recovery</li>
-        <li>Renewable energy (Manyika, et al., 2013).</li>
-        </ul>
+
+
+
+
+
 
         <!-- Footer -->
         <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
@@ -209,23 +85,12 @@
                     class="fa fa-instagram w3-hover-opacity"></i></a>
             <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
                     class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
             <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
                     class="fa fa-linkedin w3-hover-opacity"></i></a>
 
             <!-- End footer -->
         </footer>
 
-        <!-- END PAGE CONTENT -->
-        <script>
-            function openNav() {
-                document.getElementById("mySidepanel").style.width = "120px";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidepanel").style.width = "0";
-            }
-        </script>
 </body>
 
 </html>

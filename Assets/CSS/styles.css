@@ -1,0 +1,227 @@
+/* styles.css */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "serif";
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px;
+}
+
+.w3-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.w3-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.w3-bar-item {
+    flex: 1;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+#main {
+    margin-top: 50px; /* Adjust this value if your header height changes */
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.hr-centered {
+    width: 60%;
+    margin: 0 auto;
+    border: none; /* Optional: to remove default border styling if needed */
+    height: 1px; /* Optional: set the height of the line */
+    background-color: #b7b7b76f; /* Optional: set the color of the line */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: auto;
+}
+
+.profile-card {
+    background-color: #eae8d9;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #cc2b2b1a;
+    text-align: center;
+    width: 300px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 35px;
+    color: #000000;
+}
+
+.title {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.intro {
+    color: #ffffff;
+    max-width: 800px;
+}
+
+.intro h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.resume-btn {
+    background-color: white;
+    color: black;
+}
+
+.projects-btn {
+    background-color: white;
+    color: black;
+}
+
+.description {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+header {
+    width: 100%;
+}
+
+.transparent-header {
+    background-color: rgba(255, 255, 255, 0.7); /* White background with 70% opacity */
+}
+
+.logo {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space */
+}
+
+.resume-section {
+    background-color: #d1b89d;
+    padding: 20px;
+}
+
+.resume-section h1 {
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    margin-top: 0;
+}
+
+.blue-square {
+    width: 24px;
+    height: 24px;
+    background-color: #007bff;
+    margin-right: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 40px;
+}
+
+.experience-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.experience-details {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.experience-details h3 {
+    color: #007bff;
+    margin: 0;
+}
+
+.experience-details .job-title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experience-description {
+    flex: 2;
+}

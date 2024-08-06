@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | Deathloop Review</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../Images/Gaming/Deathloop.jpg" type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../Images/Gaming/Deathloop.jpg" style="width:100%;" alt="Deathloop Cover">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">Deathloop</h1>
+            <p class="w3-text-light-grey w3-center">Review Date: 29/10/2021</p>
+            <p class="w3-text-light-grey w3-center">Reviewed on PS5</p>
+            <hr style="width:page" class="w3-opacity">
+            <p>
+                Hey Arkane Studios, give me one order of Dishonored, with a side of 1960s, a dash of timelooping, and an
+                intriguing premise. That’s exactly what we got with Arkane’s latest development Deathloop. That’s right
+                people, after a while JoKishler is back with a review for Deathloop. “If at first you don’t succeed,
+                die, die again.”
+            </p>
+
+            <h2 class="w3-center"><b>Death-Defying Story</b></h2>
+            <p>Set in the 1960s, on Blackreef island, you take on the role of Colt Vahn, a bad ass motherfucker with no
+                memory of what happened, why is someone is hunting him, why the same day keeps repeating, or what the
+                hell are his particular set of skills. The story follows Colt and his countless attempts to break the
+                loop of this day. While uncovering the reasons for his wacky version of Groundhog Day (if you don’t know
+                this, Google it, and if you had to Google it … well I’m disowning you), but back to the game. Colt
+                uncovers the secrets behind the program that put them there, who are the main people in charge of this
+                program, and how can he put a stop to it.</p>
+
+            <p>Blackreef is a beautifully weird island, with 4 locations that can be explored as you see fit. Playable
+                at 4 distinct times of day, each area on Blackreef is filled with information, secrets, enemies and an
+                ever-changing environment. And last but not least, the 7 visionaries that need to be hunted, while at
+                the same time being hunted yourself. Deathloop’s environment, ways of executing your targets leave the
+                player with multiple ways to explore, with twists and turns and each loop over, this game is going to
+                keep you coming back!</p>
+
+            <h2 class="w3-center"><b>Death From All Angles</b></h2>
+            <p>Combined with a beautiful environment and attention detail, Deathloop’s combat is simple, effective and
+                tonnes of fun. With a style and power similar to that of Dishonored, the way you play and kill is all up
+                to you. If you want to go gang-ho on the enemies, that stock up your guns, choose your charms, get your
+                powers ready and go nuts. Or if you’re like me play stealth, and sneak behind and whack them assassin
+                style. Either way, Deathloop leaves the option up to you.</p>
+
+            <p>The weapons are limited, but as the rarity increases, so do some of their abilities like causing
+                bleeding, or slowing health-regen and blah blah blah. And from the power point … well this was a bit of
+                an annoyance for me. You have a choice of 7 slabs that each grant you some pretty epic abilities. But
+                anytime you go out to explore, you’re only choosing 2. Now I found myself using the Shift and Nexus
+                slabs a lot. Shift, obviously like Dishonored, gets you to places. Nexus, well what happens to one
+                enemy, affects others if they’re linked. With telekinesis style power, invisibility, and the ability to
+                rewind a little time after you die being available each time you go out, Colt’s ability to be a badass
+                is limited by your playstyle.</p>
+
+            <h2 class="w3-center"><b>Death-looping Back</b></h2>
+            <p>Now as time went on, and the story began to unfold, I found myself being able to assassinate and plan all
+                7 visionaries in a single loop become progressively easier and fun, with the trick being how to group
+                some together and giving them the old whack! I won’t lie about midway through, I found myself killing
+                visionaries over and over, to a point where some that were alone, I ended up knowing how to do it
+                blindfolded. But counterpoint, I started finding more fun ways to kill them, using their own turrets
+                against them, or a trip mine, or even grabbing my sword and just straight up running at them and gutting
+                them. Each time I had more fun, and each time it got easier. And once the plan comes together, that
+                final run of the loop is incredibly fun, knowing where they are, how to kill them, and actually
+                executing them reached a great peak. HOWEVER … I found the ending a tad bit … well plain. With 3
+                possible endings, the “good” ending that I got was a bit anti-climactic. The others leave more to hope
+                for, and actually potential for a sequel.</p>
+
+            <h2 class="w3-center"><b>Death to the Loop</b></h2>
+            <p>Arkane’s latest development and exploration into a timeloop game is probably one of the best implemented.
+                With a great story line, excellent environment, twist and turns, and the ability to play to your style,
+                leaves the game highly recommendable and tonnes of fun. The combat is simple, but gives you the chance
+                to try multiple variations and styles, and you can play to your style, limited by your creativity … and
+                well the bounds of the game. If you liked Dishonored’s style, then you will definitely love Deathloop,
+                especially in a 60s environment.</p>
+
+            <div class="column">
+                <h5 class="w3-text-red">IGN Africa: 10/10</h5>
+            </div>
+            <div class="column">
+                <h5 class="w3-text-yellow">Metacritic: 88%</h5>
+            </div>
+            <div class="column">
+                <h5 class="w3-text-orange">PC Gamer: 89%</h5>
+            </div>
+            <div class="column">
+                <h5 class="w3-text-purple">JoKishler: 9.5/10</h5>
+            </div>
+
+            <p>Till next time people, I hope to drop a few more reviews soon, and more frequently. And Abby, this one is
+                for you! Sorry it took so long. Till next time people, stay safe, wash your damn hands, wear a mask …
+                and please for the love of god… stay sane.
+                Till next time, JoKishler out! (╯°□°）╯︵ ┻━┻)
+            </p>
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+</body>
+
+</html>

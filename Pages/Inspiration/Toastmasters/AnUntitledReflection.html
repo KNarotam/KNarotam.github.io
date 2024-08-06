@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<title>Kishan Narotam | An Untitled Reflection</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon" href="../../../Images/Logo.png" type="image/x-icon">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 40px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+
+    <nav id="mySidepanel" class="sidepanel w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <font color: white>×</font>
+        </a>
+        <!-- Avatar image in top left corner -->
+        <img src="../../../Images/Logo Supreme.png" style="width:100%">
+        <a href="../../../index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a target="_blank" href="../../CV/CV.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/User.png" style="width:90%;"></i>
+            <p>CV</p>
+        </a>
+        <a href="../../Fashion/FashionHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Suit.png" style="width:100%;"></i>
+            <p>FASHION</p>
+        </a>
+        <a href="../../Gaming/GamingHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/PS.png" style="width:100%;"></i>
+            <p>GAMING</p>
+        </a>
+        <a href="../../R&D/R&DHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/R&D.png" style="width:100%;"></i>
+            <p>R & D</p>
+        </a>
+        <a href="../../Life/LifeHome.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i><img src="../../../Images/Icons/Joker.jpg" style="width:100%;"></i>
+            <p>LIFE</p>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <button class="openbtn w3-hide-large w3-hide-medium" onclick="openNav()">☰ Blog Menu</button>
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="../../../Images/Life/Toastmasters/An Untitled Reflection.jpg" style="width:100%;"
+                alt="Reflection Image">
+        </header>
+
+        <!-- Welcome Section -->
+        <div class="w3-content w3-text-white w3-padding-64" style="width:page; font-size: large;">
+            <h1 class="w3-text-light-grey w3-center">An Untitled Reflection</h1>
+            <p class="w3-text-light-grey w3-center">Presented On: 13/05/2021</p>
+            <p class="w3-text-light-grey w3-center">Using Descriptive Language</p>
+            <hr style="width:page" class="w3-opacity">
+            <p>What is this world we live in? A severely cruel and sinister place contrasted by the lush beauty and raw
+                power of nature. What is it about this world, that makes it unbearable but also desirable? It&rsquo;s
+                not a matter of what but a matter of who. Who is that person looking back at you in the mirror? Who is
+                he? What is her story? What do they want? Is their world as cruel as ours? Or is it better? Why is it
+                that we surround ourselves with tranquillity but get used like a tissue. We get used, broken and
+                destroyed. They discard you like the garbage, making you feel just the same. What is going to save them?
+                What is going to save you?</p>
+            <p>Will your good looks, or your brains help you? Or is it daddy&rsquo;s money? What is the cruel world we
+                live in? Do we even matter? Money can be gone in a second, and those you surrounded yourself will begin
+                to disappear because of the lack of paper. Falsehood, fairy tales ... it&rsquo;s where we want to live,
+                not where we are. Who can we rely on? Look in the mirror and see if they can help you. If you can depend
+                on them. Can you stand on your own? After all the masks and fabrication are dissolved, who is beside
+                you? You&rsquo;re all alone... are you even worth a damn thing?</p>
+            <p>Get off your high horse, and stop thinking you&rsquo;re someone special. Because you&rsquo;re not.
+                You&rsquo;re not worth a damn thing, not to them anyway. You think you are better, you are superior, but
+                if you get cut ... do you not bleed? Is the blood not red? What makes you so different? Say what you
+                want to them, do what you can for them, brown nose them for all you want, it&rsquo;s not going to change
+                a thing. We come from nothing, we leave with nothing. So those who prance around, showing off their
+                wealth and the wonders of family trust, it will not last forever. And the sooner you sit down and
+                realize that, the softer the ass-whooping will be.</p>
+            <p>What&rsquo;s the point of it all? We live in a world where those who lie, cheat, steal and suck up can
+                prosper. But those who are honest, who work hard, don&rsquo;t see nearly as good of a reward as the
+                former. What&rsquo;s the point of being nice? What&rsquo;s the point of giving credit and helping out,
+                when it&rsquo;s going to get you nothing? Who is it benefitting? Is it him in the mirror? Staring back
+                at you, wondering to yourself, what is it like to live in his world.</p>
+            <p>There are times he plays out scenarios in his head, which fills him with such hatred ... with such anger.
+                Scenarios he knows will never happen. And for what reason? Yet through it all he will still help out,
+                still give a hand. Give credit, where credit is due. But for what? Why is he like that? All that happens
+                is that he ends up getting hurt. But no matter how hard he tries to be cold and heartless, he cannot.
+                But yet he has to force himself to cry at those funerals for those close to him. Because he didn&rsquo;t
+                have the time to spend with them? Because they&rsquo;re gone? Why force it? He&rsquo;s cold and
+                heartless right? He cannot shed a tear for someone who was blood. So why does it hurt? Why does it pain
+                him to be what he wants to be? But he hates it. He hates feeling this burning sensation of anger and
+                resentment. He hates that about himself. And for what reason?</p>
+            <p>He hasn&rsquo;t given up in any time of adversity. He hasn&rsquo;t laid down his arms during any war. But
+                why the hatred and anger? Why the frustration? It&rsquo;s because he&rsquo;s tired. He&rsquo;s tired of
+                fighting. Why can&rsquo;t he just go on autopilot and let things play out and have them play out well?
+                He doesn&rsquo;t want to fight anymore. He hasn&rsquo;t given up ... he&rsquo;s just done with it all.
+                He&rsquo;s done with pleasing everyone. He&rsquo;s done with trying to help others when he knows the
+                favour will not be returned. He knows it&rsquo;s a losing battle, but yet he fights on.</p>
+            <p>So, when he comes home, looking at what he has done, looking at the world he&rsquo;s in. What more can he
+                do? What more can he say? He sits on his bed, and lets out a cathartic sigh. The tears roll down his
+                face. What&rsquo;s the point of it all? He gets up with a sniff, shoulders hunched ... looking like a
+                broken man. He walks to the bathroom, turns on the tap, and washes his face. He drapes the towel, wiping
+                away all the tears, and anguish of the day. He sighs and looks up. He sees me staring back at him. He
+                wonders to himself ... what is it like to live in my world?</p>
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/KNarotam" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "120px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+
+</body>
+
+</html>

@@ -78,6 +78,7 @@ h6 {
     width: auto;
 }
 
+
 .profile-card {
     background-color: #eae8d9;
     padding: 20px;
@@ -163,24 +164,28 @@ header {
 }
 
 .resume-section {
-    background-color: #d1b89d;
     padding: 20px;
 }
 
 .resume-section h2 {
     font-size: 32px;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
+}
+.resume-section h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .card {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(203, 0, 0, 0.1);
 }
 
 .card-left {
@@ -189,7 +194,7 @@ header {
 }
 
 .card-right {
-    flex: 2;
+    flex: 3;
 }
 
 .card-left h3 {
@@ -204,7 +209,87 @@ header {
 }
 
 .card-right p {
-    margin: 10px 0;
+    margin: 5px 0;
+    color: #333;
+}
+
+.card-right ul{
+    list-style-type: disc; /* Adds bullet points */
+    margin-left: 20px; /* Indents the bullet points */
+}
+
+.card-right ul li {
+    margin-bottom: 5px;
     color: #333;
     line-height: 1.5;
+}
+
+.blue-square {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #007bff;
+    margin-right: 10px;
+}
+.education-left {
+    flex: 0 0 250px; /* Fixed width for date and location */
+    padding-right: 20px;
+}
+
+.education-right {
+    flex: 1;
+    text-align: left;
+}
+
+.education-left h3 {
+    color: #007bff;
+    margin: 0 0 10px 0;
+}
+
+.education-right h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.education-left p, .education-right p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Nested Card Styling */
+.nested-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.certification-left {
+    flex: 1;
+}
+
+.certification-right {
+    flex: 0 0 120px; /* Fixed width for the image */
+    text-align: right;
+}
+
+.certification-left h3 {
+    color: #007bff;
+    margin: 0 0 5px 0;
+}
+
+.certification-left p {
+    margin: 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.certification-right img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
 }

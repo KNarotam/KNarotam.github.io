@@ -167,61 +167,44 @@ header {
     padding: 20px;
 }
 
-.resume-section h1 {
-    display: flex;
-    align-items: center;
-    font-size: 48px;
-    margin-top: 0;
-}
-
-.blue-square {
-    width: 24px;
-    height: 24px;
-    background-color: #007bff;
-    margin-right: 10px;
-}
-
-.download-btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-h2 {
-    font-size: 24px;
+.resume-section h2 {
+    font-size: 32px;
     color: #333;
-    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-.experience-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.card {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.experience-details {
+.card-left {
     flex: 1;
     padding-right: 20px;
 }
 
-.experience-details h3 {
-    color: #007bff;
-    margin: 0;
-}
-
-.experience-details .job-title {
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.experience-description {
+.card-right {
     flex: 2;
+}
+
+.card-left h3 {
+    color: #007bff;
+    margin: 0 0 10px 0;
+}
+
+.card-left p {
+    margin: 5px 0;
+    color: #555;
+    font-weight: bold;
+}
+
+.card-right p {
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.5;
 }

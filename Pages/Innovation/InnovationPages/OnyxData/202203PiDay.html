@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<title>analytiKs veNtures | Pi Day Data Challenge</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon"
+        href="/Images/Branding/Crest/Transparent White LOGO/Transparent White LOGO/Transparent White LOGO.png"
+        type="image/x-icon">
+    <meta property="og:title"
+        content="analytiKs veNtures | where Data drives Style, Strategy, Innovation, & Inspiration" />
+    <meta name="image" property="og:image" content="https://knarotam.github.io/Images/Branding/Logo.png" />
+    <meta name="author" content="Kishan Narotam" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="https://knarotam.github.io/" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Stylesheet for W3 schools-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Stylesheet for Styles CSS file-->
+    <link rel="stylesheet" href="/Assets/CSS/styles.css">
+    <!--Stylesheet for Responsive CSS file-->
+    <link rel="stylesheet" href="/Assets/CSS/responsive.css">
+    <!--Stylesheet for footer icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style type="text/css">
+    .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .tg td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+
+    .tg th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+
+    .tg .tg-a9p2 {
+        background-color: #000000;
+        border-color: #ffffff;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        vertical-align: top
+    }
+
+    .tg .tg-940v {
+        border-color: #ffffff;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: middle
+    }
+
+    .tg .tg-wbky {
+        background-color: #fe0000;
+        border-color: #ffffff;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: top
+    }
+</style>
+<body class="w3-black">
+
+    <!-- Links (sit on top) -->
+    <header>
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-padding">
+                <a href="/index.html" class="w3-bar-item w3-button w3-mobile">HOME</a>
+                <a href="/index.html#about" class="w3-bar-item w3-button w3-mobile">ABOUT</a>
+                <a href="/Pages/Style/style.html" class="w3-bar-item w3-button w3-mobile">STYLE</a>
+                <a href="/Pages/Strategy/strategy.html" class="w3-bar-item w3-button w3-mobile">STRATEGY</a>
+                <a href="/Pages/Innovation/innovation.html" class="w3-bar-item w3-button w3-mobile">INNOVATION</a>
+                <a href="/Pages/Inspiration/inspiration.html" class="w3-bar-item w3-button w3-mobile">INSPIRATION</a>
+                <a href="/Pages/Gaming Hub/gaminghub.html" class="w3-bar-item w3-button w3-mobile">GAMING HUB</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="/Images/Innovation/OnyxData/202203/Onyx Data DNA Challenge March 2022.jpg"
+                style="width:80%;" alt="Logo">
+        </header>
+
+        <section class="resume-section">
+            <div class="w3-content w3-padding-64 w3-text-white">
+                <!-- Title Section -->
+                <h2>Pi Day Data Challenge</h2>
+                <h3>Onyx Data DNA Challenge: March 2022</h3>
+                <p class="w3-center">14/01/2021</p>
+                <p class="w3-text-light-grey w3-center"><i class="fa fa-github w3-hover-opacity"></i> <a
+                    href="https://github.com/KNarotam/OnyxDataChallenge/tree/main/2022/March" target="_blank">GitHub
+                    Repo</a></p>
+                <hr style="width:60%; margin: auto;" class="w3-opacity">
+
+
+                <h2>1. Problem Statement</h2>
+                <p> In celebration of Pi Day (March 14), a fictional bakery has logged their sales from the past 2.5 years
+                    and
+                    would like their data analysed in order to make better decisions based on the trends of the provided
+                    data.</p>
+    
+                <h2>2. Data</h2>
+                <p>The data is from Onyx Data's DNA Challenge website, which can be accessed <a
+                        href="https://onyxdata.co.uk/dataset_challenge/march-2022/" target="_blank">here</a>.</p>
+    
+                <h2>3. Data Dictionary</h2>
+                <p>The following data dictionary is a combination of that provided by Onyx Data as well as any columns added
+                    to the loaded data prior to any pre-processing was done. Those highlighted in red are created in Excel,
+                    expanding on existing data columns.</p>
+    
+                <table class="tg" style="table-layout: fixed; width: 100%">
+                    <colgroup>
+                        <col style="width: 209px">
+                        <col style="width: 643px">
+                        <col style="width: 81px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="tg-a9p2">Column Name</th>
+                            <th class="tg-a9p2">Description</th>
+                            <th class="tg-a9p2">Data Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Order NO</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Order number of Pie
+                                    Bakery orders</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Order Date</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Date order was
+                                    placed</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Date</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Month/Yr</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Month &amp; Year
+                                    abbreviation of the Date of order</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Date</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-wbky">Order Day</td>
+                            <td class="tg-wbky">Day of the month the order was placed</td>
+                            <td class="tg-wbky">Integer</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-wbky">Order Month (Text)</td>
+                            <td class="tg-wbky">The Month the order was placed</td>
+                            <td class="tg-wbky">String</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-wbky">Order Year</td>
+                            <td class="tg-wbky">The Year the order was placed</td>
+                            <td class="tg-wbky">Integer</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Day of Week</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Day of the week the order
+                                    was placed</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Pie Flavor</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">The flavor of the pie(s)
+                                    ordered</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Quantity</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Quantity of pies
+                                    ordered</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Integer</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Cost</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Total cost of pies
+                                    ordered</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Float</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Slice Or Whole Pie</span>
+                            </td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Slice or Whole Pie
+                                    ordered</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Pre-Order/In-Store
+                                    Purchase</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Denotes if the order was
+                                    made in store or pre-ordered</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Organic?</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">Organic if the pie
+                                    filling ingredients were certified organic</span></td>
+                            <td class="tg-940v"><span style="font-weight:400;text-decoration:none">String</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <h2>4. Pre-Processing</h2>
+                <p>Although the data provided is generally clean and organised, some pre-processing is still done. Firstly,
+                    the <i>Day of the Week</i> is actually incorrect, and as a result is redone in DAX to ensure the correct
+                    day is used. The following DAX command is used:</p>
+                <p class="w3-center" style="font-family:'Courier New'">Day of the Week = FORMAT(Data[Order Date], "dddd")
+                </p>
+                <p>Further, to ensure that the days are displayed in the correct order and not alphabetically, we associate
+                    each day to a number corresponding, for example by default Sunday is 0, Monday is 1, up until Saturday
+                    which is 6. Personally, I prefer Monday to be 1, and Sunday to be 7. In order to create that
+                    association, the numbers generated per day is executed as follows:</p>
+                <p class="w3-center" style="font-family:'Courier New'">DayNum = WEEKDAY(Data[Order Date],2)</p>
+                <p>From there, the <i>Day of the Week</i> is sorted by <i>DayNum</i>. The dashboard can now be created from
+                    there.</p>
+    
+                <h2>5. Dashboard</h2>
+                <p>The dashboard was built in Power BI and can be downloaded <a
+                        href="https://github.com/KNarotam/OnyxDataChallenge/blob/main/2022/March/Dashboard.pbix"
+                        target="_blank">here</a>.</p>
+                <p>A screenshot of the dashboard is seen below:</p>
+    
+                <img src="/Images/Innovation/OnyxData/202203/Dashboard.jpg" style="width:100%;" alt="Dashboard">
+    
+                <h2>6. Final Analysis</h2>
+                <ul>
+                    <li><strong>April </strong>consistently recorded the highest number of sales each year followed by
+                        <strong>November</strong>.</li>
+                    <li><strong>December</strong> recorded the fewest number of sales each year with <strong>September
+                        </strong>being very closely ahead.</li>
+                    <li>It could be suggested that the increase in the sales of pies during April and November align to the
+                        festive season of Easter and Thanksgiving.</li>
+                </ul>
+                <ul>
+                    <li>Sales are fairly evenly distributed throughout the month, however it is seen that the
+                        <strong>6</strong><sup><strong>th</strong></sup> shows the <strong>highest</strong> number of sales
+                        with $6,762.50 and the <strong>3</strong><sup><strong>rd</strong></sup> with the
+                        <strong>lowest</strong> sales of $997.50</li>
+                </ul>
+                <ul>
+                    <li><strong>Apple</strong> was the best selling flavour of them all with <strong>Strawberry Rhubarb
+                        </strong>being the second best.</li>
+                    <li><strong>Other</strong> flavoured pies were the worst selling of them all.</li>
+                    <li>As assumed previously, during the seasonal times of year, seasonal pies were the best selling.</li>
+                    <li>During April, Apple was by far the most popular flavour, whereas in November, Pumpkin was the best
+                        selling flavour.</li>
+                </ul>
+                <ul>
+                    <li>The weekly sales see that midweek sales see fairly level amount, with <strong>Saturday</strong>
+                        sales being the highest in the week and <strong>Sunday</strong> being the lowest sales day.</li>
+                </ul>
+                <ul>
+                    <li>Orders between <strong>sliced</strong> and <strong>whole</strong> pies are quite even, however more
+                        people prefer to order <strong>whole </strong>pies as opposed to slices of pies.</li>
+                </ul>
+                <ul>
+                    <li>Clearly, <strong>organic</strong> pies are preferred with just of 3/4 of the orders being organic in
+                        nature.</li>
+                </ul>
+                <ul>
+                    <li>Similarly to sliced and whole pies, there is a similar distribution between
+                        <strong>pre-order</strong> and <strong>in-store</strong> orders of pie, with more orders being
+                        <strong>pre-ordered</strong> rather than in store.</li>
+                </ul>
+                <ul>
+                    <li>Since data is only recorded from halfway through 2019, the increase in sales made from 2019 to 2020
+                        sees a significant 329.47% increase.</li>
+                    <li>Although only 6 months worth of data, <strong>Strawberry Rhubarb</strong> contributed to the most to
+                        the increases sales, with <strong>Cherry</strong> contributing the least.</li>
+                    <li>From 2020 to 2021, saw a <strong>19.3%</strong> increase in sales, with <strong>Pumpkin</strong>
+                        having the greatest sales impact.</li>
+                </ul>
+    
+                <p>It can be suggested that going forward Pi Day Pie Palace could use this data to make crucial business decisions. For instance, ensuring a larger supply of ingredients during April and November could allow the business to make more pies, and if the ingredients are organic in nature can increase the number of organic pies sold. Furthermore, marketing can increase sales through specific festive marketing campaigns.</p>
+    
+                <p>Since Apple and Strawberry Rhubarb are the best selling flavours it can be suggested to ensure a consistent supply of these flavoured ingredients to keep the best sellers in stock and best in selling.</p>
+    
+                <p>Pi Day Pie Palace is on track to sell more in 2022, and based on the trends from the previous two years, it can be suggested that Strawberry Rhubarb, Pumpkin, and Apple pies will be the biggest contributors to PDPP increasing their sales, especially if they are able to market it correctly.</p>
+    
+                <p>Since there is a clear preference for Organic pies, finding a supplier to supply on organic ingredients will allow PDPP to migrate towards selling only organic pies.</p>
+    
+
+            </div>
+        </section>
+</div>
+
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+            <p>Find me on social media.</p>
+            <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                    class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+            <!-- End footer -->
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<title>analytiKs veNtures | The Battle of the Neighbourhoods</title>
+
+<head>
+    <!-- add icon link -->
+    <link rel="icon"
+        href="/Images/Branding/Crest/Transparent White LOGO/Transparent White LOGO/Transparent White LOGO.png"
+        type="image/x-icon">
+    <meta property="og:title"
+        content="analytiKs veNtures | where Data drives Style, Strategy, Innovation, & Inspiration" />
+    <meta name="image" property="og:image" content="https://knarotam.github.io/Images/Branding/Logo.png" />
+    <meta name="author" content="Kishan Narotam" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="https://knarotam.github.io/" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Stylesheet for W3 schools-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Stylesheet for Styles CSS file-->
+    <link rel="stylesheet" href="/Assets/CSS/styles.css">
+    <!--Stylesheet for Responsive CSS file-->
+    <link rel="stylesheet" href="/Assets/CSS/responsive.css">
+    <!--Stylesheet for footer icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="w3-black">
+
+    <!-- Links (sit on top) -->
+    <header>
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-padding">
+                <a href="/index.html" class="w3-bar-item w3-button w3-mobile">HOME</a>
+                <a href="/index.html#about" class="w3-bar-item w3-button w3-mobile">ABOUT</a>
+                <a href="/Pages/Style/style.html" class="w3-bar-item w3-button w3-mobile">STYLE</a>
+                <a href="/Pages/Strategy/strategy.html" class="w3-bar-item w3-button w3-mobile">STRATEGY</a>
+                <a href="/Pages/Innovation/innovation.html" class="w3-bar-item w3-button w3-mobile">INNOVATION</a>
+                <a href="/Pages/Inspiration/inspiration.html" class="w3-bar-item w3-button w3-mobile">INSPIRATION</a>
+                <a href="/Pages/Gaming Hub/gaminghub.html" class="w3-bar-item w3-button w3-mobile">GAMING HUB</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="/Images/Innovation/Battle of the Neighbourhoods/Battle of the Neighbourhoods Cover.jpg" style="width:80%;" alt="Logo">
+        </header>
+
+        <section class="resume-section">
+            <div class="w3-content w3-padding-64 w3-text-white">
+                <!-- Title Section -->
+                <h2>The Battle of the Neighbourhoods</h2>
+                <h3>IBM: Applied Data Science Capstone</h3>
+                <p class="w3-center">14/01/2021</p>
+                <p class="w3-text-light-grey w3-center"><a target="_blank" href="https://github.com/KNarotam/Applied-Data-Science-Capstone/blob/master/Week%204%20%2B%205/The%20Battle%20of%20the%20Neighbourhoods.ipynb" class="w3-text-light-grey w3-center">Jupyter Notebook</a></p>
+                <hr style="width:60%; margin: auto;" class="w3-opacity">
+
+                <h2>Introduction</h2>
+                <p> A venture capitalist is known as a private equity investor who seeks opportunity in high-growth
+                    potential
+                    companies such as small businesses and startups in exchange for a stake in the respective company. The
+                    risk-reward factor of investing in these companies can be drastic, and if invested correctly can yield a
+                    substantial return for the investor. Venture capital firms began in the United States in the early to
+                    mid-1900s and has continued to grow exponentially as the world evolved through the Dot-Com burst and
+                    into
+                    the Fourth Industrial Revolution<sup><a href="#1">1</a></sup>.</p>
+    
+                <p>The popular television show Shark Tank and its respective spinoff such as Dragon's Den in the UK has
+                    brought
+                    to life the way investors, specifically venture capitalists invest their money in small businesses and
+                    startups. In order to mitigate the risks, investors must know about the business and what the plan would
+                    be
+                    to succeed.</p>
+    
+                <p>This project aims to provide information to venture capitalists on what businesses are popular based on
+                    data
+                    about Toronto, Canada. The idea is to be able to make valid assumptions based on the popularity of
+                    certain
+                    venues in the various boroughs. The information gathered will allow venture capitalists to know what
+                    type of
+                    businesses are in high-demand as well as potential opportunities for less popular businesses.</p>
+                <h2>Data</h2>
+    
+                Based on what we aim to achieve with this project, the data required includes:
+                <ul>
+                    <li>List of postal codes, corresponding boroughs and neighbourhoods for the City of Toronto.</li>
+                    <li>The demographics of the Toronto neighbourhoods.</li>
+                    <li>The various venues such as restaurants, bars, coffee shops, malls, etc. around each of the
+                        neighbourhoods.</li>
+                    <li>The longitude and latitude of each neighbourhood and venues.</li>
+                </ul>
+    
+                <h3>Data Sources</h3>
+                <p>The list of postal codes, boroughs and neighbourhoods are retrieved from a Wikipedia table listing all of
+                    the postal codes in Canada that begin with the letter M. This was chosen as the postal codes that begin
+                    with
+                    the letter M are the boroughs and neighbourhoods that are found within the city of Toronto. The original
+                    table is found at the link below:</p>
+    
+                <p><a
+                        href="https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M">https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M</a>
+    
+    
+                    <p>This postal code data along with the corresponding boroughs and neighbourhoods will correlate
+                        directly
+                        with
+                        the geospatial data file. This data file provides the longitude and latitude of each postal code
+                        that is
+                        stored in a <i>csv</i> file. The link to the file can be found at the link below:</p>
+    
+                    <p><a href="http://cocl.us/Geospatial_data">http://cocl.us/Geospatial_data</a></p>
+    
+                    <p> The demographics data is taken from the Toronto Open Data Catalogue, relating to neighbourhood
+                        profiles.
+                        The
+                        csv file consists of the neighbourhood profiles from a census done in 2016, which includes
+                        population
+                        distribution across various races and religions, languages spoken, immigration and citizenship,
+                        education
+                        and finances. This file is provided as a <i>csv</i> file and can be found at the link below:
+                    </p>
+                    <p><a
+                            href="https://ckan0.cf.opendata.inter.prod-toronto.ca/download_resource/ef0239b1-832b-4d0b-a1f3-4153e53b189e?format=csv">https://ckan0.cf.opendata.inter.prod-toronto.ca/download_resource/ef0239b1-832b-4d0b-a1f3-4153e53b189e?format=csv</a>
+                    </p>
+    
+                    <p>These above links alongside the Foursquare API will be used to map the neighbourhoods and retrieve
+                        the
+                        data
+                        relating to the various venues. For this project, due to the limitations of the free account on
+                        Foursquare,
+                        the search limit of the venues is set to 100 with a radius of 500 metres of each neighbourhood.</p>
+    
+                    <h2>Methodology</h2>
+                    <h3>Importing the Libraries</h3>
+                    <p> Various libraries will be used through the implementation of this project, with the main ones being
+                        <code>pandas</code> and <code>numpy</code> to handle the data itself. The <code>geopy</code>,
+                        <code>folium</code> and
+                        <code>requests</code> libraries will handle longitude and latitude conversion, JSON handling and map
+                        rendering
+                        respectively. The <code>Sci-kit learn</code> library gives us access to the k-means clustering model
+                        for our
+                        project execution and analysis. Lastly, the <code>BeautifulSoup</code> library will extract data
+                        from the
+                        respective HTML pages and allow us to use that data in a dataframe for analysis and modelling.
+                    </p>
+    
+                    <h3>Importing the Data Sources</h3>
+                    <h4>Toronto Neighbourhoods Data</h4>
+                    In order to obtain this data from the Wikipedia page, the <code>get</code> function is used to request
+                    the
+                    page and convert it to raw HTML text. Using the <code>BeautifulSoup</code> library the table can be
+                    identified
+                    and converted into raw HTML text. Following this, the table is then read as an HTML file and converted
+                    into a dataframe for processing. Figure 1 shows the original Wikipedia table whereas
+                    Figure 2 shows the same data after being converted to a dataframe.
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/WikiTable.png"
+                            alt="Wikipedia Data table" style="width:100%">
+                        <figcaption>Fig.1: Toronto Neighboods Wikipedia table</figcaption>
+                    </figure>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/WikiDf.png" alt="Wikipedia df"
+                            style="width:100%">
+                        <figcaption>Fig.2: Toronto Neighboods dataframe</figcaption>
+                    </figure>
+    
+                    <h4>Preprocessing the Neighbourhoods Data</h4>
+                    <p> With the data having been imported correctly, it now must be preprocessed before any modelling and
+                        analysis can be done. The first step is to drop all rows from the table where the boroughs are
+                        <i>Not assigned</i>. The next step is to assign all <i>Not assigned</i> neighbourhoods the value of
+                        their respective boroughs. Figure 3 shows the table after being preprocessed and ready
+                        for assigning the respective longitude and latitude values to each location.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/Preproc.png" alt="Preproc df"
+                            style="width:100%">
+                        <figcaption>Fig.3: Neighbourhoods dataframe after being preprocessed</figcaption>
+                    </figure>
+    
+                    <h4>Geospatial Data</h4>
+                    <p>The Geospatial data is the data that will provide the geographical coordinates to the neighbourhoods,
+                        specifically the centre point of each neighbourhood. The data is stores in a <i>csv</i> file, and
+                        is read in as such and converted into a dataframe. Subsequently, this data must be merged with the
+                        neighbourhoods dataframe for the data to be modelled and analysed. A left join is done on the
+                        neighbourhoods table with the geospatial data table and the resulting dataframe can be seen in
+                        Figure 4.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/Finaldf.png" alt="Final df"
+                            style="width:100%">
+                        <figcaption>Fig.4: Merged dataframe containing Neighbourhoods data</figcaption>
+                    </figure>
+    
+                    <h4>Demographics data (used for in-depth analysis</h4>
+                    <p>The demographics data is a <i>csv</i> file that was extracted from the Toronto open Data Catalogue
+                        and contained data from a 2016 census. With the amount of information in this file only two rows
+                        were extracted, specifically the population of the neighbourhoods and the average income of the
+                        neighbourhoods. This data was read in, preprocessed and merged with the Neighbourhoods dataframe.
+                        The resulting table can be seen in Figure 5.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/InDepthdf.png" alt="In-depth df"
+                            style="width:100%">
+                        <figcaption>Fig.5: Dataframe used for the in-depth analysis</figcaption>
+                    </figure>
+    
+                    <h3>Creating the Map</h3>
+                    <p>In order to generate an interactive map with points over each neighbourhood, the <code>folium</code>
+                        and
+                        <code>geopy</code> libraries are used. The <code>geopy</code> retrieved the centre coordinates of
+                        the city of
+                        Toronto, and the <code>folium</code> library is able to take the data from the dataframe as well as
+                        the
+                        location of Toronto and map it out accordingly as seen in Figure 6.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/TorontoMap.jpg" alt="Toronto"
+                            style="width:100%">
+                        <figcaption>Fig.6: Generated map of Toronto and respective neighbourhoods</figcaption>
+                    </figure>
+    
+                    <h3>Retrieving the venue</h3>
+                    <p>With half of the data ready for modelling and analysis, we can now extract the data required from the
+                        Foursquare API. The initial step is to set up your Foursquare credentials in order to retrieve the
+                        requested information. Once authenticated, 100 venues within a 500 metre radius of each
+                        neighbourhood. This data is requested as a JSON file and once received is converted into a dataframe
+                        which can be seen in Figure 7.
+                    </p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/Venuesdf.png" alt="Venuesdf"
+                            style="width:100%">
+                        <figcaption>Fig.7: Dataframe of the neighbourhoods and requested venues</figcaption>
+                    </figure>
+    
+    
+                    <h4>Grouping the Venues</h4>
+                    <p>All the venues within the requested radius has been presented, however in order to gain a full
+                        understanding of the data, the venues are grouped and counted. This is to observe what are some of
+                        the popular venues within the city of Toronto. The results can be seen in Figure 8 which amounts to
+                        a total of 273 unique categories of venues. Since no dictionary or
+                        classification is done on the venue categories, a café and a coffee shop and a breakfast place are
+                        all categorised as unique venues, which for this project was an accepted trade off.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/GroupedVenues.png"
+                            alt="GroupedVenuesdf" style="width:100%">
+                        <figcaption>Fig.8: Dataframe of the venues and the number of times it has appeared in the
+                            request</figcaption>
+                    </figure>
+    
+                    <h3>One Hot Encoding</h3>
+                    <p>One Hot Encoding is a process where categorical variables can be converted in order for a machine
+                        learning algorithm to process the data<sup><a href="#2">2</a></sup>. This converts the variables
+                        into a binary format,
+                        where a 0 indicates no occurrence and a 1 indicates an occurrence of that respective variable.
+                        Figure 9 shows the venues dataframe after being passed through the <code>onehot</code>
+                        function.
+                    </p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/OHE.png" alt="OHE" style="width:100%">
+                        <figcaption>Fig.9: One Hot Encoded dataframe</figcaption>
+                    </figure>
+    
+                    <h4>Calculating the average occurrence of each venues</h4>
+                    <p>Once processed and done, One Hot Encoding simply states if that categorical variable, in this case a
+                        venue, is present in that neighbourhoods radius. It does not give an indication of how many times
+                        that specific venue occurs in the radius. In order to achieve this, the neighbourhoods are grouped
+                        and the means of each venue is calculated as seen in Figure 10.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/VenuesMean.png" alt="VenuesMean"
+                            style="width:100%">
+                        <figcaption>Fig.10: Grouped Neighbourhoods and means of respective venues</figcaption>
+                    </figure>
+    
+                    <h4>Presenting the top 10 venues of each neighbourhood</h4>
+                    <p>Now that the means are calculated for each venue for each neighbourhood,the goal is to retrieve the
+                        top 10 venues in each neighbourhood to allow investors to see what is the most popular venue
+                        categories and what would pose the most competition. Figure 11 displays an example
+                        of the top 10 venues of three different neighbourhoods. This raw text data can now be converted into
+                        a dataframe for clustering, which can be seen in Figure 12.
+                    </p>
+    
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/Top10Ex.png" alt="10Ex"
+                            style="width:100%">
+                        <figcaption>Fig.11: Top 10 venues in various neighbourhoods</figcaption>
+                    </figure>
+    
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/Top10df.png" alt="10df"
+                            style="width:100%">
+                        <figcaption>Fig.12: Dataframe of the top 10 venues in each neighbourhood</figcaption>
+                    </figure>
+    
+                    <h3>Clustering</h3>
+                    <p>The clustering used in this project is the <i>k-means</i> clustering. Five clusters were chosen for
+                        the categorisation in order to prevent underfitting and overfitting of the data given the
+                        concentration of the various neighbourhoods in the city of Toronto. Figure 13
+                        shows the final processed dataframe after being passed through the machine learning algorithm.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/ClusterTable.png" alt="ClusterTable"
+                            style="width:100%">
+                        <figcaption>Fig.13: Dataframe of all neighbourhoods, cluster groups and top 10 venues
+                        </figcaption>
+                    </figure>
+    
+                    <h2>Results</h2>
+                    <h3>Cluster Map</h3>
+                    <p>The neighbourhoods are all clustered, and in order to gain a better understanding on how they were
+                        clustered, a map is generated with each cluster being presented in a different colour.
+                        Figure 14 displays the map, where the following clusters correspond to the
+                        following clusters: gray is cluster 1; black is cluster 2; red is cluster 3; blue is cluster 4;
+                        purple is cluster 5.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/ClusterMap.jpg" alt="ClusterMap"
+                            style="width:100%">
+                        <figcaption>Fig.14: Map showing the clusters
+                        </figcaption>
+                    </figure>
+    
+                    <h3>Cluster 1</h3>
+                    <p>If we analyse cluster 1, we can see that based on the most popular venue across all the
+                        neighbourhoods are parks and playgrounds. Across the top 10, it seems that all of these
+                        neighbourhoods have similarities as the rank of the venues decrease, for example the fifth to the
+                        8th most common venues for the first four neighbourhoods have <i>Dog run</i>, <i>Doner
+                            Restaurant</i>, <i>Donut shop</i> and <i>Drugstore</i> in the same order.</p>.
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/Cluster1.png" alt="Cluster1"
+                            style="width:100%">
+                        <figcaption>Fig.15: Table of Cluster 1
+                        </figcaption>
+                    </figure>
+    
+                    <h3>Cluster 2</h3>
+                    <p>Cluster 2 has a <i>Pizza place</i> as it's most common venue in the various neighbourhoods. The
+                        various types of restaurants are spread across the rank of each neighbourhood, however almost all
+                        exist in each other, albeit at a lower or higher rank. An example of this would be the
+                        <i>Eastern European restaurant</i> being the third most common venue for the first two
+                        neighbourhoods, but the fifth most common venue for the fourth neighbourhood.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/Cluster2.png" alt="Cluster2"
+                            style="width:100%">
+                        <figcaption>Fig.16: Table of Cluster 2
+                        </figcaption>
+                    </figure>
+                    <h3>Cluster 3</h3>
+                    <p>Cluster 3 may not seem to have any similarities with regards to their venues, however these two
+                        neighbourhoods are clustered together due to the similarities of their location. Although not
+                        regarded as a venue, these two neighbourhoods are situated next to middle schools.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/Cluster3.png" alt="Cluster3"
+                            style="width:100%">
+                        <figcaption>Fig.17: Table of Cluster 3
+                        </figcaption>
+                    </figure>
+                    <h3>Cluster 4</h3>
+                    <p>Cluster 4 is somewhat of an outlier as no other neighbourhoods are similar to this, as it's most
+                        common venue is a <i>Filipino restaurant</i>. As no other cluster has this in common, this
+                        neighbourhood is clustered by itself.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/Cluster4.png" alt="Cluster4"
+                            style="width:100%">
+                        <figcaption>Fig.18: Table of Cluster 4
+                        </figcaption>
+                    </figure>
+                    <h3>Cluster 5</h3>
+                    <p>Cluster 5 has the most neighbourhoods in it and shows blatant similarities in the most common venues.
+                        These neighbourhoods are clustered together as they are all high-density residential areas.</p>
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/Cluster5.png" alt="Cluster5"
+                            style="width:100%">
+                        <figcaption>Fig.19: Table of Cluster 5
+                        </figcaption>
+                    </figure>
+    
+    
+    
+                    <h2>Discussion & In-Depth Analysis</h2>
+    
+                    <p> For the in-depth analysis, 10 neighbourhoods were chosen and their respective populations and
+                        average
+                        income was extracted and combined into a single dataframe. These 10 cities will stand as an example
+                        to
+                        what can be done with this type of clustering and analysis. Figure 20 shows the
+                        dataframe of the 10 neighbourhoods while Figure 21 presents the previously clustered
+                        neighbourhoods and corresponding clusters.</p>
+    
+    
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/InDepthdf.png" alt="InDepthdf"
+                            style="width:100%">
+                        <figcaption>Fig.20: Dataframe of 10 neighbourhoods chosen for in-depth analysis
+                        </figcaption>
+                    </figure>
+    
+                    <p>The main analysis would rather happen from the dataframe as the pertinent data is presented. If we
+                        take the second neighbourhood, <i>Humewood-Cedervale</i>, for example we can analyse the following:
+    
+                        <ul>
+                            <li> The neighbourhood is in the fifth cluster, meaning it is in a residential area.</li>
+                            <li> The top five most common venues are all healthy or sport related venues.</li>
+                            <li> There is no healthy restaurant or healthy food store in the top 10 most common venues.</li>
+                            <li> Given the smaller population size, but with the second highest average income in this list,
+                                it could stand that a venture capitalist may see an opportunity to invest in a healthy food
+                                store that already exists in the area to begin a small franchise.</li>
+                            <li> Increasing the number of same-branded healthy food stores can result in more people having
+                                access to the stores and make it potentially the sixth most common, if not one of the top
+                                five most common venues in the neighbourhood.</li>
+                        </ul>
+    
+                        If we take the <i>Woburn</i> neighbourhood, with the largest population size in the list, and one of
+                        the lowest average income, we can deduce that this neighbourhood could be a potential location to
+                        open a fast food restaurant. However, in the borough of <i>Scarborough</i>, the population is
+                        potentially ethnically diverse given the various restaurants seen in the top 10 most common venues.
+                    </p>
+                    <figure>
+                         <img src="/Images/Innovation/Battle of the Neighbourhoods/InDepthMap.jpg" alt="InDepthMap"
+                            style="width:100%">
+                        <figcaption>Fig.21: Map of 10 neighbourhoods chosen for in-depth analysis
+                        </figcaption>
+                    </figure>
+                    This implementation of this project can be drastically improved by utilising more data from the census
+                    file such as the ethnicity of people that live in the various neighbourhoods. Furthermore, the overall
+                    model can be improved by finding the optimal number of clusters and with increased usage of the
+                    Foursquare API, a user can map each neighbourhood's population as a chloropleth, while adding markers to
+                    the various venues that are present.
+    
+    
+    
+                    <h2>Conclusion</h2>
+                    A project was implemented on analysing data of the city of Toronto relating to its neighbourhoods. The
+                    data was sourced from various locations, preprocessed and presented accordingly. The data was then
+                    modelled and clustered using the k-means clustering machine learning algorithm, and an analysis was done
+                    on the results. An in-depth analysis was done given more information such as population and average
+                    income of the neighbourhood to answer the problem posed in this project. Overall, the project was
+                    successful but can stand to be improved with recommendations being given.
+    
+                    <h2>References</h2>
+                    <p> <a id="1"
+                            href="https://www.investopedia.com/terms/v/venturecapitalist.asp#:~:text=A%20venture%20capitalist%20(VC)%20is,have%20access%20to%20equities%20markets"><sup>1</sup>
+                            Ganti, A; <i>Venture Capitalist (VC) Definition</i>;Last Accessed:
+                            15/01/2021</a><br>
+                        <a id="2"
+                            href="https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f"><sup>2</sup>
+                            Vasudev, R; <i>What is One Hot Encoding? Why and When Do You Have to Use it?</i>; Last Accessed:
+                            15/01/2021</a><br>
+                    </p>
+                </section>
+
+
+            <!-- Footer -->
+            <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge w3-center">
+                <p>Find me on social media.</p>
+                <a href="https://github.com/KNarotam" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+                <a href="https://www.facebook.com/JoKishler" target="_blank"><i
+                        class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/jokishler/" target="_blank"><i
+                        class="fa fa-instagram w3-hover-opacity"></i></a>
+                <a href="https://za.pinterest.com/JoKishler/" target="_blank"><i
+                        class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/kishan-y-narotam/" target="_blank"><i
+                        class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+                <!-- End footer -->
+            </footer>
+
+</body>
+
+</html>
